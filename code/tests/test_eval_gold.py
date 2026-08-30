@@ -38,9 +38,11 @@ def test_perfect_match_scores_one() -> None:
     report = evaluate([gold], [gold])
     summary = report.summary()
     assert summary["tables_matched"] == 1
-    assert summary["exact"]["caption_accuracy"] == 1.0
-    assert summary["exact"]["mean_cell_accuracy"] == 1.0
-    assert summary["soft"]["mean_caption_token_f1"] == 1.0
+    assert summary["caption"] == {"accuracy": 1.0, "precision": 1.0, "recall": 1.0, "f1": 1.0}
+    assert summary["cells"]["accuracy"] == 1.0
+    assert summary["cells"]["f1"] == 1.0
+    assert "exact" not in summary
+    assert "soft" not in summary
 
 
 def test_missing_gold_document_is_a_detection_miss() -> None:
@@ -52,7 +54,7 @@ def test_missing_gold_document_is_a_detection_miss() -> None:
     assert summary["gold_documents_found_in_prediction"] == 0
     assert summary["gold_tables"] == 1
     assert summary["tables_matched"] == 0
-    assert report.structure_summary()["detection_recall"] == 0.0
+    assert report.structure_summary()["detection"]["recall"] == 0.0
 
 
 def test_cell_mismatch_lowers_accuracy() -> None:
@@ -100,7 +102,9 @@ def test_soft_mention_recall_accepts_overlapping_paragraph() -> None:
     )
     score = score_table(gold, pred)
     assert score.mention_recall_exact == 0.0
-    assert score.mention_recall_soft == 1.0
+    assert score.mention_recall == 1.0
+    assert score.mention_precision == 1.0
+    assert score.mention_f1 == 1.0
     assert score.mention_mean_token_f1 is not None and score.mention_mean_token_f1 > 0.4
 
 
@@ -124,8 +128,26 @@ def test_empty_prediction_document_counts_as_detection_miss() -> None:
     assert summary["gold_documents_found_in_prediction"] == 1
     assert summary["gold_tables"] == 1
     assert summary["tables_matched"] == 0
-    assert summary["detection_recall"] == 0.0
-    assert summary["exact"]["mean_cell_accuracy"] is None
+    assert summary["detection"]["recall"] == 0.0
+    assert summary["cells"]["accuracy"] is None
+
+
+def test_extra_predicted_table_lowers_detection_precision() -> None:
+    gold = _doc("a.pdf", _table())
+    extra = _table(table_id="t2", table_label="Table 2", page=9)
+    pred = GroundTruthDocument(
+        document_id="id_a.pdf",
+        source_pdf="a.pdf",
+        title="Demo",
+        num_tables=2,
+        tables=[_table(), extra],
+    )
+    summary = evaluate([gold], [pred]).structure_summary()
+    assert summary["tables_matched"] == 1
+    assert summary["predicted_tables"] == 2
+    assert summary["detection"]["recall"] == 1.0
+    assert summary["detection"]["precision"] == 0.5
+    assert summary["detection"]["f1"] == 0.6667
 
 
 def test_structure_summary_omits_context_metrics() -> None:
@@ -136,7 +158,11 @@ def test_structure_summary_omits_context_metrics() -> None:
     )
     summary = evaluate([gold], [pred]).structure_summary()
     assert summary["tables_matched"] == 1
-    assert summary["detection_recall"] == 1.0
-    assert "caption_accuracy" not in summary["exact"]
-    assert "mean_caption_token_f1" not in summary["soft"]
-    assert set(summary["exact"]) == {"columns_accuracy", "mean_cell_accuracy"}
+    assert summary["detection"]["recall"] == 1.0
+    assert "caption" not in summary
+    assert "section" not in summary
+    assert "mentions" not in summary
+    assert "exact" not in summary
+    assert "soft" not in summary
+    assert set(summary["columns"]) == {"accuracy", "precision", "recall", "f1"}
+    assert set(summary["cells"]) == {"accuracy", "precision", "recall", "f1"}

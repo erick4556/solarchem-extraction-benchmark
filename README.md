@@ -170,7 +170,7 @@ full example of one document entry produced by the pipeline.
 | `title` | the article title, read from the PDF metadata |
 | `page`, `table_label` | table detection and identification |
 | `caption` | caption extraction, verbatim as printed |
-| `columns`, `rows` | structure and content: cell F1, CER/WER, numeric accuracy |
+| `columns`, `rows` | structure and content: column headers and cell accuracy |
 | `context.section_title` | which section of the article the table belongs to |
 | `context.mentions` | retrieval of in-text references |
 
@@ -264,9 +264,19 @@ weights.
 ## Evaluate automatic GT against the Gold pilot
 
 The Gold pilot has **10 documents**. Notation follows the same canonical form
-as the extractor (`m^2`, header `_` joins); `section_title` in Gold is semantic
-while silver is positional — prefer soft metrics for that field. The evaluator
-only scores Gold overlap and lists missing Gold PDFs.
+as the extractor (`m^2`, header `_` joins). `section_title` in Gold is the
+discussing section (semantic); silver uses the heading above the table
+(positional). The evaluator only scores reference overlap and lists missing
+reference PDFs.
+
+The report `summary` is grouped by field — `detection`, `columns`, `cells`,
+and, with `--metrics all`, `caption`, `section`, `mentions`. Each field
+exposes **accuracy**, **precision**, **recall** and **f1**. Accuracy is
+exact string or header-list agreement (Jaccard for detection and mentions).
+P/R/F1 are token overlap for caption, columns and section; set overlap for
+mentions; table-level for detection. On cells the four numbers coincide:
+the grid is compared position by position. `--metrics structure` omits the
+context fields so empty captions are not ranked.
 
 1. Copy `data/ground_truth/gold/` to the server (next to the silver JSON files).
 2. If the 10 Gold PDFs are not already inside silver, generate them:

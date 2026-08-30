@@ -30,14 +30,16 @@ What Gold does **not** do:
 | | Gold | Silver |
 | --- | --- | --- |
 | Meaning | discussing section (semantic, human) | heading above table float (positional) |
-| Primary metric | soft token-F1 | soft token-F1 |
+| Primary metric | section P/R/F1 (tokens) | section P/R/F1 (tokens) |
 
-Exact section match is secondary for OCR selection.
+Section **accuracy** (identical string) is secondary: `2 Results` vs
+`2. Results` is a miss on accuracy and a hit on F1.
 
 ### Mentions
 
-Gold: concise citing sentences. Silver: often full OCR paragraphs. Use
-**soft mention recall**, not exact string equality.
+Gold: concise citing sentences. Silver: often full OCR paragraphs. Score
+mention **recall** (and the rest of the mention quartet), not identical
+strings.
 
 ## Pilot contents
 
@@ -61,8 +63,8 @@ python scripts/evaluate_against_gold.py \
   --report ../data/ground_truth/gold/eval_report_lighton_ocr.json
 ```
 
-Prefer **soft + cell accuracy** for OCR selection. Exact columns/section/mentions
-will stay stricter by design.
+Prefer cell **accuracy** plus caption / section **F1** and mention **recall**
+for OCR selection. Column and section **accuracy** stay stricter by design.
 
 Silver files are named per engine by default:
 

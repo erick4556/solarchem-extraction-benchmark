@@ -1,9 +1,13 @@
-# SolarChem table benchmark — automatic ground truth
+# SolarChem extraction benchmark
+
+Benchmark for extracting **tables, figures, and their context** from SolarChem
+scientific PDFs. The current release scores **tables and table-context**; figure
+extraction is planned on the same schema and evaluation CLI.
 
 Automatic generation of a **table and table-context ground truth** for the
 SolarChem PDF corpus, in a form that can be compared directly against the
 output of any extraction tool (pdfplumber, Camelot, Unstructured, TATR, Docling,
-LightOnOCR, Unlimited-OCR).
+GROBID, LightOnOCR, Unlimited-OCR, Ollama VLMs).
 
 The generation strategy follows the GAP-KGE project: an OCR engine transcribes
 each page, the emitted tables are flattened into a rectangular grid, and the
@@ -18,16 +22,16 @@ deliberate:
 
 ## Layout
 
-The repository is developed locally and executed on a GPU server where code and
-data are siblings:
+This repository is `code/` plus `data/` (except the PDF corpus):
 
 ```
-<server_root>/
-├── code/                 # this repository
+.
+├── README.md             # this file (GitHub landing page)
+├── code/                 # package, scripts, tests
 └── data/
     ├── documents/        # source PDF corpus (gitignored; not in the repo)
     ├── ground_truth/     # generated ground truth JSON (per engine)
-    ├── predictions/      # native/layout tool outputs (not GT)
+    ├── predictions/      # tool outputs (not GT)
     └── intermediate/
         └── ocr_cache/
             ├── lighton_ocr/      # raw page transcriptions (LightOn)
@@ -35,6 +39,7 @@ data are siblings:
 ```
 
 `data/documents/` is excluded from git. Ground truth and predictions are tracked.
+All `python scripts/…` commands below run from `code/`.
 No path is hardcoded. The data root is resolved from `--data-root`, then from
 `$SOLARCHEM_DATA_ROOT`, then by looking for `data/` next to or inside the
 repository.
@@ -132,7 +137,7 @@ Optional with `--per-document`:
 
 * `data/ground_truth/<document_id>.json`
 
-See [`examples/solarchem_example.json`](examples/solarchem_example.json) for a
+See [`code/examples/solarchem_example.json`](code/examples/solarchem_example.json) for a
 full example of one document entry produced by the pipeline.
 
 ```json
@@ -279,7 +284,7 @@ only scores Gold overlap and lists missing Gold PDFs.
      --report ../data/ground_truth/gold/eval_report_lighton_ocr.json
    ```
 
-See [`docs/gold_pilot.md`](docs/gold_pilot.md).
+See [`code/docs/gold_pilot.md`](code/docs/gold_pilot.md).
 
 ## Phase 5 — native PDF table extractors
 
@@ -472,7 +477,7 @@ produced the silver file.
 Implemented and tested: the flattening, context and normalisation layers, the
 LightOnOCR-2 adapter, the Unlimited-OCR adapter (`--engine unlimited_ocr`),
 both GT CLIs (with resume), the schema, a **Gold pilot** of 10 human-verified
-tables under `data/ground_truth/gold/` (see [`docs/gold_pilot.md`](docs/gold_pilot.md)),
+tables under `data/ground_truth/gold/` (see [`code/docs/gold_pilot.md`](code/docs/gold_pilot.md)),
 and **Phase 5 native extractors** (pdfplumber, Camelot lattice/stream, PyMuPDF)
 plus **Phase 6 layout extractors** (Docling, TATR, Unstructured), **GROBID**,
 and **Phase 7 Ollama VLMs** writing to `data/predictions/`.

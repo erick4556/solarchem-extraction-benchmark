@@ -1,0 +1,152 @@
+{
+  "$defs": {
+    "Mention": {
+      "additionalProperties": false,
+      "description": "An in-text reference to the table, with the sentence(s) around it.",
+      "properties": {
+        "page": {
+          "description": "1-based page number.",
+          "minimum": 1,
+          "title": "Page",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "page",
+        "text"
+      ],
+      "title": "Mention",
+      "type": "object"
+    },
+    "Table": {
+      "additionalProperties": false,
+      "description": "A table in its flattened, evaluable form.\n\n``columns`` and ``rows`` form a rectangular grid: merged cells have been\nexpanded and multi-level headers collapsed into one label per column.",
+      "properties": {
+        "table_id": {
+          "title": "Table Id",
+          "type": "string"
+        },
+        "table_label": {
+          "default": "",
+          "description": "Identifier only, e.g. \"Table 1\".",
+          "title": "Table Label",
+          "type": "string"
+        },
+        "page": {
+          "description": "1-based page number.",
+          "minimum": 1,
+          "title": "Page",
+          "type": "integer"
+        },
+        "caption": {
+          "default": "",
+          "description": "Full caption as printed, label included. The title alone is solarchem_benchmark.gt.context.caption_title(caption).",
+          "title": "Caption",
+          "type": "string"
+        },
+        "columns": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Columns",
+          "type": "array"
+        },
+        "rows": {
+          "items": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "title": "Rows",
+          "type": "array"
+        },
+        "context": {
+          "$ref": "#/$defs/TableContext"
+        }
+      },
+      "required": [
+        "table_id",
+        "page",
+        "columns",
+        "rows"
+      ],
+      "title": "Table",
+      "type": "object"
+    },
+    "TableContext": {
+      "additionalProperties": false,
+      "description": "Narrative context attached to a single table.\n\nContext is restricted to what identifies where the table sits in the\narticle and where it is referred to: the section it belongs to, and the\nparagraphs that name it explicitly.",
+      "properties": {
+        "section_title": {
+          "default": "",
+          "description": "Heading of the section the table appears under.",
+          "title": "Section Title",
+          "type": "string"
+        },
+        "mentions": {
+          "description": "Paragraphs elsewhere in the article that reference the table.",
+          "items": {
+            "$ref": "#/$defs/Mention"
+          },
+          "title": "Mentions",
+          "type": "array"
+        }
+      },
+      "title": "TableContext",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Ground truth for one source PDF.",
+  "properties": {
+    "document_id": {
+      "title": "Document Id",
+      "type": "string"
+    },
+    "source_pdf": {
+      "description": "Path relative to the corpus directory.",
+      "title": "Source Pdf",
+      "type": "string"
+    },
+    "title": {
+      "default": "",
+      "description": "Title of the article.",
+      "title": "Title",
+      "type": "string"
+    },
+    "num_tables": {
+      "minimum": 0,
+      "title": "Num Tables",
+      "type": "integer"
+    },
+    "tables": {
+      "items": {
+        "$ref": "#/$defs/Table"
+      },
+      "title": "Tables",
+      "type": "array"
+    }
+  },
+  "required": [
+    "document_id",
+    "source_pdf",
+    "num_tables"
+  ],
+  "title": "GroundTruthDocument",
+  "type": "object"
+}

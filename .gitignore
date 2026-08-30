@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+.venv/
+.venv-*/
+venv/
+
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+.DS_Store
+
+# PDF corpus — keep local / on the GPU server (copyright, ~4 GB)
+data/documents/*
+!data/documents/.gitkeep

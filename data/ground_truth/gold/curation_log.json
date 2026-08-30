@@ -1,0 +1,164 @@
+{
+  "pilot_id": "solarchem_gold_pilot_v2",
+  "created_at": "2026-08-11",
+  "updated_at": "2026-08-11",
+  "curator": "assistant+human-review-pending",
+  "status": "draft_for_human_confirmation",
+  "schema": "GroundTruthCorpus (evaluable fields only)",
+  "ground_truth_file": "ground_truth_gold_pilot.json",
+  "conventions": {
+    "notation": [
+      "Plain ASCII after the same rules as normalize_scientific_text (no LaTeX in Gold).",
+      "Unit powers use caret: m^2, cm^3, g^-1 (not m2 / cm3).",
+      "Multi-level headers join with _: Phase content (%)_A (pipeline flatten).",
+      "Angstrom as A; micro as u (umol).",
+      "Header footnotes (^a, †) are not part of the evaluable label."
+    ],
+    "section_title": [
+      "Gold uses the discussing section (semantic), verified by a human against the PDF.",
+      "Automatic silver uses the closest article-section heading above the table float (positional).",
+      "Exact section_title is therefore not the primary OCR-selection metric; use soft token-F1.",
+      "Gold sections are NOT copied from silver predictions."
+    ],
+    "mentions": [
+      "Gold keeps concise in-text sentences that cite the table.",
+      "Silver often stores the full OCR paragraph; soft mention recall is the fair metric."
+    ]
+  },
+  "scope": {
+    "documents": 10,
+    "tables": 10,
+    "selection_criteria": [
+      "native PDF text exposes every cell (no image-only tables)",
+      "one main-text Table 1 per paper",
+      "mix of characterisation, EDS, activity and transposed layouts",
+      "domain coverage: lattice/phase, textural, band gap, metal loading, CO2 ads, formic-acid yield"
+    ]
+  },
+  "documents": [
+    {
+      "source_pdf": "Band_gap_engineered,_oxygen-rich_TiO2_for_visible_light_induced_photocatalytic_reduction_of_CO2.pdf",
+      "document_id": "solarchem_band_gap_engineered_oxygen_rich_tio2_for_visible_light_induc",
+      "tables_curated": ["Table 1"],
+      "notes": [
+        "ChemComm: no numbered section above the table; section_title left empty.",
+        "Angstrom as A in column headers.",
+        "Title from article header; PDF /Title was empty."
+      ],
+      "verified_against": "native PDF text on page 2"
+    },
+    {
+      "source_pdf": "Novel_Ti-KIT-6_material_for_the_photocatalytic_reduction_of_carbon_dioxide_to_methane.pdf",
+      "document_id": "solarchem_novel_ti_kit_6_material_for_the_photocatalytic_reduction_of",
+      "tables_curated": ["Table 1"],
+      "notes": [
+        "Semantic section_title = 2.2 Characterization (content), not the methods float position.",
+        "Short headers SBET / PV / APD as printed; units only in the table footnote."
+      ],
+      "verified_against": "native PDF text on pages 2-4"
+    },
+    {
+      "source_pdf": "Synthesis_of_Mo-doped_graphitic_carbon_nitride_catalysts_and_their_photocatalytic_activity_in_the_reduction_of_CO2_with_H2O.pdf",
+      "document_id": "solarchem_synthesis_of_mo_doped_graphitic_carbon_nitride_catalysts_and",
+      "tables_curated": ["Table 1"],
+      "notes": [
+        "Unit powers written m^2/g and cm^3/g (canonical form).",
+        "Two in-text mentions on page 3 kept separate."
+      ],
+      "verified_against": "native PDF text on page 3"
+    },
+    {
+      "source_pdf": "10.1016@S1872-20671060199-4.pdf",
+      "document_id": "solarchem_10_1016_s1872_20671060199_4",
+      "tables_curated": ["Table 1"],
+      "notes": [
+        "Semantic section_title = 2 Results and discussion (as printed, no dot after 2).",
+        "ABET (m^2/g) in canonical form."
+      ],
+      "verified_against": "native PDF text on page 3"
+    },
+    {
+      "source_pdf": "paper_195220973259e5c83626d748.73004088.pdf",
+      "document_id": "solarchem_paper_195220973259e5c83626d748_73004088",
+      "tables_curated": ["Table 1"],
+      "notes": [
+        "Transposed layout kept as printed (times as columns).",
+        "Section title kept as printed typo: 3.1. Characters."
+      ],
+      "verified_against": "native PDF text on pages 3 and 5"
+    },
+    {
+      "source_pdf": "Engineering_the_TiO2_outermost_layers_using_magnesium_for_carbon_dioxide_photoreduction.pdf",
+      "document_id": "solarchem_engineering_the_tio2_outermost_layers_using_magnesium_for_ca",
+      "tables_curated": ["Table 1"],
+      "notes": [
+        "Multi-level header flattened with _: Phase content (%)_A etc.",
+        "Semantic section_title = 3.1. Structural characterization.",
+        "Missing printed en-dashes stored as '-'."
+      ],
+      "verified_against": "native PDF text on page 3"
+    },
+    {
+      "source_pdf": "Photocatalytic_reduction_of_CO2_on_MgOTiO2_nanotube_films.pdf",
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_on_mgotio2_nanotube_films",
+      "tables_curated": ["Table 1"],
+      "notes": [
+        "Header CMg(NO3)2 kept as printed concentration label.",
+        "section_title = 3. Results and discussion."
+      ],
+      "verified_against": "native PDF text on pages 3-4"
+    },
+    {
+      "source_pdf": "Steam_reduction_of_CO2_in_a_photocatalytic_fluidized_bed_reactor.pdf",
+      "document_id": "solarchem_steam_reduction_of_co2_in_a_photocatalytic_fluidized_bed_rea",
+      "tables_curated": ["Table 1"],
+      "notes": [
+        "PDF /Title is a Word artefact; title from article header.",
+        "Caption keeps printed 'Table 1:' colon.",
+        "Absent metal loadings as '-'."
+      ],
+      "verified_against": "native PDF text on page 2"
+    },
+    {
+      "source_pdf": "Turning_lipophilic_phthalocyaninesTiO2_composites_into_efficient_photocatalysts_for_the_conversion_of_CO2_into_formic_acid_under_UV-vis_light_irradiation.pdf",
+      "document_id": "solarchem_turning_lipophilic_phthalocyaninestio2_composites_into_effic",
+      "tables_curated": ["Table 1"],
+      "notes": [
+        "Yield units in headers; entry 9 dark row uses '-'.",
+        "Second yield unit kept as printed 'mol' in the PDF text layer (mu may be absent there)."
+      ],
+      "verified_against": "native PDF text on page 3"
+    },
+    {
+      "source_pdf": "paper_1659931384588f66383f8519.61495962.pdf",
+      "document_id": "solarchem_paper_1659931384588f66383f8519_61495962",
+      "tables_curated": ["Table 1"],
+      "notes": [
+        "Semantic section_title = 3.3. Texture of samples (table floats near 3.5 in layout).",
+        "Footnote letters not part of column labels.",
+        "Unit powers in canonical caret form."
+      ],
+      "verified_against": "native PDF text on pages 4-5"
+    }
+  ],
+  "intentionally_excluded": [
+    {
+      "source_pdf": "1-s2.0-S0010854522000236-main.pdf",
+      "reason": "Table 1 not fully recoverable from native text; Table 2 is a long multi-page summary."
+    },
+    {
+      "source_pdf": "Photoreduction_of_CO2_using_black_TiO2_films_under_solar_light.pdf",
+      "reason": "Nested Weight%/Atomic% EDS layout needs an agreed flattening rule first."
+    },
+    {
+      "source_pdf": "Steam_reduction_of_CO2_on_PdTiO2_catalysts_A_comparison_between_thermal_and_photocatalytic_reactions.pdf",
+      "reason": "Near-duplicate Me/TiO2 table next to the fluidized-bed Steam paper already in Gold-10."
+    }
+  ],
+  "next_human_check": [
+    "Confirm every cell against the printed PDF",
+    "Confirm semantic section_title choices where they differ from the float",
+    "Confirm canonical m^2 / _A headers still match the printed meaning",
+    "Mark status confirmed when done"
+  ]
+}

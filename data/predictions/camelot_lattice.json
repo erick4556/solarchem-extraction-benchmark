@@ -1,0 +1,5306 @@
+{
+  "documents": [
+    {
+      "document_id": "solarchem_paper_1659931384588f66383f8519_61495962",
+      "source_pdf": "paper_1659931384588f66383f8519.61495962.pdf",
+      "title": "Photocatalytic reduction of CO2 to CO over the Ti–Highly dispersed HZSM-5 zeolite containing Fe",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_195220973259e5c83626d748_73004088",
+      "source_pdf": "paper_195220973259e5c83626d748.73004088.pdf",
+      "title": "CO2 photoreduction on hydroxyl-group-rich mesoporous single crystal TiO2",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s0010854522000236",
+      "source_pdf": "1-s2.0-S0010854522000236-main.pdf",
+      "title": "Modified UiO-66 as photocatalysts for boosting the carbon-neutral energy cycle and solving environmental remediation issues",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s0021979722002831",
+      "source_pdf": "1-s2.0-S0021979722002831-main.pdf",
+      "title": "Constructing an ohmic junction of copper@ cuprous oxide nanocomposite with plasmonic enhancement for photocatalysis",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s0022459622000020",
+      "source_pdf": "1-s2.0-S0022459622000020-main.pdf",
+      "title": "Construction of NiO/g-C3N4 p-n heterojunctions for enhanced photocatalytic CO2 reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s0169433222001179",
+      "source_pdf": "1-s2.0-S0169433222001179-main.pdf",
+      "title": "Size-dependent selectivity and activity of highly dispersed sub-nanometer Pt clusters integrated with P25 for CO2 photoreduction into methane fuel",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s016943322200201x",
+      "source_pdf": "1-s2.0-S016943322200201X-main.pdf",
+      "title": "Non-metal atom modified SnS2 sheet for CO2 photoreduction with significant activity and selectivity improvements: A first-principles study",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s0169433222002288",
+      "source_pdf": "1-s2.0-S0169433222002288-main.pdf",
+      "title": "Preparation of CdS-P25/ZIF-67 composite material and its photocatalytic CO2 reduction performance",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s0169433222002471",
+      "source_pdf": "1-s2.0-S0169433222002471-main.pdf",
+      "title": "A novel Bi2WO6/Si heterostructure photocatalyst with Fermi level shift in valence band realizes efficient reduction of CO2 under visible light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s036031992105028x",
+      "source_pdf": "1-s2.0-S036031992105028X-main.pdf",
+      "title": "Switching charge transfer of g-C3N4/BiVO4 heterojunction from type II to Z-scheme via interfacial vacancy engineering for improved photocatalysis",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s0925346721011617",
+      "source_pdf": "1-s2.0-S0925346721011617-main.pdf",
+      "title": "Solar-light-driven photocatalytic performance of Cr and Co doped Sr1-xCoxFe12-yCryO19 and effect of doping on optical, structural and dielectric properties",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s0925838822004030",
+      "source_pdf": "1-s2.0-S0925838822004030-main.pdf",
+      "title": "Formation of Cu-Rh alloy nanoislands on TiO2 for photoreduction of carbon dioxide",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s0926337322000054",
+      "source_pdf": "1-s2.0-S0926337322000054-main.pdf",
+      "title": "Graphene aerogel-based NiAl-LDH/g-C3N4 with ultratight sheet-sheet heterojunction for excellent visible-light photocatalytic activity of CO2 reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s0926337322000091",
+      "source_pdf": "1-s2.0-S0926337322000091-main.pdf",
+      "title": "PtCu thickness-modulated interfacial charge transfer and surface reactivity in stacked graphene/Pd@PtCu heterostructures for highly efficient visible-light reduction of CO2 to CH4",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s1010603021006201",
+      "source_pdf": "1-s2.0-S1010603021006201-main.pdf",
+      "title": "Non-synergistic photocatalysis of CO2-to-CO conversion by a binuclear complex of rigidly linking two cobalt catalytic centers",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s1010603022000326",
+      "source_pdf": "1-s2.0-S1010603022000326-main.pdf",
+      "title": "Atmospheric CO2 mediated formation of Ag2O-Ag2CO3/g-C3N4 (p-n/n-n dual heterojunctions) with enhanced photoreduction of hexavalent chromium and nitrophenols",
+      "num_tables": 2,
+      "tables": [
+        {
+          "table_id": "solarchem_1_s2_0_s1010603022000326_table_01",
+          "table_label": "",
+          "page": 10,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "a b c d e",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_1_s2_0_s1010603022000326_table_02",
+          "table_label": "",
+          "page": 12,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "NaBH4 (light) AAG (light) AAG (dark) AA (dark) AAG + NaBH4 (light)",
+              "-",
+              "-"
+            ],
+            [
+              "AA + NaBH4 (light)",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s1010603025003557",
+      "source_pdf": "1-s2.0-S1010603025003557-main.pdf",
+      "title": "Boosting the photocatalytic performance for oxidative coupling of amines to imines by fabricating the Zn0.1Cd0.9S/In2O3 heterojunction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s1369800122000592",
+      "source_pdf": "1-s2.0-S1369800122000592-main.pdf",
+      "title": "Effect of annealing on the structural, optical and electrical properties of (F, Zn) double doped SnO2 nanoparticles obtained by the laser pyrolysis method",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s1369800122000658",
+      "source_pdf": "1-s2.0-S1369800122000658-main.pdf",
+      "title": "Highly stable LaCoO3 perovskite supported g-C3N4 nanotextures with proficient charges migration for visible light CO2 photoreduction to CO and CH4",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s138589472200804x",
+      "source_pdf": "1-s2.0-S138589472200804X-main.pdf",
+      "title": "Pt-GdCrO3-Bi2MoO6 ternary heterojunction with high photocatalytic activities for CO2 reduction and water purification",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s2212982021004315",
+      "source_pdf": "1-s2.0-S2212982021004315-main.pdf",
+      "title": "In-situ infrared investigation of m-TiO2/α-Fe2O3 photocatalysts and tracing of intermediates in photocatalytic hydrogenation of CO2 to methanol",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s2212982022000245",
+      "source_pdf": "1-s2.0-S2212982022000245-main.pdf",
+      "title": "Photocatalytic reduction of CO2 to methanol using Zr(IV)-based MOF composite with g-C3N4 quantum dots under visible light irradiation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s2212982022000282",
+      "source_pdf": "1-s2.0-S2212982022000282-main.pdf",
+      "title": "Copper decorated indium oxide rods for photocatalytic CO2 conversion under simulated sun light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s221334372200118x",
+      "source_pdf": "1-s2.0-S221334372200118X-main.pdf",
+      "title": "Synthesis and characterization of bimetallic TiO2/CNT/Pd-Cu for efficient remediation of endocrine disruptors under solar light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s2352940722000312",
+      "source_pdf": "1-s2.0-S2352940722000312-main.pdf",
+      "title": "Titanosilicates enhance carbon dioxide photocatalytic reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s2468519421001439",
+      "source_pdf": "1-s2.0-S2468519421001439-main.pdf",
+      "title": "Selective visible light reduction of carbon dioxide over iridium(III)-terpyridine photocatalysts",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s2666386421004069",
+      "source_pdf": "1-s2.0-S2666386421004069-main.pdf",
+      "title": "CH-π interaction boosts photocatalytic CO2 reduction activity of a molecular cobalt catalyst anchored on carbon nitride",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_1_s2_0_s2666386421004549",
+      "source_pdf": "1-s2.0-S2666386421004549-main.pdf",
+      "title": "Spatially separated oxygen vacancies and nickel sites for ensemble promotion of selective CO2 photoreduction to CO",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1007_s11244_007_9022_7",
+      "source_pdf": "10.1007@s11244-007-9022-7.pdf",
+      "title": "",
+      "num_tables": 2,
+      "tables": [
+        {
+          "table_id": "solarchem_10_1007_s11244_007_9022_7_table_01",
+          "table_label": "",
+          "page": 2,
+          "caption": "",
+          "columns": [
+            ""
+          ],
+          "rows": [
+            [
+              "fiber"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_10_1007_s11244_007_9022_7_table_02",
+          "table_label": "",
+          "page": 4,
+          "caption": "",
+          "columns": [
+            "Anatase °",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "° ° °",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "Ag/TiO2 °",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "Cu/TiO2",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "TiO2",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_10_1016_s0926_3373_02_00174_1",
+      "source_pdf": "10.1016@S0926-3373(02)00174-1.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_s1010_6030_97_00082_8",
+      "source_pdf": "10.1016@S1010-6030(97)00082-8.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_s1010_6030_97_00228_1",
+      "source_pdf": "10.1016@S1010-6030(97)00228-1.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_s1010_6030_97_00318_3",
+      "source_pdf": "10.1016@S1010-6030(97)00318-3.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_s1010_6030_98_00274_3",
+      "source_pdf": "10.1016@S1010-6030(98)00274-3.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_s1010_6030_98_00430_4",
+      "source_pdf": "10.1016@S1010-6030(98)00430-4.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_s1381_1169_01_00398_3",
+      "source_pdf": "10.1016@S1381-1169(01)00398-3.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_s1381_1169_02_00478_8",
+      "source_pdf": "10.1016@S1381-1169(02)00478-8.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_s1387_7003_02_00758_x",
+      "source_pdf": "10.1016@S1387-7003(02)00758-X.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_s1872_2067_07_60046_1",
+      "source_pdf": "10.1016@S1872-2067(07)60046-1.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_s1872_20671060199_4",
+      "source_pdf": "10.1016@S1872-20671060199-4.pdf",
+      "title": "Wavelength Effect on Photocatalytic Reduction of CO2 by Ag/TiO2 Catalyst",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1016_j_catcom_2005_01_011",
+      "source_pdf": "10.1016_j.catcom.2005.01.011.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_am200425y",
+      "source_pdf": "10.1021@am200425y.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_cg201568q",
+      "source_pdf": "10.1021@cg201568q.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_cs2001434",
+      "source_pdf": "10.1021@cs2001434.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_cs300273q",
+      "source_pdf": "10.1021@cs300273q.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_ef9003957",
+      "source_pdf": "10.1021@ef9003957.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_ja101318k",
+      "source_pdf": "10.1021@ja101318k.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_ja1078199",
+      "source_pdf": "10.1021@ja1078199.pdf",
+      "title": "Photoreduction of Carbon Dioxide to Carbon Monoxide with Hydrogen Catalyzed by a Rhenium(I) PhenanthrolinePolyoxometalate Hybrid Complex",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_ja207586e",
+      "source_pdf": "10.1021@ja207586e.pdf",
+      "title": "Photocatalytic Reduction of Carbon Dioxide over Ag Cocatalyst-Loaded ALa<sub>4</sub>Ti<sub>4</sub>O<sub>15</sub> (A = Ca, Sr, and Ba) Using Water as a Reducing Reagent",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_ja304075b",
+      "source_pdf": "10.1021@ja304075b.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_ja311541a",
+      "source_pdf": "10.1021@ja311541a.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_jp210106b",
+      "source_pdf": "10.1021@jp210106b.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_jp306793r",
+      "source_pdf": "10.1021@jp306793r.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_jp910835k",
+      "source_pdf": "10.1021@jp910835k.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_jp971621q",
+      "source_pdf": "10.1021@jp971621q.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1021_la9801561",
+      "source_pdf": "10.1021@la9801561.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1023_a_1011403320301",
+      "source_pdf": "10.1023@A@1011403320301.pdf",
+      "title": "A New Type of Photocatalysis Initiated by Photoexcitation of Adsorbed Carbon Dioxide on ZrO2",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1039_b008887k",
+      "source_pdf": "10.1039@B008887K.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1039_b400326h",
+      "source_pdf": "10.1039@B400326H.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1039_c0ee00780c",
+      "source_pdf": "10.1039@C0EE00780C.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1039_c1cc12491a",
+      "source_pdf": "10.1039@C1CC12491A.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1039_c1gc15078b",
+      "source_pdf": "10.1039@C1GC15078B.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1039_c2jm33980c",
+      "source_pdf": "10.1039@C2JM33980C.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1039_b613098d",
+      "source_pdf": "10.1039@b613098d.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1039_c0ee00609b",
+      "source_pdf": "10.1039@c0ee00609b.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1039_b507103h",
+      "source_pdf": "10.1039_B507103H.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1061_asce_ee_1943_7870_0000311",
+      "source_pdf": "10.1061@(ASCE)EE.1943-7870.0000311.pdf",
+      "title": "Synergistic Effect of N and on Nanotitania in Photocatalytic Reduction of",
+      "num_tables": 2,
+      "tables": [
+        {
+          "table_id": "solarchem_10_1061_asce_ee_1943_7870_0000311_table_01",
+          "table_label": "",
+          "page": 4,
+          "caption": "",
+          "columns": [
+            "",
+            "DSC"
+          ],
+          "rows": [
+            [
+              "-",
+              "TG"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_10_1061_asce_ee_1943_7870_0000311_table_02",
+          "table_label": "",
+          "page": 4,
+          "caption": "",
+          "columns": [
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "N-Ni/TiO2 N/TiO2 Ni/TiO2 TiO2",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_10_1073_pnas_1118336109",
+      "source_pdf": "10.1073@pnas.1118336109.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1155_2010_309103",
+      "source_pdf": "10.1155@2010@309103.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_10_1155_2010_309103_table_01",
+          "table_label": "",
+          "page": 3,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "Ti",
+              "-",
+              "Ci"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_10_1163_156856700x00129",
+      "source_pdf": "10.1163@156856700X00129.pdf",
+      "title": "Photoreduction of carbon dioxide by hydrogen and methane",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1163_156856706778606462",
+      "source_pdf": "10.1163@156856706778606462.pdf",
+      "title": "Methane generated during photocatalytic redox reaction of alcohols on TiO<Subscript>2</Subscript> suspension in aqueous solutions",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_1163_156856707781749883",
+      "source_pdf": "10.1163@156856707781749883.pdf",
+      "title": "Formation of different products during photo-catalytic reaction on TiO<Subscript>2</Subscript> suspension in water with and without 2-propanol under diverse ambient conditions",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_10_2478_v10026_010_0022_1",
+      "source_pdf": "10.2478@v10026-010-0022-1.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_135_triphenylbenzenebasedporousconjugated",
+      "source_pdf": "135-TriphenylbenzeneBasedPorousConjugated.pdf",
+      "title": "1,3,5‐Triphenylbenzene Based Porous Conjugated Polymers for Highly Efficient Photoreduction of Low‐Concentration CO2 in the Gas‐Phase System",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_27362718_photo_reduction_of_co2_to_methanol_via_tio2_photoca",
+      "source_pdf": "27362718_Photo_reduction_of_CO2_to_methanol_via_TiO2_photocatalyst.pdf",
+      "title": "",
+      "num_tables": 2,
+      "tables": [
+        {
+          "table_id": "solarchem_27362718_photo_reduction_of_co2_to_methanol_via_tio2_photoca_table_01",
+          "table_label": "",
+          "page": 2,
+          "caption": "",
+          "columns": [
+            ""
+          ],
+          "rows": [
+            [
+              "ﬁber"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_27362718_photo_reduction_of_co2_to_methanol_via_tio2_photoca_table_02",
+          "table_label": "",
+          "page": 3,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "photoreactor GC",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_415_reduction_of_co2_with_water_on_pt_loaded_rutile_tio2_110",
+      "source_pdf": "415._Reduction_of_CO2_with_Water_on_Pt-Loaded_Rutile_TiO2(110)_Modeled.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_416_carbon_microfiber_layer_as_noble_metal_catalyst_support",
+      "source_pdf": "416._Carbon_microfiber_layer_as_noble_metal-catalyst_support_for_selective.pdf",
+      "title": "Carbon microfiber layer as noble metal-catalyst support for selective CO2 photoconversion in phosphate solution: Toward artificial photosynthesis in a single-compartment reactor",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_416_carbon_microfiber_layer_as_noble_metal_catalyst_support_table_01",
+          "table_label": "",
+          "page": 4,
+          "caption": "",
+          "columns": [
+            "Light on",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "46.1 umol",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "H2",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "-",
+              "O2 CO",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "33.4 umol",
+              "-"
+            ],
+            [
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "17.2 umol",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_417_nature_inspired_highly_durable_co2_reduction_system_cons",
+      "source_pdf": "417._Nature-Inspired,_Highly_Durable_CO2_Reduction_System_Consisting_of_a_binuclear_ruthenium_(II)_complex_and_an_organic_semiconductor_using_visible_light.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_418_enhanced_photocatalytic_co2_conversion_over_lapo4_by_int",
+      "source_pdf": "418._Enhanced_photocatalytic_CO2_conversion_over_LaPO4_by_introduction_of_CoCl2_as_a_hole_mediator.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_420_surprisingly_advanced_co2_photocatalytic_conversion_over",
+      "source_pdf": "420._Surprisingly_advanced_CO2_photocatalytic_conversion_over_thiourea_derived_g_C3N4_with_water_vapor_while_introducing_200_420_nm_UV_light.pdf",
+      "title": "Surprisingly advanced CO2 photocatalytic conversion over thiourea derived g-C3N4 with water vapor while introducing 200–420nm UV light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_423_biomimetic_polymeric_semiconductor_based_hybrid_nanosyst",
+      "source_pdf": "423._Biomimetic_polymeric_semiconductor_based_hybrid_nanosystems_for_artificial_photosynthesis_towards_solar_fuels_generation_via_CO2.pdf",
+      "title": "Biomimetic polymeric semiconductor based hybrid nanosystems for artificial photosynthesis towards solar fuels generation via CO2 reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_424_photocatalytic_co2_methanation_over_nio_in2o3_promoted_t",
+      "source_pdf": "424.Photocatalytic_CO2_methanation_over_NiO-In2O3_promoted_TiO2_nanocatalysts_using_H2O_and_or_H2_reductant.pdf",
+      "title": "",
+      "num_tables": 3,
+      "tables": [
+        {
+          "table_id": "solarchem_424_photocatalytic_co2_methanation_over_nio_in2o3_promoted_t_table_01",
+          "table_label": "",
+          "page": 3,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "",
+            "Sampling port Product"
+          ],
+          "rows": [
+            [
+              "-",
+              "Catalyst",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_424_photocatalytic_co2_methanation_over_nio_in2o3_promoted_t_table_02",
+          "table_label": "",
+          "page": 5,
+          "caption": "",
+          "columns": [
+            "No",
+            "Size (nm)",
+            "(b)"
+          ],
+          "rows": [
+            [
+              1,
+              8,
+              "-"
+            ],
+            [
+              2,
+              8,
+              "-"
+            ],
+            [
+              3,
+              16,
+              "-"
+            ],
+            [
+              4,
+              12,
+              "-"
+            ],
+            [
+              5,
+              7,
+              "-"
+            ],
+            [
+              6,
+              8,
+              "-"
+            ],
+            [
+              7,
+              12,
+              "-"
+            ],
+            [
+              8,
+              8,
+              "-"
+            ],
+            [
+              9,
+              11,
+              "-"
+            ],
+            [
+              10,
+              6,
+              "-"
+            ],
+            [
+              11,
+              8,
+              "-"
+            ],
+            [
+              12,
+              10,
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_424_photocatalytic_co2_methanation_over_nio_in2o3_promoted_t_table_03",
+          "table_label": "",
+          "page": 6,
+          "caption": "",
+          "columns": [
+            "",
+            "In/TiO2",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Ni-In/TiO2",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_426_photocatalytic_co2_reduction_using_cu_i_photosensitizers",
+      "source_pdf": "426._Photocatalytic_CO2_Reduction_Using_Cu(I)_Photosensitizers_with_a_Fe(II)_Catalyst.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_427_photocatalytic_reduction_of_co2_with_h2o_over_modified_t",
+      "source_pdf": "427._Photocatalytic_reduction_of_CO2_with_H2O_over_modified_TiO2_nanofibers_Understanding_the_reduction_pathway.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_431_enhancement_of_photocatalytic_reduction_of_co2_to_ch4_ov",
+      "source_pdf": "431._Enhancement_of_photocatalytic_reduction_of_CO2_to_CH4_over_TiO2_nanosheets_by_modifying_with_sulfuric_acid.pdf",
+      "title": "Enhancement of photocatalytic reduction of CO2 to CH4 over TiO2 nanosheets by modifying with sulfuric acid",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_432_dynamic_photocatalytic_reduction_of_co2_to_co_in_a_honey",
+      "source_pdf": "432._Dynamic_photocatalytic_reduction_of_CO2_to_CO_in_a_honeycomb_monolith_reactor_loaded_with_Cu_and_N_doped_TiO2_nanocatalysts.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_432_dynamic_photocatalytic_reduction_of_co2_to_co_in_a_honey_table_01",
+          "table_label": "",
+          "page": 1,
+          "caption": "",
+          "columns": [
+            "Contents lists available at ScienceDirect Applied Surface Science"
+          ],
+          "rows": [
+            [
+              "j o u r n a l h o m e p a g e : w w w . e l s e v i e r . c o m / l o c a t e / a p s u s c"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_436_photocatalytic_reduction_of_co2_using_tio2_graphene_nano",
+      "source_pdf": "436._Photocatalytic_reduction_of_CO2_Using_TiO2-graphene_nanocomposites.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_436_photocatalytic_reduction_of_co2_using_tio2_graphene_nano_table_01",
+          "table_label": "",
+          "page": 6,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "Hindawi Publishing Corporation http://www.hindawi.com",
+              "International Journal of Biomaterials",
+              "-",
+              "Volume 2014",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_437_photocatalytic_reduction_of_co2_by_co_co_feed_combined_w",
+      "source_pdf": "437._Photocatalytic_reduction_of_CO2_by_CO_co-feed_combined_with_photocatalytic_water_splitting_in_a_novel_twin_reactor.pdf",
+      "title": "Photocatalytic reduction of CO2 by CO co-feed combined with photocatalytic water splitting in a novel twin reactor",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_438_photocatalytic_activity_of_carbon_nitride_modified_with",
+      "source_pdf": "438._Photocatalytic_activity_of_carbon_nitride_modified_with_a_ruthenium(II)_complex_having_carboxylic-_or_phosphonic_acid_anchoring_groups_for_visible-light_CO2_reduction.pdf",
+      "title": "Photocatalytic Activity of Carbon Nitride Modified with a Ruthenium(II) Complex Having Carboxylic- or Phosphonic Acid Anchoring Groups for Visible-light CO2 Reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_439_optofluidic_membrane_microreactor_for_photocatalytic_red",
+      "source_pdf": "439._Optofluidic_membrane_microreactor_for_photocatalytic_reduction_of_CO2.pdf",
+      "title": "Optofluidic membrane microreactor for photocatalytic reduction of CO2",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_441_indirect_z_scheme_bioi_g_c3n4_photocatalysts_with_enhanc",
+      "source_pdf": "441._Indirect_Z-Scheme_BiOI-g-C3N4_Photocatalysts_with_Enhanced_Photoreduction_CO2_Activity_under_Visible_Light_Irradiation.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_442_optimization_of_cerium_doping_of_tio2_for_photocatalytic",
+      "source_pdf": "442._Optimization_of_cerium_doping_of_TiO2_for_photocatalytic_reduction_of_CO2_and_photocatalytic_decomposition_of_N2O.pdf",
+      "title": "Optimization of cerium doping of TiO2 for photocatalytic reduction of CO2 and photocatalytic decomposition of N2O",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_443_photocatalytic_co2_reduction_highly_enhanced_by_oxygen_v",
+      "source_pdf": "443._Photocatalytic_CO2_reduction_highly_enhanced_by_oxygen_vacancies_on_Pt-nanoparticle-dispersed_gallium_oxide.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_444_photocatalytic_reduction_of_carbon_dioxide_to_co_and_hco",
+      "source_pdf": "444._Photocatalytic_Reduction_of_Carbon_Dioxide_to_CO_and_HCO2H_Using_fac-Mn(CN)(bpy)(CO)3.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_445_photocatalytic_reduction_of_carbon_dioxide_using_iodine",
+      "source_pdf": "445._Photocatalytic_reduction_of_carbon_dioxide_using_iodine-doped_titanium_dioxide_with_high_exposed_{001}_facets_under_visible_light.pdf",
+      "title": "Photocatalytic reduction of carbon dioxide using iodine-doped titanium dioxide with high exposed {001} facets under visible light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_446_photocatalytic_reduction_of_co2_with_h2o_to_ch4_over_ult",
+      "source_pdf": "446._Photocatalytic_reduction_of_CO2_with_H2O_to_CH4_over_ultrathin_SnNb2O6_2D_nanosheets_under_visible_light_irradiation.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_448_tuning_the_selectivity_toward_co_evolution_in_the_photoc",
+      "source_pdf": "448._Tuning_the_selectivity_toward_CO_evolution_in_the_photocatalytic_conversion_of_CO2_with_H2O_through_the_modification_of_Ag-loaded_Ga2O3_with_a_ZnGa2O4_layer.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_448_tuning_the_selectivity_toward_co_evolution_in_the_photoc_table_01",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            "H2",
+            "CO evolution (%) CO O2"
+          ],
+          "rows": [
+            [
+              "[c] 268 Bare Ga2O3",
+              "139 5.4 2.0"
+            ],
+            [
+              "280 Ag/Ga2O3",
+              "181 111 28.4"
+            ],
+            [
+              "[d] 8.9 Ag/ZnGa2O4/Ga2O3",
+              "60.6 108 92.4"
+            ],
+            [
+              "[e] 2.1 Ag/ZnGa2O4",
+              "28.9 50.8 96.0"
+            ],
+            [
+              "233 Ag/(Ga2O3+ZnGa2O4)[f]",
+              "165 109 31.9"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_449_unique_solvent_effects_on_visible_light_co2_reduction_ov",
+      "source_pdf": "449._Unique_Solvent_Effects_on_Visible-Light_CO2_Reduction_over_Ruthenium(II)-Complex-Carbon_Nitride_Hybrid_Photocatalysts.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_452_photoexcited_surface_frustrated_lewis_pairs_for_heteroge",
+      "source_pdf": "452._Photoexcited_Surface_Frustrated_Lewis_Pairs_for_Heterogeneous_Photocatalytic_CO2_Reduction.pdf",
+      "title": "Photoexcited Surface Frustrated Lewis Pairs for Heterogeneous Photocatalytic CO<sub>2</sub> Reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_453_enhancement_in_the_photocatalytic_activity_of_carbon_nit",
+      "source_pdf": "453._Enhancement_in_the_photocatalytic_activity_of_carbon_nitride_through_hybridization_with_light-sensitive_AgCl_for_carbon_dioxide_reduction_to_methane.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_454_partial_oxidation_of_alcohols_on_visible_light_responsiv",
+      "source_pdf": "454._Partial_Oxidation_of_Alcohols_on_Visible_Light_Responsive_WO3_photocatalysts_loaded_with_palladium_oxide_cocatalyst.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_455_photocatalytic_reduction_of_co2_with_h2o_on_cuo_tio2_cat",
+      "source_pdf": "455._Photocatalytic_reduction_of_CO2_with_H2O_on_CuO-TiO2_catalysts.pdf",
+      "title": "Photocatalytic reduction of CO <Subscript>2 </Subscript> with H <Subscript>2 </Subscript>O on TiO <Subscript>2 </Subscript> and Cu/TiO <Subscript>2 </Subscript> catalysts",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_457_highly_efficient_visible_light_driven_co2_reduction_to_f",
+      "source_pdf": "457._Highly_efficient_visible-light-driven_CO2_reduction_to_formate_by_a_new_anthracene-based_zirconium_MOF_via_dual_catalytic_routes.pdf",
+      "title": "Highly efficient visible-light-driven CO2 reduction to formate by a new anthracene-based zirconium MOF via dual catalytic routes",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_460_core_shell_structured_zno_cu_zn_al_layered_double_hydrox",
+      "source_pdf": "460._Core-shell_structured_ZnO@Cu-Zn-Al_layered_double_hydroxides_with_enhanced_photocatalytic_efficiency_for_CO2_reduction.pdf",
+      "title": "Core-shell structured ZnO@Cu-Zn-Al layered double hydroxides with enhanced photocatalytic efficiency for CO2 reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_465_ultrathin_nanosheets_of_molecular_sieve_sapo_5_a_new_pho",
+      "source_pdf": "465._Ultrathin_nanosheets_of_molecular_sieve_SAPO-5._A_new_photocatalyst_for_efficient_photocatalytic_reduction_of_CO2_with_H2O_to_methane.pdf",
+      "title": "Ultrathin nanosheets of molecular sieve SAPO-5: A new photocatalyst for efficient photocatalytic reduction of CO2 with H2O to methane",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_465_ultrathin_nanosheets_of_molecular_sieve_sapo_5_a_new_pho_table_01",
+          "table_label": "",
+          "page": 34,
+          "caption": "",
+          "columns": [
+            "Sample",
+            "a ABET (m2 g-1)",
+            "b CCO2 (cm3 g-1)",
+            "CCO2’c (10-2 cm3 m-2)",
+            "d RCH4 (uL h-1 g-1)",
+            "RCH4’e (10-2 uL h-1 m-2)",
+            "Al （wt%）",
+            "RCH4’f (10-2 uL h-1 g-1)"
+          ],
+          "rows": [
+            [
+              "SAPO-5 microrod",
+              229.4,
+              4.04,
+              0.018,
+              1.57,
+              0.007,
+              0.24,
+              6.54
+            ],
+            [
+              "SAPO-5 nanosheet",
+              208.8,
+              12.9,
+              0.062,
+              8.96,
+              0.043,
+              0.27,
+              33.19
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_467_synthesis_of_hierarchical_flower_like_bi2moo6_microspher",
+      "source_pdf": "467._Synthesis_of_hierarchical_flower-like_Bi2MoO6_microspheres_as_efficient_photocatalyst_for_photoreduction_of_CO2_into_solar_fuels_under_visible_light.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_469_metal_oxide_nanocluster_modified_tio2_as_solar_activated",
+      "source_pdf": "469._Metal_oxide_nanocluster-modified_TiO2_as_solar_activated_photocatalyst_materials.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_470_zn_cu_promoted_tio2_photocatalyst_for_co2_reduction_with",
+      "source_pdf": "470._Zn-Cu_promoted_TiO2_photocatalyst_for_CO2_reduction_with_H2O_under_UV_light.pdf",
+      "title": "Zn-Cu promoted TiO2 photocatalyst for CO2 reduction with H2O under UV light",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_470_zn_cu_promoted_tio2_photocatalyst_for_co2_reduction_with_table_01",
+          "table_label": "",
+          "page": 26,
+          "caption": "",
+          "columns": [
+            "catalyst",
+            "Content (%wt)a",
+            "",
+            "SBET (m2/g)",
+            "Pore volume (cm3/g)",
+            "d (Ǻ)",
+            "Identified phasesb",
+            "",
+            "Atomic ratio",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "XPS*",
+              "-",
+              "EDS**",
+              "-"
+            ],
+            [
+              "-",
+              "CuO",
+              "ZnO",
+              "-",
+              "-",
+              "-",
+              "TiO2",
+              "Zn O",
+              "Cu/T i",
+              "Zn/T i",
+              "Cu/T i",
+              "Zn/T i"
+            ],
+            [
+              "P- TiO2 25",
+              "-",
+              "-",
+              49,
+              "-",
+              "-",
+              "A + R",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "TiO2",
+              "-",
+              "-",
+              52,
+              0.14,
+              108,
+              "A + B",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "CT",
+              2.4,
+              "-",
+              36,
+              0.12,
+              124,
+              "A + B",
+              "-",
+              0.12,
+              "-",
+              0.03,
+              "-"
+            ],
+            [
+              "CZT",
+              2.2,
+              19.2,
+              43,
+              0.15,
+              126,
+              "A + B",
+              "Z",
+              0.3,
+              4.12,
+              0.03,
+              0.22
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_472_tio2_vanadate_sr10v6o25_ni3v2o8_zn2v2o7_heterostructured",
+      "source_pdf": "472._TiO2-vanadate_(Sr10V6O25,_Ni3V2O8,_Zn2V2O7)_heterostructured_photocatalysts_with_enhanced_photocatalytic_activity_for_photoreduction_of_CO2_into_CH4.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_473_modeling_of_photodegradation_process_to_remove_the_highe",
+      "source_pdf": "473._Modeling_of_photodegradation_process_to_remove_the_higher_concentration_of_environmental_pollution.pdf",
+      "title": "Modeling of photodegradation process to remove the higher concentration of environmental pollution",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_474_iron_catalyzed_photoreduction_of_carbon_dioxide_to_synth",
+      "source_pdf": "474._Iron-catalyzed_photoreduction_of_carbon_dioxide_to_synthesis_gas.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_475_co3o4_hexagonal_platelets_with_controllable_facets_enabl",
+      "source_pdf": "475._Co3O4_Hexagonal_Platelets_with_Controllable_Facets_Enabling_Highly_Efficient_Visible-Light_Photocatalytic_Reduction_of_CO2.pdf",
+      "title": "Co<sub>3</sub>O<sub>4</sub> Hexagonal Platelets with Controllable Facets Enabling Highly Efficient Visible‐Light Photocatalytic Reduction of CO<sub>2</sub>",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_477_water_splitting_and_co2_reduction_under_visible_light_ir",
+      "source_pdf": "477._Water_Splitting_and_CO2_Reduction_under_Visible_Light_Irradiation_Using_Z-Scheme_Systems_Consisting_of_Metal_Sulfides,_CoOx-Loaded_BiVO4_and_a_Reduced_Graphene_Oxide_Electron_Mediator.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_477_water_splitting_and_co2_reduction_under_visible_light_ir_table_01",
+          "table_label": "",
+          "page": 5,
+          "caption": "",
+          "columns": [
+            "Entry",
+            "H2)photocatalyst (metal sulfide)",
+            "Activity / umol h-1",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "-",
+              "H2",
+              "O2"
+            ],
+            [
+              "1 2 3 4",
+              "Pt/CuGaS2 Pt/CuInS2 Pt/Cu2ZnGeS4 Pt/Cu2ZnSnS4",
+              "3.5 0.1 1.1 0",
+              "1.7 trace 0.7 0"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_479_photocatalytic_reduction_of_carbon_dioxide_in_alkaline_m",
+      "source_pdf": "479._Photocatalytic_reduction_of_carbon_dioxide_in_alkaline_medium_on_la_modified_sodium_tantalate_with_different_co-catalysts_under_UV-Visible_radiation.pdf",
+      "title": "Photocatalytic reduction of carbon dioxide in alkaline medium on La modified sodium tantalate with different co-catalysts under UV–Visible radiation",
+      "num_tables": 8,
+      "tables": [
+        {
+          "table_id": "solarchem_479_photocatalytic_reduction_of_carbon_dioxide_in_alkaline_m_table_01",
+          "table_label": "",
+          "page": 1,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: V. Jeyalakshmi, et al., Photocatalytic reduction of carbon dioxide in alkaline",
+              "-"
+            ],
+            [
+              "-",
+              "medium on La modiﬁed sodium tantalate with different co-catalysts under UV-Visible radiation, Catal. Today (2015), http://dx.doi.org/10.1016/j.cattod.2015.09.004",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_479_photocatalytic_reduction_of_carbon_dioxide_in_alkaline_m_table_02",
+          "table_label": "",
+          "page": 2,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: V. Jeyalakshmi, et al., Photocatalytic reduction of carbon dioxide in alkaline",
+              "-"
+            ],
+            [
+              "-",
+              "medium on La modiﬁed sodium tantalate with different co-catalysts under UV-Visible radiation, Catal. Today (2015), http://dx.doi.org/10.1016/j.cattod.2015.09.004",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_479_photocatalytic_reduction_of_carbon_dioxide_in_alkaline_m_table_03",
+          "table_label": "",
+          "page": 3,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: V. Jeyalakshmi, et al., Photocatalytic reduction of carbon dioxide in alkaline",
+              "-"
+            ],
+            [
+              "-",
+              "medium on La modiﬁed sodium tantalate with different co-catalysts under UV-Visible radiation, Catal. Today (2015), http://dx.doi.org/10.1016/j.cattod.2015.09.004",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_479_photocatalytic_reduction_of_carbon_dioxide_in_alkaline_m_table_04",
+          "table_label": "",
+          "page": 4,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: V. Jeyalakshmi, et al., Photocatalytic reduction of carbon dioxide in alkaline",
+              "-"
+            ],
+            [
+              "-",
+              "medium on La modiﬁed sodium tantalate with different co-catalysts under UV-Visible radiation, Catal. Today (2015), http://dx.doi.org/10.1016/j.cattod.2015.09.004",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_479_photocatalytic_reduction_of_carbon_dioxide_in_alkaline_m_table_05",
+          "table_label": "",
+          "page": 5,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: V. Jeyalakshmi, et al., Photocatalytic reduction of carbon dioxide in alkaline",
+              "-"
+            ],
+            [
+              "-",
+              "medium on La modiﬁed sodium tantalate with different co-catalysts under UV-Visible radiation, Catal. Today (2015), http://dx.doi.org/10.1016/j.cattod.2015.09.004",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_479_photocatalytic_reduction_of_carbon_dioxide_in_alkaline_m_table_06",
+          "table_label": "",
+          "page": 6,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: V. Jeyalakshmi, et al., Photocatalytic reduction of carbon dioxide in alkaline",
+              "-"
+            ],
+            [
+              "-",
+              "medium on La modiﬁed sodium tantalate with different co-catalysts under UV-Visible radiation, Catal. Today (2015), http://dx.doi.org/10.1016/j.cattod.2015.09.004",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_479_photocatalytic_reduction_of_carbon_dioxide_in_alkaline_m_table_07",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: V. Jeyalakshmi, et al., Photocatalytic reduction of carbon dioxide in alkaline",
+              "-"
+            ],
+            [
+              "-",
+              "medium on La modiﬁed sodium tantalate with different co-catalysts under UV-Visible radiation, Catal. Today (2015), http://dx.doi.org/10.1016/j.cattod.2015.09.004",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_479_photocatalytic_reduction_of_carbon_dioxide_in_alkaline_m_table_08",
+          "table_label": "",
+          "page": 8,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: V. Jeyalakshmi, et al., Photocatalytic reduction of carbon dioxide in alkaline",
+              "-"
+            ],
+            [
+              "-",
+              "medium on La modiﬁed sodium tantalate with different co-catalysts under UV-Visible radiation, Catal. Today (2015), http://dx.doi.org/10.1016/j.cattod.2015.09.004",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_481_remarkable_photoconversion_of_carbon_dioxide_into_methan",
+      "source_pdf": "481._Remarkable_photoconversion_of_carbon_dioxide_into_methane_using_Bi-doped_TiO2_nanoparticles_prepared_by_a_conventional_sol-gel_method.pdf",
+      "title": "Remarkable photoconversion of carbon dioxide into methane using Bi-doped TiO2 nanoparticles prepared by a conventional sol–gel method",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_488_facile_one_step_synthesis_of_hybrid_graphitic_carbon_nit",
+      "source_pdf": "488._Facile_One-Step_Synthesis_of_Hybrid_Graphitic_Carbon_Nitride_and_Carbon_Composites_as_High-Performance_Catalysts_for_CO2_Photocatalytic_Conversion.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_488_facile_one_step_synthesis_of_hybrid_graphitic_carbon_nit_table_01",
+          "table_label": "",
+          "page": 31,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "(802) (807)",
+              "-",
+              "-"
+            ],
+            [
+              "-",
+              "-",
+              "810 765",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_a_hierarchical_z_scheme_cds_wo3_photocatalyst_with_enhanced",
+      "source_pdf": "A_Hierarchical_Z-Scheme_CdS-WO3_Photocatalyst_with_Enhanced_CO2_Reduction_Activity.pdf",
+      "title": "A Hierarchical Z‐Scheme CdS–WO<sub>3</sub> Photocatalyst with Enhanced CO<sub>2</sub> Reduction Activity",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_a_doping_technique_that_suppresses_undesirable_h2_evolution",
+      "source_pdf": "A_doping_technique_that_suppresses_undesirable_H2_evolution_derived_from_overall_water_splitting_in_the_highly_selective_photocatalytic_conversion_of_CO2_in_and_by_water.pdf",
+      "title": "A Doping Technique that Suppresses Undesirable H2 Evolution Derived from Overall Water Splitting in the Highly Selective Photocatalytic Conversion of CO2 in and by Water",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_a_noble_metal_free_reduced_graphene_oxide_cds_nanorod_compos",
+      "source_pdf": "A_noble_metal-free_reduced_graphene_oxide-cds_nanorod_composite_for_the_enhanced_visible-light_photocatalytic_reduction_of_CO2_to_solar_fuel.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_a_novel_photosynthetic_mimic_reaction_catalysed_by",
+      "source_pdf": "A_novel_photosynthetic_mimic_reaction_catalysed_by.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_a_novel_twin_reactor_for_co2_photoreduction_to_mimic_artific",
+      "source_pdf": "A_novel_twin_reactor_for_CO2_photoreduction_to_mimic_artificial_photosynthesis.pdf",
+      "title": "A novel twin reactor for CO2 photoreduction to mimic artificial photosynthesis",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_a_polymeric_semiconductor_metal_complex_hybrid_photocatalyst",
+      "source_pdf": "A_polymeric-semiconductor-metal-complex_hybrid_photocatalyst_for_visible-light_CO2_reduction.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_an_artificial_photosynthesis_system_based_on_ceo2_as_light_h",
+      "source_pdf": "An_artificial_photosynthesis_system_based_on_CeO2_as_light_harvester_and_N-doped_graphene_Cu(II)_complex_as_artificial_metalloenzyme_for_CO2_reduction_to_methanol_fuel.pdf",
+      "title": "An artificial photosynthesis system based on CeO2 as light harvester and N-doped graphene Cu(II) complex as artificial metalloenzyme for CO2 reduction to methanol fuel",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_angew_chem_int_ed_2021_yin_metallizationprompted_robust_porp",
+      "source_pdf": "Angew Chem Int Ed - 2021 - Yin - Metallization‐Prompted Robust Porphyrin‐Based Hydrogen‐Bonded Organic Frameworks for.pdf",
+      "title": "Metallization‐Prompted Robust Porphyrin‐Based Hydrogen‐Bonded Organic Frameworks for Photocatalytic CO2 Reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_anodic_cu2s_and_cus_nanorod_and_nanowall_arrays_preparation",
+      "source_pdf": "Anodic_Cu2S_and_CuS_nanorod_and_nanowall_arrays_Preparation,_properties_and_application_in_CO2_photoreduction.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_band_gap_engineered_oxygen_rich_tio2_for_visible_light_induc",
+      "source_pdf": "Band_gap_engineered,_oxygen-rich_TiO2_for_visible_light_induced_photocatalytic_reduction_of_CO2.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_co2_photoreduction_with_h2o_vapor_by_porous_mgo_tio2_microsp",
+      "source_pdf": "CO2_photoreduction_with_H2O_vapor_by_porous_MgO-TiO2_microspheres_Effects_of_surface_MgO_dispersion_and_CO_2_adsorption-desorption_dynamics.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_co2_photoreduction_with_water_catalyst_and_process_investiga",
+      "source_pdf": "CO2_photoreduction_with_water_Catalyst_and_process_investigation.pdf",
+      "title": "CO2 photoreduction with water: Catalyst and process investigation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_calcium_titanate_photocatalyst_prepared_by_a_flux_method_for",
+      "source_pdf": "Calcium_titanate_photocatalyst_prepared_by_a_flux_method_for_reduction_of_carbon_dioxide_with_water.pdf",
+      "title": "Calcium titanate photocatalyst prepared by a flux method for reduction of carbon dioxide with water",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_carbon_dioxide_reduction_with_hydrogen_in_a_continuous_catal",
+      "source_pdf": "Carbon_dioxide_reduction_with_hydrogen_in_a_continuous_catalytic_monolith_photoreactor.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_ceo2_tio2_as_a_visible_light_active_catalyst_for_the_photore",
+      "source_pdf": "CeO2-TiO2_as_a_visible_light_active_catalyst_for_the_photoreduction_of_CO2_to_methanol.pdf",
+      "title": "CeO2-TiO2 as a visible light active catalyst for the photoreduction of CO2 to methanol",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_chemcatchem_2021_zhao_sscheme_heterojunction_and_defect_site",
+      "source_pdf": "ChemCatChem - 2021 - Zhao - S‐Scheme Heterojunction and Defect Site Engineering on CuxIn5S8 Cu2‐ySe for Highly Efficient.pdf",
+      "title": "S‐Scheme Heterojunction and Defect Site Engineering on CuxIn5S8−Cu2‐ySe for Highly Efficient Photoreduction of CO2 to methanol",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_chemcatchem_2021_zhao_sscheme_heterojunction_and_defect_site_table_01",
+          "table_label": "",
+          "page": 10,
+          "caption": "",
+          "columns": [
+            "Table 1. The apparent quantum efficiency of and Cu1.5In4.5S7.5, CuIn5S8 Cu1.5In4.5S7.5\u0000 Cu1.45Se. Catalysts AQE"
+          ],
+          "rows": [
+            [
+              "2.81 % CuIn5S8 3.23 % Cu1.5In4.5S7.5 5.21 % Cu1.5In4.5S7.5\u0000 Cu1.45Se"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_controlled_synthesis_of_cobalt_telluride_superstructures_for",
+      "source_pdf": "Controlled_synthesis_of_cobalt_telluride_superstructures_for_the_visible_light_photo-conversion_of_carbon_dioxide_into_methane.pdf",
+      "title": "Controlled synthesis of cobalt telluride superstructures for the visible light photo-conversion of carbon dioxide into methane",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_copper_doped_titania_photocatalysts_for_simultaneous_reducti",
+      "source_pdf": "Copper-doped_titania_photocatalysts_for_simultaneous_reduction_of_CO2_and_production_of_H2_from_aqueous_sulfide.pdf",
+      "title": "Copper-doped titania photocatalysts for simultaneous reduction of CO2 and production of H2 from aqueous sulfide",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_effect_of_au_surface_plasmon_nanoparticles_on_the_selective",
+      "source_pdf": "Effect_of_Au_surface_plasmon_nanoparticles_on_the_selective_CO2_photoreduction_to_CH4.pdf",
+      "title": "Effect of Au surface plasmon nanoparticles on the selective CO2 photoreduction to CH4",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_effect_of_graphitic_carbon_nitride_microstructures_on_the_ac",
+      "source_pdf": "Effect_of_graphitic_carbon_nitride_microstructures_on_the_activity_and_selectivity_of_photocatalytic_CO2_reduction_under_visible_light.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_effectively_co2_photoreduction_to_ch4_by_the_synergistic_eff",
+      "source_pdf": "Effectively_CO2_photoreduction_to_CH4_by_the_synergistic_effects_of_Ca_and_Ti_on_Ca-loaded_TiSiMCM-41_mesoporous_photocatalytic_systems.pdf",
+      "title": "Effectively CO2 photoreduction to CH4 by the synergistic effects of Ca and Ti on Ca-loaded TiSiMCM-41 mesoporous photocatalytic systems",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_efficient_photocatalytic_reduction_of_co2_into_liquid_produc",
+      "source_pdf": "Efficient_photocatalytic_reduction_of_CO2_into_liquid_products_over_cerium_doped_titania_nanoparticles_synthesized_by_a_sol-gel_auto-ignited_method.pdf",
+      "title": "Efficient photocatalytic reduction of CO2 into liquid products over cerium doped titania nanoparticles synthesized by a sol–gel auto-ignited method",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_electronicpccp",
+      "source_pdf": "ElectronicPCCP.pdf",
+      "title": "Electronic Structures of the MoS2/TiO2 (anatase) Heterojunction: Influence of Physical and Chemical Modifications at the 2D-or 1D Interfaces",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_engineering_the_tio2_outermost_layers_using_magnesium_for_ca",
+      "source_pdf": "Engineering_the_TiO2_outermost_layers_using_magnesium_for_carbon_dioxide_photoreduction.pdf",
+      "title": "Engineering the TiO2 outermost layers using magnesium for carbon dioxide photoreduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_enhanced_co2_photoreduction_activity_of_black_tio2_coated_cu",
+      "source_pdf": "Enhanced_CO2_photoreduction_activity_of_black_TiO2-coated_Cu_nanoparticles_under_visible_light_irradiation_Role_of_metallic_Cu.pdf",
+      "title": "Enhanced CO2 photoreduction activity of black TiO2−coated Cu nanoparticles under visible light irradiation: Role of metallic Cu",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_enhanced_photocatalytic_co2_reduction_activity_of_electrospu",
+      "source_pdf": "Enhanced_photocatalytic_CO2-reduction_activity_of_electrospun_mesoporous_TiO2_nanofibers_by_solvothermal_treatment.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_enhanced_photocatalytic_activity_of_g_c3n4_for_selective_co2",
+      "source_pdf": "Enhanced_photocatalytic_activity_of_g-C3N4_for_selective_CO2_reduction_to_CH3OH_via_facile_coupling_of_ZnO_A_direct_Z-scheme_mechanism.pdf",
+      "title": "Enhanced photocatalytic activity of g-C3N4 for selective CO2 reduction to CH3OH via facile coupling of ZnO: a direct Z-scheme mechanism",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_enhanced_photocatalytic_performance_of_ordered_mesoporous_fe",
+      "source_pdf": "Enhanced_photocatalytic_performance_of_ordered_mesoporous_Fe-doped_CeO2_catalysts_for_the_reduction_of_CO2_with_H2O_under_simulated_solar_irradiation.pdf",
+      "title": "Enhanced photocatalytic performance of ordered mesoporous Fe-doped CeO2 catalysts for the reduction of CO2 with H2O under simulated solar irradiation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_enhancing_photocatalytic_activity_of_defective_tit",
+      "source_pdf": "Enhancing_photocatalytic_activity_of_defective_tit.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_fabrication_of_self_organized_tio2_nanotube_arrays_for_photo",
+      "source_pdf": "Fabrication_of_self-organized_TiO2_nanotube_arrays_for_photocatalytic_reduction_of_CO2.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_gold_copper_nanoalloys_supported_on_tio2_as_photocatalysts_f",
+      "source_pdf": "Gold-copper_nanoalloys_supported_on_TiO2_as_photocatalysts_for_CO2_reduction_by_water.pdf",
+      "title": "Gold–Copper Nanoalloys Supported on TiO2 as Photocatalysts for CO2 Reduction by Water",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_goren_jphyschem94_1990_3784",
+      "source_pdf": "Goren_-_JPhysChem94(1990)3784.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_goren_jphyschem94_1990_3784_table_01",
+          "table_label": "",
+          "page": 4,
+          "caption": "",
+          "columns": [
+            "[ HOCHZC HZSH] A 0"
+          ],
+          "rows": [
+            [
+              "[HOCHZCHZSH] 1"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_graphene_templated_bottom_up_fabrication_of_ultralarge_binar",
+      "source_pdf": "Graphene_templated_bottom_up_fabrication_of_ultralarge_binary_CdS_TiO2_nanosheets_for_photocatalytic_selective_reduction.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_green_synthesis_of_methanol_by_photocatalytic_reduction_of_c",
+      "source_pdf": "Green_synthesis_of_methanol_by_photocatalytic_reduction_of_CO2_under_visible_light_using_a_graphene_and_tourmaline_co-doped_titania_nanocomposites.pdf",
+      "title": "Green synthesis of methanol by photocatalytic reduction of CO2 under visible light using a graphene and tourmaline co-doped titania nanocomposites",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_highly_active_direct_z_scheme_sitio2_photocatalyst_for_boost",
+      "source_pdf": "Highly-active_direct_Z-scheme_SiTiO2_photocatalyst_for_boosted_CO2_reduction_into_value-added_methanol.pdf",
+      "title": "Highly-active direct Z-scheme Si/TiO2 photocatalyst for boosted CO2 reduction into value-added methanol",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_indium_doped_tio2_nanoparticles_for_photocatalytic_co2_reduc",
+      "source_pdf": "Indium-doped_TiO2_nanoparticles_for_photocatalytic_CO2_reduction_with_H2O_vapors_to_CH4.pdf",
+      "title": "Indium-doped TiO2 nanoparticles for photocatalytic CO2 reduction with H2O vapors to CH4",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_indium_doped_tio2_nanoparticles_for_photocatalytic_co2_reduc_table_01",
+          "table_label": "",
+          "page": 8,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "CH4 CO",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_influence_of_operational_parameters_on_the_photocatalytic_ac",
+      "source_pdf": "Influence_of_operational_parameters_on_the_photocatalytic_activity_of_powdered_TiO2_for_the_reduction_of_CO2.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_influence_of_photodeposited_gold_nanoparticles_on_the_photoc",
+      "source_pdf": "Influence_of_photodeposited_gold_nanoparticles_on_the_photocatalytic_activity_of_titanate_species_in_the_reduction_of_CO2_to_hydrocarbons.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_integration_of_co_bpy_3_2_electron_mediator_with_heterogeneo",
+      "source_pdf": "Integration_of_[(Co(bpy)3]2+_electron_mediator_with_heterogeneous_photocatalysts_for_co2_conversion.pdf",
+      "title": "Integration of [(Co(bpy)3]2+ Electron Mediator with Heterogeneous Photocatalysts for CO2 Conversion",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_intl_j_of_energy_research_2022_madi_fabricating_v2alc_gc3n4",
+      "source_pdf": "Intl J of Energy Research - 2022 - Madi - Fabricating V2AlC g‐C3N4 nanocomposite with MAX as electron moderator for.pdf",
+      "title": "Fabricating V2AlC/g‐C3N4 nanocomposite with MAX as electron moderator for promoting photocatalytic CO2‐CH4 reforming to CO/H2",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_kinetic_study_of_photocatalytic_reduction_of_co2_over_tio2",
+      "source_pdf": "Kinetic_study_of_photocatalytic_reduction_of_CO2_over_TiO2.pdf",
+      "title": "",
+      "num_tables": 2,
+      "tables": [
+        {
+          "table_id": "solarchem_kinetic_study_of_photocatalytic_reduction_of_co2_over_tio2_table_01",
+          "table_label": "",
+          "page": 4,
+          "caption": "",
+          "columns": [
+            "(R1) TiO2 hv⎯⎯→ e-(TiO2) + h+(TiO2) [(Ti4+-O2-) (R2) hv⎯⎯→ (Ti3+-O-)* ] heat (R3) e- (TiO2) + h+ (TiO2) ⎯→⎯hv 3 + - (Ti O)* - •OH + H+ (R4) h+ + H2Oads ⎯⎯⎯⎯⎯→ 3 + - (Ti O)* - (R5) 3h+ + •OH + H2Oads ⎯⎯⎯⎯⎯→ O2 + 3H+ 3 + - (Ti O)* - (R6) H+ + e- ⎯⎯⎯⎯⎯→ •H + - ()* 3Ti O - (R7) ⎯⎯⎯⎯→ O-•C-O- CO2 + e-"
+          ],
+          "rows": [
+            [
+              "Mechanism I"
+            ],
+            [
+              "+ - ()* 3Ti O - O-•C-O- + H+ (R8) ⎯⎯⎯⎯→ HO-•C=O + - ()* 3Ti O - HO-•C=O + •H (R9) ⎯⎯⎯⎯→ HCOOH + - ()* 3Ti O - (R10) ⎯⎯⎯⎯→ H-•C(OH)-OH HCOOH + •H + - ()* 3Ti O - (R11) ⎯⎯⎯⎯→ H-CO-H + H2O H-•C(OH)-OH + •H + - ()* 3Ti O - (R12) ⎯⎯⎯⎯→ H-•C(OH)-H H-CO-H + •H + - ()* 3Ti O - (R13) ⎯⎯⎯⎯→ CH3OH H-•C(OH)-H + •H + - ()* 3Ti O - (R14) ⎯⎯⎯⎯→ •CH3 + H2O CH3OH + •H + - ()* 3Ti O - (R15) •CH3 + •H ⎯⎯⎯⎯→ CH4"
+            ],
+            [
+              "Mechanism II"
+            ],
+            [
+              "+ - ()* 3Ti O - (R16) ⎯⎯⎯⎯→ CO + OH- O-•C-O- + •H + - ()* 3Ti O - (R17) CO + e- ⎯⎯⎯⎯→ •CO- + - ()* 3Ti O - (R18) ⎯⎯⎯⎯→ C + OH- •CO- + •H + - ()* 3Ti O - (R19) ⎯⎯⎯⎯→ •CH C + •H + - ()* 3Ti O - (R20) ⎯⎯⎯⎯→ CH2 •CH + •H + - ()* 3Ti O - (R21) ⎯⎯⎯⎯→ •CH3 CH2 + •H + - ()* 3Ti O - (R15) ⎯⎯⎯⎯→ CH4 •CH3 + •H + - ()* 3Ti O - (R22) •CH3 + •OH ⎯⎯⎯⎯→ CH3OH"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_kinetic_study_of_photocatalytic_reduction_of_co2_over_tio2_table_02",
+          "table_label": "",
+          "page": 9,
+          "caption": "",
+          "columns": [
+            "Equation",
+            "Equation",
+            "Constant",
+            "95 % interval of reliability",
+            "Correlation coefficient",
+            "Variance"
+          ],
+          "rows": [
+            [
+              "Model IIb",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "(11) for CH4",
+              "3/2 3/2 t k log(1 k c) k c = - + 10 11 12",
+              "k10 = 2.592 k11 = -203.000 k12 = 0.478",
+              "± 0.006 ± 3.723 ± 0.001",
+              0.997,
+              0.33
+            ],
+            [
+              "(11) for CH3OH",
+              "-",
+              "k10 = 0.639 k11 = -203.000 k12 = 18.452",
+              "± 0.017 ± 27.707 ± 0.042",
+              0.998,
+              0.306
+            ],
+            [
+              "(11) for CO",
+              "-",
+              "k10 = 6.706 k11 = -79.954 k12 = 9.694",
+              "± 3.699 ± 108.232 ± 3.551",
+              0.999,
+              0.15
+            ],
+            [
+              "Model IIc",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "(16) for CO",
+              "k t k 13* 17 c e 1 = - CO () k 17",
+              "k13* = 0.280 k17 = -0.058",
+              "± 0.000 ± 0.002",
+              0.1546,
+              0.121
+            ],
+            [
+              "(17) for CH4",
+              "⎡ ⎤ k k 1 t k 13* 15 17 c e 1 t = - - CH ⎢ ⎥ 4 () k k 17 17 ⎣ ⎦",
+              "k13* = 0.280 k15 = 1.807 k17= -0.058",
+              "± 0.000 ± 0.209 ± 0.002",
+              0.969,
+              0.437
+            ],
+            [
+              "(18) for CH3OH",
+              "⎡ ⎤ k k 1 t k 13* 16 17 c e 1 t = - - CH OH ⎢ ⎥ 3 () k k 17 17 ⎣ ⎦",
+              "k13* = 0.280 k16 = 0.181 k17 = -0.058",
+              "± 0.000 ± 0.114 ± 0.002",
+              0.716,
+              0.085
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_linbo3_coating_on_concrete_surface_a_new_and_environmentally",
+      "source_pdf": "LiNbO3_coating_on_concrete_surface_A_new_and_environmentally_friendly_route_for_artificial_photosynthesis.pdf",
+      "title": "",
+      "num_tables": 4,
+      "tables": [
+        {
+          "table_id": "solarchem_linbo3_coating_on_concrete_surface_a_new_and_environmentally_table_01",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            "International Journal of Rotating Machinery"
+          ],
+          "rows": [
+            [
+              "Hindawi Publishing Corporation http://www.hindawi.com Volume 2014"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_linbo3_coating_on_concrete_surface_a_new_and_environmentally_table_02",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "The Scientific World Journal Hindawi Publishing Corporation http://www.hindawi.com Volume 2014"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_linbo3_coating_on_concrete_surface_a_new_and_environmentally_table_03",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            ""
+          ],
+          "rows": [
+            [
+              "Advances in OptoElectronics"
+            ],
+            [
+              "Hindawi Publishing Corporation Volume 2014 http://www.hindawi.com"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_linbo3_coating_on_concrete_surface_a_new_and_environmentally_table_04",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "VLSI Design Hindawi Publishing Corporation http://www.hindawi.com Volume 2014"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_matsuoka_jphyschem96_1992_4437",
+      "source_pdf": "Matsuoka_-_JPhysChem96(1992)4437.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_mesostructured_ceo2g_c3n4_nanocomposites_remarkably_enhanced",
+      "source_pdf": "Mesostructured_CeO2g-C3N4_nanocomposites_Remarkably_enhanced_photocatalytic_activity_for_CO2_reduction_by_mutual_component_activations.pdf",
+      "title": "Mesostructured CeO2/g-C3N4 nanocomposites_ Remarkably enhanced photocatalytic activity for CO2 reduction by mutual component activations",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_methane_formation_from_photoreduction_of_co2_with_water_usin",
+      "source_pdf": "Methane_formation_from_photoreduction_of_CO2_with_water_using_TiO2_including_Ni_ingredient.pdf",
+      "title": "Methane formation from photoreduction of CO2 with water using TiO2 including Ni ingredient",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_mgo_and_pt_promoted_tio2_as_an_efficient_photocatalyst_for_t",
+      "source_pdf": "MgO-_and_Pt-promoted_TiO2_as_an_efficient_photocatalyst_for_the_preferential_reduction_of_carbon_dioxide_in_the_presence_of_water.pdf",
+      "title": "MgO- and Pt-Promoted TiO2 as an Efficient Photocatalyst for the Preferential Reduction of Carbon Dioxide in the Presence of Water",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_modification_of_mwcnt_tico2core_shell_nanocomposites_withtra",
+      "source_pdf": "Modification_of_MWCNT@TiCO2core-shell_nanocomposites_withtransition_metal_oxide_dopants_for_photoreduction_of_carbon_dioxideinto_methane.pdf",
+      "title": "Modification of MWCNT@TiO2 core–shell nanocomposites with transition metal oxide dopants for photoreduction of carbon dioxide into methane",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_new_nanostructured_silica_incorporated_with_isolated_ti_mate",
+      "source_pdf": "New_nanostructured_silica_incorporated_with_isolated_Ti_material_for_the_photocatalytic_conversion_of_CO2_to_fuels.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_new_optimized_mesoporous_silica_incorporated_isolated_ti_mat",
+      "source_pdf": "New_optimized_mesoporous_silica_incorporated_isolated_Ti_materials_towards_improved_photocatalytic_reduction_of_carbon_dioxide_to_renewable_fuels.pdf",
+      "title": "New optimized mesoporous silica incorporated isolated Ti materials towards improved photocatalytic reduction of carbon dioxide to renewable fuels",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_nitrogen_doped_tio2_microsheets_with_enhanced_visible_light",
+      "source_pdf": "Nitrogen-doped_TiO2_microsheets_with_enhanced_visible_light_photocatalytic_activity_for_CO2_reduction.pdf",
+      "title": "Nitrogen-doped TiO2 microsheets with enhanced visible light photocatalytic activity for CO2 reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_novel_ti_kit_6_material_for_the_photocatalytic_reduction_of",
+      "source_pdf": "Novel_Ti-KIT-6_material_for_the_photocatalytic_reduction_of_carbon_dioxide_to_methane.pdf",
+      "title": "Novel Ti-KIT-6 material for the photocatalytic reduction of carbon dioxide to methane",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_novel_nanostructured_tio2_materials_for_the_photocatalytic_r",
+      "source_pdf": "Novel_nanostructured-TiO2_materials_for_the_photocatalytic_reduction_of_CO2_greenhouse_gas_to_hydrocarbons_and_syngas.pdf",
+      "title": "Novel nanostructured-TiO2 materials for the photocatalytic reduction of CO2 greenhouse gas to hydrocarbons and syngas",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_numerical_investigation_on_co2_photocatalytic_reduction_in_o",
+      "source_pdf": "Numerical_investigation_on_CO2_photocatalytic_reduction_in_optical_fiber_monolith_reactor.pdf",
+      "title": "Numerical investigation on CO2 photocatalytic reduction in optical fiber monolith reactor",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_on_sol_gel_derived_au_enriched_tio2_and_tio2_zro_2_photocata",
+      "source_pdf": "On_sol-gel_derived_Au-enriched_TiO2_and_TiO2-ZrO_2_photocatalysts_and_their_investigation_in_photocatalytic_reduction_of_carbon_dioxide.pdf",
+      "title": "On sol–gel derived Au-enriched TiO2 and TiO2-ZrO2 photocatalysts and their investigation in photocatalytic reduction of carbon dioxide",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_one_pot_synthesis_of_ag_mwcnt_tio2_core_shell_nanocomposites",
+      "source_pdf": "One-pot_synthesis_of_Ag-MWCNT@TiO2_core-shell_nanocomposites_for_photocatalytic_reduction_of_CO2_with_water_under_visible_light_irradiation.pdf",
+      "title": "One-pot synthesis of Ag-MWCNT@TiO2 coreâ€“shell nanocomposites for photocatalytic reduction of CO2 with water under visible light irradiation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_ordered_mesoporous_ceo2_tio2_composites_highly_efficient_pho",
+      "source_pdf": "Ordered_mesoporous_CeO2-TiO2_composites_Highly_efficient_photocatalysts_for_the_reduction_of_CO2_with_H2O_under_simulated_solar_irradiation.pdf",
+      "title": "Ordered mesoporous CeO2-TiO2 composites: Highly efficient photocatalysts for the reduction of CO2 with H2O under simulated solar irradiation",
+      "num_tables": 2,
+      "tables": [
+        {
+          "table_id": "solarchem_ordered_mesoporous_ceo2_tio2_composites_highly_efficient_pho_table_01",
+          "table_label": "",
+          "page": 6,
+          "caption": "",
+          "columns": [
+            "2.0 1.6 1.2 0.8 0.4",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "-",
+              "(a) P25 Mes- TiO2 Mes-CeTi-0.5 Mes-CeTi-1.0 Mes-CeTi-2.0 Mes-CeO2"
+            ],
+            [
+              0.0,
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_ordered_mesoporous_ceo2_tio2_composites_highly_efficient_pho_table_02",
+          "table_label": "",
+          "page": 6,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "(b) 2.5 P25 Mes- TiO2 Mes-CeTi-0.5",
+              "-",
+              "-"
+            ],
+            [
+              "-",
+              "Mes-CeTi-1.0 Mes-CeTi-2.0 Mes-CeO2",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_pdfdeclaracion",
+      "source_pdf": "PDFDeclaracion.pdf",
+      "title": "Copper decorated indium oxide rods for photocatalytic CO2 conversion under simulated sun light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photoassisted_carbon_dioxide_reduction_on_aqueous",
+      "source_pdf": "PHOTOASSISTED_CARBON_DIOXIDE_REDUCTION_ON_AQUEOUS.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_performance_analysis_of_nanostructured_nio_in2o3tio2_catalys",
+      "source_pdf": "Performance_analysis_of_nanostructured_NiO-In2O3TiO2_catalyst_for_CO2_photoreduction_with_H2_in_a_monolith_photoreactor.pdf",
+      "title": "Performance analysis of nanostructured NiOâ€“In2O3/TiO2 catalyst for CO2 photoreduction with H2 in a monolith photoreactor",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_performance_analysis_of_nanostructured_nio_in2o3tio2_catalys_table_01",
+          "table_label": "",
+          "page": 5,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "TiO2",
+              "-"
+            ],
+            [
+              "-",
+              "2% In2O3/TiO2",
+              "-"
+            ],
+            [
+              "-",
+              "3.5% In2O3/TiO2",
+              "-"
+            ],
+            [
+              "-",
+              "5% In2O3/TiO2",
+              "-"
+            ],
+            [
+              "-",
+              "1% NiO-3.5% In2O3/TiO2",
+              "-"
+            ],
+            [
+              "-",
+              "2% NiO-3.5% In2O3/TiO2",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_photocatalytic_co2_reduction_and_kinetic_study_over_intio_2",
+      "source_pdf": "Photocatalytic_CO2_reduction_and_kinetic_study_over_InTiO_2_nanoparticles_supported_microchannel_monolith_photoreactor.pdf",
+      "title": "Photocatalytic CO2 reduction and kinetic study over In/TiO2 nanoparticles supported microchannel monolith photoreactor",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_co2_reduction_by_cds_promoted_with_a_zeolitic",
+      "source_pdf": "Photocatalytic_CO2_reduction_by_CdS_promoted_with_a_zeolitic_imidazolate_framework.pdf",
+      "title": "Photocatalytic CO2 reduction by CdS promoted with a zeolitic imidazolate framework",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_co2_reduction_in_n_n_dimethylacetamidewater_a",
+      "source_pdf": "Photocatalytic_CO2_reduction_in_N,N-dimethylacetamidewater_as_an_alternative_solvent_system.pdf",
+      "title": "Photocatalytic CO2 Reduction in N,N-Dimethylacetamide/Water as an Alternative Solvent System",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_co2_reduction_in_gas_solid_regime_in_the_pres",
+      "source_pdf": "Photocatalytic_CO2_reduction_in_gas-solid_regime_in_the_presence_of_H2O_by_using_GaPTiO2_composite_as_photocatalyst_under_simulated_solar_light.pdf",
+      "title": "Photocatalytic CO2 reduction in gas–solid regime in the presence of H2O by using GaP/TiO2 composite as photocatalyst under simulated solar light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_co2_reduction_in_gas_solid_regime_in_the_pres",
+      "source_pdf": "Photocatalytic_CO2_reduction_in_gas-solid_regime_in_the_presence_of_bare,_SiO2_supported_or_Cu-loaded_TiO2_samples.pdf",
+      "title": "",
+      "num_tables": 2,
+      "tables": [
+        {
+          "table_id": "solarchem_photocatalytic_co2_reduction_in_gas_solid_regime_in_the_pres_table_01",
+          "table_label": "",
+          "page": 5,
+          "caption": "",
+          "columns": [
+            "Photocatalyst",
+            "Phases1",
+            "SSA2 [m2 g-1]",
+            "Band-gap [eV]",
+            "Cu/(Ti + Cu) at.% calculated",
+            "Cu/(Ti + Cu) at.% EDX"
+          ],
+          "rows": [
+            [
+              "TiO2 Merck",
+              "A",
+              10,
+              3.24,
+              "-",
+              "-"
+            ],
+            [
+              "TiO2 Evonik P25",
+              "A, R",
+              50,
+              3.13,
+              "-",
+              "-"
+            ],
+            [
+              "TiO2 Mirkat M211",
+              "A",
+              180,
+              3.24,
+              "-",
+              "-"
+            ],
+            [
+              "TiO2 Hombikat PC500",
+              "A",
+              350,
+              3.25,
+              "-",
+              "-"
+            ],
+            [
+              "HP-rutile",
+              "R",
+              87,
+              3.02,
+              "-",
+              "-"
+            ],
+            [
+              "HP-brookite",
+              "B",
+              82,
+              3.26,
+              "-",
+              "-"
+            ],
+            [
+              "HP1",
+              "A, R",
+              54,
+              3.0,
+              "-",
+              "-"
+            ],
+            [
+              "1%Cu-HP1",
+              "A, R",
+              76,
+              2.98,
+              1.2,
+              1.4
+            ],
+            [
+              "2%Cu-HP1",
+              "A, R",
+              62,
+              2.92,
+              2.4,
+              3.7
+            ],
+            [
+              "HP1/SiO2",
+              "A, R",
+              177,
+              3.02,
+              "-",
+              "-"
+            ],
+            [
+              "1%Cu-HP1/SiO2",
+              "A, R",
+              114,
+              2.97,
+              1.2,
+              2.9
+            ],
+            [
+              "2%Cu-HP1/SiO2",
+              "A, R",
+              121,
+              2.92,
+              2.4,
+              4.1
+            ],
+            [
+              "HP2",
+              "A",
+              31,
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "2%Cu-HP2",
+              "A",
+              35,
+              "-",
+              2.4,
+              2.2
+            ],
+            [
+              "HP2/SiO2 SBA",
+              "A",
+              217,
+              3.12,
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_photocatalytic_co2_reduction_in_gas_solid_regime_in_the_pres_table_02",
+          "table_label": "",
+          "page": 8,
+          "caption": "",
+          "columns": [
+            "CO2 + 2H+ + 2e- → HCOOH"
+          ],
+          "rows": [
+            [
+              "CO2 + 2H+ + 2e- → CO + H2O"
+            ],
+            [
+              "CO + 4H+ + 4e- → HCHO + H O CO2 + 4H + 4e- → HCHO + H2O"
+            ],
+            [
+              "CO2 + 6H+ + 6e- → CH3OH + H2O"
+            ],
+            [
+              "CO2 + 8H+ + 8e- → CH4 + 2H2O 2 4 2"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_photocatalytic_co2_reduction_over_b4cc3n4_with_internal_elec",
+      "source_pdf": "Photocatalytic_CO2_reduction_over_B4CC3N4_with_internal_electric_field_under_visible_light_irradiation.pdf",
+      "title": "Photocatalytic CO2 Reduction over B4C/C3N4 with Internal Electric Field under Visible Light Irradiation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_co2_reduction_with_h2o_over_lapo4_nanorods_de",
+      "source_pdf": "Photocatalytic_CO2_reduction_with_H2O_over_LaPO4_nanorods_deposited_with_Pt_cocatalyst.pdf",
+      "title": "Photocatalytic CO2 reduction with H2O over LaPO4 nanorods deposited with Pt cocatalyst",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_using_titanium_dioxide_and_m",
+      "source_pdf": "Photocatalytic_Reduction_of_CO2_Using_Titanium_Dioxide_and_Metal-Semiconductor_Nanostructures_Made_from_Titanium_Dioxide.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_on_mesoporous_tio2_modified",
+      "source_pdf": "Photocatalytic_Reduction_of_CO2_on_Mesoporous_TiO2_Modified_with_AgCu_Bimetallic_Nanostructures.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_conversion_of_co2_and_ch4_using_zno_coated_me",
+      "source_pdf": "Photocatalytic_conversion_of_CO2_and_CH4_using_ZnO_coated_mesh_Effect_of_operational_parameters_and_optimization.pdf",
+      "title": "Photocatalytic conversion of CO2 and CH4 using ZnO coated mesh Effect of operational parameters and optimization",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_conversion_of_co2_in_an_aqueous_solution_usin",
+      "source_pdf": "Photocatalytic_conversion_of_CO2_in_an_aqueous_solution_using_various_kinds_of_layered_double_hydroxides.pdf",
+      "title": "Photocatalytic conversion of CO2 in an aqueous solution using various kinds of layered double hydroxides",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_conversion_of_co2_to_hydrocarbons_by_light_ha",
+      "source_pdf": "Photocatalytic_conversion_of_CO2_to_hydrocarbons_by_light-harvesting_complex_assisted_Rh-doped_TiO2_photocatalyst.pdf",
+      "title": "Photocatalytic conversion of CO2 to hydrocarbons by light-harvesting complex assisted Rh-doped TiO2 photocatalyst",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_conversion_of_carbon_dioxide_with_water_into",
+      "source_pdf": "Photocatalytic_conversion_of_carbon_dioxide_with_water_into_methane_Platinum_and_CopperI_oxide_co-catalysts_with_a_core-shell_structure.pdf",
+      "title": "Photocatalytic Conversion of Carbon Dioxide with Water into Methane: Platinum and Copper(I) Oxide Cocatalysts with a CoreShell Structure",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_and_protons_using_water_as_a",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_and_protons_using_water_as_an_electron_donor_over_potassium_tantalate_nanoflakes.pdf",
+      "title": "Photocatalytic reduction of CO2 and protons using water as an electron donor over potassium tantalate nanoflakes",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_coupled_with_selective_alcoh",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_coupled_with_selective_alcohol_oxidation_under_ambient_conditions.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_in_aqueous_solution_on_surfa",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_in_aqueous_solution_on_surface-fluorinated_anatase_TiO2_nanosheets_with_exposed_{001}_facets.pdf",
+      "title": "Photocatalytic Reduction of CO2 in Aqueous Solution on Surface-Fluorinated Anatase TiO2 Nanosheets with Exposed {001} Facets",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_into_hydrocarbon_solar_fuels",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_into_hydrocarbon_solar_fuels_over_g-C3N4-Pt_nanocomposite_photocatalysts.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_on_mgotio2_nanotube_films",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_on_MgOTiO2_nanotube_films.pdf",
+      "title": "Photocatalytic reduction of CO2 on MgO/TiO2 nanotube films",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_over_a_hybrid_photocatalyst",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_over_a_hybrid_photocatalyst_composed_of_WO3_and_graphitic_carbon_nitride_(g-C3N_4)_under_visible_light.pdf",
+      "title": "Photocatalytic reduction of CO2 over a hybrid photocatalyst composed of WO3 and graphitic carbon nitride (g-C3N4) under visible light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_over_platinised_bi2wo6_based",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_over_platinised_Bi2WO6-based_materials.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_to_energy_products_using_cu",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_to_energy_products_using_Cu-TiO2ZSM-5_and_Co-TiO2ZSM-5_under_low_energy_irradiation.pdf",
+      "title": "Photocatalytic reduction of CO2 to energy products using Cu–TiO2/ZSM-5 and Co–TiO2/ZSM-5 under low energy irradiation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_to_methane_on_pttio2_nanoshe",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_to_methane_on_PtTiO2_nanosheet_porous_film.pdf",
+      "title": "",
+      "num_tables": 2,
+      "tables": [
+        {
+          "table_id": "solarchem_photocatalytic_reduction_of_co2_to_methane_on_pttio2_nanoshe_table_01",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            ""
+          ],
+          "rows": [
+            [
+              "The Scientific World Journal Hindawi Publishing Corporation http://www.hindawi.com Volume 2014"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_photocatalytic_reduction_of_co2_to_methane_on_pttio2_nanoshe_table_02",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            ""
+          ],
+          "rows": [
+            [
+              "International Journal of Superconductivity Hindawi Publishing Corporation http://www.hindawi.com Volume 2014"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_using_ti_mcm_41_photocatalys",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_using_Ti-MCM-41_photocatalysts_in_monoethanolamine_solution_for_methane_production.pdf",
+      "title": "Photocatalytic Reduction of CO2 Using Ti–MCM-41 Photocatalysts in Monoethanolamine Solution for Methane Production",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_with_h2o_significant_enhance",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_with_H2O_Significant_enhancement_of_the_activity_of_Pt-TiO2_in_CH4_formation_by_addition_of_MgO.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_with_h2o_to_ch4_on_cu_i_supp",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_with_H2O_to_CH4_on_Cu(i)_supported_TiO2_nanosheets_with_defective_{001}_facets.pdf",
+      "title": "Photocatalytic reduction of CO2 with H2O to CH4 on Cu(i) supported TiO2 nanosheets with defective {001} facets",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_with_h2o_using_perovskite_ca",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_with_H2O_using_perovskite_CaxTiyO3.pdf",
+      "title": "Photocatalytic reduction of CO2 with H2O using perovskite CaxTiyO3",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_with_water_vapor_on_surface",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_with_water_vapor_on_surface_La-modified_TiO2_nanoparticles_with_enhanced_CH4_selectivity.pdf",
+      "title": "Photocatalytic reduction of CO2 with water vapor on surface La-modified TiO2 nanoparticles with enhanced CH4 selectivity",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_no2_and_co2_using_molybdenum_dop",
+      "source_pdf": "Photocatalytic_reduction_of_NO2_and_CO2_using_molybdenum-doped_titania_nanotubes.pdf",
+      "title": "Photocatalytic reduction of NO2 and CO2 using molybdenum-doped titania nanotubes",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_carbon_dioxide_to_methane",
+      "source_pdf": "Photocatalytic_reduction_of_carbon_dioxide_to_methane.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_carbon_dioxide_with_water_vapors",
+      "source_pdf": "Photocatalytic_reduction_of_carbon_dioxide_with_water_vapors_over_montmorillonite_modified_TiO2_nanocomposites.pdf",
+      "title": "Photocatalytic reduction of carbon dioxide with water vapors over montmorillonite modified TiO2 nanocomposites",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photocatalytically_reducing_co2_to_methyl_formate_in_methano",
+      "source_pdf": "Photocatalytically_reducing_CO2_to_methyl_formate_in_methanol_over_ZnS_and_Ni-doped_ZnS_photocatalysts.pdf",
+      "title": "Photocatalytically reducing CO2 to methyl formate in methanol over ZnS and Ni-doped ZnS photocatalysts",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_photocatalytically_reducing_co2_to_methyl_formate_in_methano_table_01",
+          "table_label": "",
+          "page": 3,
+          "caption": "",
+          "columns": [
+            "c 0.3% NiS loaded ZnS",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "0.3% Ni doped ZnS",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "ZnS-H24",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_photoconversion_of_co2_to_methanol_over_plasmonic_agtio2_nan",
+      "source_pdf": "Photoconversion_of_CO2_to_methanol_over_plasmonic_AgTiO2_nano-wire_films_enhanced_by_overlapped_visible-light-harvesting_nanostructures.pdf",
+      "title": "Photoconversion of CO2 to methanol over plasmonic Ag/TiO2 nano-wire films enhanced by overlapped visible-light-harvesting nanostructures",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photoelectrocatalytic_reduction_of_carbon_dioxide_in_aqueous",
+      "source_pdf": "Photoelectrocatalytic reduction of carbon dioxide in aqueous suspensions of semiconductor powders.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photoreduction_of_co2_using_black_tio2_films_under_solar_lig",
+      "source_pdf": "Photoreduction_of_CO2_using_black_TiO2_films_under_solar_light.pdf",
+      "title": "Photoreduction of CO2 using black TiO2 films under solar light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_photoreduction_of_carbon_dioxide_to_formic_acid_in_aqueous_s",
+      "source_pdf": "Photoreduction_of_carbon_dioxide_to_formic_acid_in_aqueous_suspension_A_comparison_between_phthalocyanineTiO2and_porphyrinTiO2_catalysed_processes.pdf",
+      "title": "Photoreduction of Carbon Dioxide to Formic Acid in Aqueous Suspension: A Comparison between Phthalocyanine/TiO2 and Porphyrin/TiO2 Catalysed Processes",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_porous_structured_cu2otio2_nanojunction_material_toward_effi",
+      "source_pdf": "Porous-structured_Cu2OTiO2_nanojunction_material_toward_efficient_CO2_photoreduction.pdf",
+      "title": "Porous-structured Cu2O/TiO2 nanojunction material toward efficient CO2 photoreduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_preparation_characterization_and_photocatalytic_properties_o",
+      "source_pdf": "Preparation,_characterization_and_photocatalytic_properties_of_cerium_doped_TiO2_On_the_effect_of_Ce_loading_on_the_photocatalytic_reduction_of_carbon_dioxide.pdf",
+      "title": "Preparation, characterization and photocatalytic properties of cerium doped TiO2: On the effect of Ce loading on the photocatalytic reduction of carbon dioxide",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_preparation_characterization_and_photocatalytic_properties_o_table_01",
+          "table_label": "",
+          "page": 3,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "-",
+              "pressure bottle CO2"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_preparation_and_characterization_of_cu_doped_tio2_materials",
+      "source_pdf": "Preparation_and_characterization_of_Cu-doped_TiO2_materials_for_electrochemical,_photoelectrochemical,_and_photocatalytic_applications.pdf",
+      "title": "Preparation and characterization of Cu-doped TiO2 materials for electrochemical, photoelectrochemical, and photocatalytic applications",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_preparation_and_characterization_of_nabio3_nanopowders_by_di",
+      "source_pdf": "Preparation_and_characterization_of_NaBiO3_nanopowders_by_different_methods_for_photocatalytic_reduction_of_CO2.pdf",
+      "title": "Preparation and characterization of NaBiO3 nanopowders by different methods for photocatalytic reduction of CO2",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_preparation_and_characterization_of_srtio3_znte_nanocomposit",
+      "source_pdf": "Preparation_and_characterization_of_SrTiO3-ZnTe_nanocomposites_for_the_visible-light_photoconversion_of_carbon_dioxide_to_methane.pdf",
+      "title": "Preparation and characterization of SrTiO3–ZnTe nanocomposites for the visible-light photoconversion of carbon dioxide to methane",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_preparation_and_characterizations_of_bivo4reduced_graphene_o",
+      "source_pdf": "Preparation_and_characterizations_of_BiVO4reduced_graphene_oxide_nanocomposites_with_higher_visible_light_reduction_activities.pdf",
+      "title": "Preparation and characterizations of BiVO4/reduced graphene oxide nanocomposites with higher visible light reduction activities",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_preparation_of_cdin2s4_microspheres_and_application_for_phot",
+      "source_pdf": "Preparation_of_CdIn2S4_microspheres_and_application_for_photocatalytic_reduction_of_carbon_dioxide.pdf",
+      "title": "Preparation of CdIn2S4 microspheres and application for photocatalytic reduction of carbon dioxide",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_preparation_of_thickness_tunable_biocl_nanosheets_with_high",
+      "source_pdf": "Preparation_of_thickness-tunable_BiOCl_nanosheets_with_high_photocatalytic_activity_for_photoreduction_of_CO2.pdf",
+      "title": "Preparation of thickness-tunable BiOCl nanosheets with high photocatalytic activity for photoreduction of CO2",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_process_modeling_and_optimization_of_simultaneous_direct_con",
+      "source_pdf": "Process_modeling_and_optimization_of_simultaneous_direct_conversion_of_CO2_and_CH4_greenhouse_gas_mixture_over_TiO2webnet_photocatalyst.pdf",
+      "title": "Process modeling and optimization of simultaneous direct conversion of CO2 and CH4 greenhouse gas mixture over TiO2/webnet photocatalyst",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_product_selectivity_of_visible_light_photocatalytic_reductio",
+      "source_pdf": "Product_selectivity_of_visible-light_photocatalytic_reduction_of_carbon_dioxide_using_titanium_dioxide_doped_by_different_nitrogen-sources.pdf",
+      "title": "Product selectivity of visible-light photocatalytic reduction of carbon dioxide using titanium dioxide doped by different nitrogen-sources",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_promoting_photocatalytic_co_2_reduction_through_fa",
+      "source_pdf": "Promoting_Photocatalytic_CO_2_Reduction_Through_Fa.pdf",
+      "title": "Promoting photocatalytic CO2 reduction through facile electronic modification of N-annulated perylene diimide rhenium bipyridine dyads",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_reduction_of_co2_by_adsorption_and_reaction_on_surface_of_ti",
+      "source_pdf": "Reduction_of_CO2_by_adsorption_and_reaction_on_surface_of_TiO2-nitrogen_modified_photocatalyst.pdf",
+      "title": "Reduction of CO2 by adsorption and reaction on surface of TiO2-nitrogen modified photocatalyst",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_role_of_catalyst_carriers_in_co2_photoreduction_over_nanocry",
+      "source_pdf": "Role_of_catalyst_carriers_in_CO2_photoreduction_over_nanocrystalline_nickel_loaded_TiO2-based_photocatalysts.pdf",
+      "title": "Role of catalyst carriers in CO2 photoreduction over nanocrystalline nickel loaded TiO2-based photocatalysts",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_role_of_chlorophyll_in_spirulina_on_photocatalytic_activity",
+      "source_pdf": "Role_of_chlorophyll_in_Spirulina_on_photocatalytic_activity_of_CO2_reduction_under_visible_light_over_modified_N-doped_TiO2_photocatalysts.pdf",
+      "title": "Role of chlorophyll in Spirulina on photocatalytic activity of CO2 reduction under visible light over modified N-doped TiO2 photocatalysts",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_role_of_quaternary_n_in_n_doped_graphene_fe2o3_nanocomposite",
+      "source_pdf": "Role_of_quaternary_N_in_N-doped_graphene-Fe2O3_nanocomposites_as_efficient_photocatalysts_for_CO2_reduction_and_acetaldehyde_degradation.pdf",
+      "title": "Role of quaternary N in N-doped graphene–Fe2O3 nanocomposites as efficient photocatalysts for CO2 reduction and acetaldehyde degradation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_ruthenium_assemblies_for_co2_reduction_and_h2_gene",
+      "source_pdf": "Ruthenium_Assemblies_for_CO2_Reduction_and_H2_Gene.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_sayama_jphyschem97_1993_531",
+      "source_pdf": "Sayama_-_JPhysChem97(1993)531.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_selective_formic_acid_production_via_co_reduction_with_visib",
+      "source_pdf": "Selective_Formic_Acid_Production_via_CO_Reduction_with_Visible_Light_Using_a_Hybrid_of_a_Perovskite_Tantalum_Oxynitride_and_a_Binuclear_Ruthenium(II)_Complex.pdf",
+      "title": "Selective Formic Acid Production via CO2 Reduction with Visible Light Using a Hybrid of a Perovskite Tantalum Oxynitride and a Binuclear Ruthenium(II) Complex",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_self_assembly_of_cpo_27_mgtio2_nanocomposite_with_enhanced_p",
+      "source_pdf": "Self-assembly_of_CPO-27-MgTiO2_nanocomposite_with_enhanced_performance_for_photocatalytic_CO2_reduction.pdf",
+      "title": "Self-Assembly of CPO-27-Mg/TiO2 Nanocomposite with Enhanced Performance for Photocatalytic CO2 Reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_silver_incorporated_bicrystalline_anatase_brookite_tio2_micr",
+      "source_pdf": "Silver-incorporated_bicrystalline_anatase_brookite_TiO2_microspheres_for_CO2_photoreduction_with_water_in_the_presence_of_methanol.pdf",
+      "title": "Silver-incorporated bicrystalline (anatase/brookite) TiO2 microspheres for CO2 photoreduction with water in the presence of methanol",
+      "num_tables": 4,
+      "tables": [
+        {
+          "table_id": "solarchem_silver_incorporated_bicrystalline_anatase_brookite_tio2_micr_table_01",
+          "table_label": "",
+          "page": 5,
+          "caption": "",
+          "columns": [
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "(a) Ag(I)/Ti(A) (b) Ag(I)/Ti(AB) (c) Ag(I)/Ti(BA) (d) Ag(I)/Ti(P25) (d) (c)"
+            ],
+            [
+              "-",
+              "(b) (a)"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_silver_incorporated_bicrystalline_anatase_brookite_tio2_micr_table_02",
+          "table_label": "",
+          "page": 5,
+          "caption": "",
+          "columns": [
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "(a) Ag(0)/Ti(A) (b) Ag(0)/Ti(AB) (c) Ag(0)/Ti(BA)"
+            ],
+            [
+              "-",
+              "(d) Ag(0)/Ti(P25) (d) (c) (b)"
+            ],
+            [
+              "-",
+              "(a)"
+            ],
+            [
+              "250 300 350 400 450 500",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_silver_incorporated_bicrystalline_anatase_brookite_tio2_micr_table_03",
+          "table_label": "",
+          "page": 6,
+          "caption": "",
+          "columns": [
+            "Absorbance (a.u.)",
+            "Ag0-CO Ag+-CO 2024 2176 2161 2115 2069 Ag(0)/Ti(P25) 2190 Ag(I)/Ti(P25)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              2250,
+              "-",
+              2200,
+              "-",
+              2150,
+              "-",
+              2100,
+              "-",
+              2050,
+              "-",
+              2000,
+              "-",
+              1950,
+              "-",
+              1900
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_silver_incorporated_bicrystalline_anatase_brookite_tio2_micr_table_04",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            "H 2 CH",
+            ""
+          ],
+          "rows": [
+            [
+              "4 CO",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_solar_to_fuels_conversion_over_in2o3g_c3n4_hybrid_photocatal",
+      "source_pdf": "Solar-to-fuels_conversion_over_In2O3g-C3N4_hybrid_photocatalysts.pdf",
+      "title": "Solar-to-fuels conversion over In2O3/g-C3N4 hybrid photocatalysts",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_srnb2o6_nanoplates_as_efficient_photocatalysts_for_the_prefe",
+      "source_pdf": "SrNb2O6_nanoplates_as_efficient_photocatalysts_for_the_preferential_reduction_of_CO2_in_the_presence_of_H2O.pdf",
+      "title": "SrNb2O6 nanoplates as efficient photocatalysts for the preferential reduction of CO2 in the presence of H2O",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_steam_reduction_of_co2_in_a_photocatalytic_fluidized_bed_rea",
+      "source_pdf": "Steam_reduction_of_CO2_in_a_photocatalytic_fluidized_bed_reactor.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_steam_reduction_of_co2_on_pdtio2_catalysts_a_comparison_betw",
+      "source_pdf": "Steam_reduction_of_CO2_on_PdTiO2_catalysts_A_comparison_between_thermal_and_photocatalytic_reactions.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_sulfur_doped_g_c3n4_with_enhanced_photocatalytic_co2_reducti",
+      "source_pdf": "Sulfur-doped_g-C3N4_with_enhanced_photocatalytic_CO2-reduction_performance.pdf",
+      "title": "Sulfur-doped g-C3N4 with enhanced photocatalytic CO2-reduction performance",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_sulfur_doped_g_c3n4_with_enhanced_photocatalytic_co2_reducti_table_01",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "Transmittance (a.u.)",
+              "884 1405 TCN 2377 1454 MCN 1250 3166 1636 804 1324 1571",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              4000,
+              "-",
+              "-",
+              3500,
+              "-",
+              3000,
+              "-",
+              2500,
+              "-",
+              "2000 1500",
+              "-",
+              "-",
+              "-",
+              "1000 500",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_synthesis_of_3d_ordered_macroporous_tio2_supported_au_nanopa",
+      "source_pdf": "Synthesis_of_3D_ordered_macroporous_TiO2-supported_Au_nanoparticle_photocatalysts_and_their_photocatalytic_performances_for_the_reduction_of_CO2_to_methane.pdf",
+      "title": "Synthesis of 3D ordered macroporous TiO2-supported Au nanoparticle photocatalysts and their photocatalytic performances for the reduction of CO2 to methane",
+      "num_tables": 8,
+      "tables": [
+        {
+          "table_id": "solarchem_synthesis_of_3d_ordered_macroporous_tio2_supported_au_nanopa_table_01",
+          "table_label": "",
+          "page": 1,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: J. Jiao, et al., Synthesis of 3D ordered macroporous Au nanopar- TiO2-supported",
+              "-"
+            ],
+            [
+              "-",
+              "ticle photocatalysts and their photocatalytic performances for the reduction of to methane, Catal. Today (2015), CO2 http://dx.doi.org/10.1016/j.cattod.2015.01.030",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_synthesis_of_3d_ordered_macroporous_tio2_supported_au_nanopa_table_02",
+          "table_label": "",
+          "page": 2,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: J. Jiao, et al., Synthesis of 3D ordered macroporous Au nanopar- TiO2-supported",
+              "-"
+            ],
+            [
+              "-",
+              "ticle photocatalysts and their photocatalytic performances for the reduction of to methane, Catal. Today (2015), CO2 http://dx.doi.org/10.1016/j.cattod.2015.01.030",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_synthesis_of_3d_ordered_macroporous_tio2_supported_au_nanopa_table_03",
+          "table_label": "",
+          "page": 3,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: J. Jiao, et al., Synthesis of 3D ordered macroporous Au nanopar- TiO2-supported",
+              "-"
+            ],
+            [
+              "-",
+              "ticle photocatalysts and their photocatalytic performances for the reduction of to methane, Catal. Today (2015), CO2 http://dx.doi.org/10.1016/j.cattod.2015.01.030",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_synthesis_of_3d_ordered_macroporous_tio2_supported_au_nanopa_table_04",
+          "table_label": "",
+          "page": 4,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: J. Jiao, et al., Synthesis of 3D ordered macroporous Au nanopar- TiO2-supported",
+              "-"
+            ],
+            [
+              "-",
+              "ticle photocatalysts and their photocatalytic performances for the reduction of to methane, Catal. Today (2015), CO2 http://dx.doi.org/10.1016/j.cattod.2015.01.030",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_synthesis_of_3d_ordered_macroporous_tio2_supported_au_nanopa_table_05",
+          "table_label": "",
+          "page": 5,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: J. Jiao, et al., Synthesis of 3D ordered macroporous Au nanopar- TiO2-supported",
+              "-"
+            ],
+            [
+              "-",
+              "ticle photocatalysts and their photocatalytic performances for the reduction of to methane, Catal. Today (2015), CO2 http://dx.doi.org/10.1016/j.cattod.2015.01.030",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_synthesis_of_3d_ordered_macroporous_tio2_supported_au_nanopa_table_06",
+          "table_label": "",
+          "page": 6,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: J. Jiao, et al., Synthesis of 3D ordered macroporous Au nanopar- TiO2-supported",
+              "-"
+            ],
+            [
+              "-",
+              "ticle photocatalysts and their photocatalytic performances for the reduction of to methane, Catal. Today (2015), CO2 http://dx.doi.org/10.1016/j.cattod.2015.01.030",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_synthesis_of_3d_ordered_macroporous_tio2_supported_au_nanopa_table_07",
+          "table_label": "",
+          "page": 7,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: J. Jiao, et al., Synthesis of 3D ordered macroporous Au nanopar- TiO2-supported",
+              "-"
+            ],
+            [
+              "-",
+              "ticle photocatalysts and their photocatalytic performances for the reduction of to methane, Catal. Today (2015), CO2 http://dx.doi.org/10.1016/j.cattod.2015.01.030",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_synthesis_of_3d_ordered_macroporous_tio2_supported_au_nanopa_table_08",
+          "table_label": "",
+          "page": 8,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Please cite this article in press as: J. Jiao, et al., Synthesis of 3D ordered macroporous Au nanopar- TiO2-supported",
+              "-"
+            ],
+            [
+              "-",
+              "ticle photocatalysts and their photocatalytic performances for the reduction of to methane, Catal. Today (2015), CO2 http://dx.doi.org/10.1016/j.cattod.2015.01.030",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_synthesis_of_mo_doped_graphitic_carbon_nitride_catalysts_and",
+      "source_pdf": "Synthesis_of_Mo-doped_graphitic_carbon_nitride_catalysts_and_their_photocatalytic_activity_in_the_reduction_of_CO2_with_H2O.pdf",
+      "title": "Synthesis of Mo-doped graphitic carbon nitride catalysts and their photocatalytic activity in the reduction of CO2 with H2O",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_synthesis_of_nanocomposite_cdstio2_and_investigation_of_its",
+      "source_pdf": "Synthesis_of_nanocomposite_CdSTiO2_and_investigation_of_its_photocatalytic_activity_for_CO2_reduction_to_CO_and_CH4_under_visible_light_irradiation.pdf",
+      "title": "Synthesis of nanocomposite CdS/TiO2 and investigation of its photocatalytic activity for CO2 reduction to CO and CH4 under visible light irradiation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_tailoring_cu_valence_and_oxygen_vacancy_in_cutio2_catalysts",
+      "source_pdf": "Tailoring_Cu_valence_and_oxygen_vacancy_in_CuTiO2_catalysts_for_enhanced_CO2_photoreduction_efficiency.pdf",
+      "title": "Tailoring Cu valence and oxygen vacancy in Cu/TiO2 catalysts for enhanced CO2 photoreduction efficiency",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_the_effect_of_the_pore_wall_structure_of_carbon_nitride_on_p",
+      "source_pdf": "The_effect_of_the_pore-wall_structure_of_carbon_nitride_on_photocatalytic_CO2_reduction_under_visible_light.pdf",
+      "title": "The effect of the pore-wall structure of carbon nitride on photocatalytic CO2 reduction under visible light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_turning_lipophilic_phthalocyaninestio2_composites_into_effic",
+      "source_pdf": "Turning_lipophilic_phthalocyaninesTiO2_composites_into_efficient_photocatalysts_for_the_conversion_of_CO2_into_formic_acid_under_UV-vis_light_irradiation.pdf",
+      "title": "Turning lipophilic phthalocyanines/TiO2 composites into efficient photocatalysts for the conversion of CO2 into formic acid under UV–vis light irradiation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_two_dimensional_g_c3n4_an_ideal_platform_for_examining_facet",
+      "source_pdf": "Two-dimensional_g-C3N4_An_ideal_platform_for_examining_facet_selectivity_of_metal_co-catalysts_in_photocatalysis.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_visible_light_driven_co2_reduction_with_carbon_nitrid_enhanc",
+      "source_pdf": "Visible-light-driven_CO2_reduction_with_carbon_nitrid_Enhancing_the_activity_of_ruthenium_catalysts.pdf",
+      "title": "VisibleLightDriven CO2 Reduction with Carbon Nitride: Enhancing the Activity of Ruthenium Catalysts",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_visible_light_driven_mwcnt_tio2_core_shell_nanocomposites_an",
+      "source_pdf": "Visible-light-driven_MWCNT@TiO2_core-shell_nanocomposites_and_the_roles_of_MWCNTs_on_the_surface_chemistry,_optical_properties_and_reactivity_in_CO2_photoreduction.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_zinc_sulfide_functionalized_with_ruthenium_nanoparticles_for",
+      "source_pdf": "Zinc_sulfide_functionalized_with_ruthenium_nanoparticles_for_photocatalytic_reduction_of_CO2.pdf",
+      "title": "Zinc sulfide functionalized with ruthenium nanoparticles for photocatalytic reduction of CO2",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_znsmmt_nanocomposites_the_effect_of_zns_loading_in_mmt_on_th",
+      "source_pdf": "ZnSMMT_nanocomposites_The_effect_of_ZnS_loading_in_MMT_on_the_photocatalytic_reduction_of_carbon_dioxide.pdf",
+      "title": "ZnS/MMT nanocomposites: The effect of ZnS loading in MMT on the photocatalytic reduction of carbon dioxide",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_catalysts_12_00031_v3",
+      "source_pdf": "catalysts-12-00031-v3.pdf",
+      "title": "CO2 Reduction to Valuable Chemicals on TiO2-Carbon Photocatalysts Deposited on Silica Cloth",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_catalysts_12_00031",
+      "source_pdf": "catalysts-12-00031.pdf",
+      "title": "CO2 Reduction to Valuable Chemicals on TiO2-Carbon Photocatalysts Deposited on Silica Cloth",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_catalysts_12_00110_v5",
+      "source_pdf": "catalysts-12-00110-v5.pdf",
+      "title": "Insight into the Photocatalytic Activity of Cobalt-Based Metal–Organic Frameworks and Their Composites",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_d1cp05151b",
+      "source_pdf": "d1cp05151b.pdf",
+      "title": "Electronic structures of the MoS2/TiO2 (anatase) heterojunction: influence of physical and chemical modifications at the 2D- or 1D-interfaces",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_d1cy01740c1",
+      "source_pdf": "d1cy01740c1.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_d1sc05465a",
+      "source_pdf": "d1sc05465a.pdf",
+      "title": "Promoting photocatalytic CO2 reduction through facile electronic modification of N-annulated perylene diimide rhenium bipyridine dyads",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_fchem_09_795877",
+      "source_pdf": "fchem-09-795877.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_fchem_13_1576504",
+      "source_pdf": "fchem-13-1576504.pdf",
+      "title": "",
+      "num_tables": 4,
+      "tables": [
+        {
+          "table_id": "solarchem_fchem_13_1576504_table_01",
+          "table_label": "",
+          "page": 6,
+          "caption": "",
+          "columns": [
+            "NPs",
+            "Weight %",
+            "",
+            "",
+            "Atomic%",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Ti",
+              "O",
+              "Ag",
+              "Ti",
+              "O",
+              "Ag"
+            ],
+            [
+              "TiO2NPs",
+              59.95,
+              40.05,
+              "-",
+              33.33,
+              66.67,
+              "-"
+            ],
+            [
+              "1%Ag-TiO2NPs",
+              57.97,
+              38.95,
+              3.08,
+              32.95,
+              66.28,
+              0.78
+            ],
+            [
+              "3%Ag-TiO2NPs",
+              56.71,
+              38.26,
+              5.03,
+              32.69,
+              66.02,
+              1.29
+            ],
+            [
+              "5%Ag-TiO2NPs",
+              28.93,
+              22.9,
+              48.17,
+              24.34,
+              57.67,
+              17.99
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_fchem_13_1576504_table_02",
+          "table_label": "",
+          "page": 9,
+          "caption": "",
+          "columns": [
+            "Sample",
+            "Lattice parameter (nm)",
+            "",
+            "",
+            "Average crystallite size (nm)"
+          ],
+          "rows": [
+            [
+              "-",
+              "a",
+              "c",
+              "c/a",
+              "-"
+            ],
+            [
+              "TiO2NPs",
+              0.3783,
+              0.9486,
+              2.5077,
+              15.55
+            ],
+            [
+              "1%Ag-TiO2NPs",
+              0.3784,
+              0.9486,
+              2.5067,
+              15.62
+            ],
+            [
+              "3%Ag-TiO2NPs",
+              0.3778,
+              0.9486,
+              2.5107,
+              14.56
+            ],
+            [
+              "5%Ag-TiO2NPs",
+              0.3781,
+              0.9484,
+              2.508,
+              14.91
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_fchem_13_1576504_table_03",
+          "table_label": "",
+          "page": 9,
+          "caption": "",
+          "columns": [
+            "FIGURE 8",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "FT-IR spectra of undoped and Ag-doped TiO2NPs.",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_fchem_13_1576504_table_04",
+          "table_label": "",
+          "page": 15,
+          "caption": "",
+          "columns": [
+            "Photocatalysts",
+            "Size (nm)",
+            "Shape",
+            "Bandgap (eV)",
+            "Dye",
+            "Degradation efﬁciency (%)",
+            "Reference"
+          ],
+          "rows": [
+            [
+              "TiO2NPs",
+              23.8,
+              "Spherical",
+              3.32,
+              "MB",
+              40.1,
+              "Komaraiah et al., 2020"
+            ],
+            [
+              "Degussa P25 TiO2NPs",
+              38.5,
+              "Irregular",
+              "-",
+              "MB",
+              ">98",
+              "Pahasup-anan et al., 2018"
+            ],
+            [
+              "Ag/TiO2NPs",
+              "20-30",
+              "Spherical",
+              2.47,
+              "MB",
+              94,
+              "Rathi et al., 2023"
+            ],
+            [
+              "TiO2NPs, Ag-TiO2NPs",
+              18,
+              "Cuboid, spherical",
+              "3.22, 2.67",
+              "MB",
+              "66, 97",
+              "Abbad et al., 2020"
+            ],
+            [
+              "Ag-Zn doped TiO2NC",
+              5.66,
+              "Variable",
+              3,
+              "MB, MO",
+              "90, 93",
+              "Ali et al., 2023"
+            ],
+            [
+              "TiO2-P25 Degussa, Ag/TiO2",
+              "100-1,000",
+              "Granular",
+              "3.2, 1.7",
+              "MB",
+              "97.6, 60.6",
+              "Cruz et al., 2022"
+            ],
+            [
+              "PDA/PEI@TiO2@P-HSM composites",
+              "-",
+              "-",
+              2.1,
+              "RhB",
+              90,
+              "Chen et al., 2024"
+            ],
+            [
+              "TiO2, Ag/MoO3/TiO2",
+              "11.52, 4.25",
+              "-",
+              "3.24, 2.89",
+              "MO",
+              82.43,
+              "Kader et al., 2022"
+            ],
+            [
+              "TiO2NPs, Ag-TiO2NPs",
+              "15.55, 14-16",
+              "Irregular",
+              "3.32, 3.17-3.20",
+              "MB, RhB",
+              "78-92, 92-99",
+              "Current research"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_nanomaterials_12_00127",
+      "source_pdf": "nanomaterials-12-00127.pdf",
+      "title": "Preparation of Amine-Modified Cu-Mg-Al LDH Composite Photocatalyst",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_nanomaterials_12_00332_v2",
+      "source_pdf": "nanomaterials-12-00332-v2.pdf",
+      "title": "Highly Efficient Photothermal Reduction of CO2 on Pd2Cu Dispersed TiO2 Photocatalyst and Operando DRIFT Spectroscopic Analysis of Reactive Intermediates",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_nanomaterials_12_00332_v2_table_01",
+          "table_label": "",
+          "page": 10,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "",
+            "decreased when irradiated with UV-Vis light, and at the same time, the C-H peaks are increased at 2962 cm-1 (Figure 6a). In addition, the *CO peak arises at 1640 cm-1 during the light irradiation, as shown in Figure 6b [19]. The obtained DRIFT spectra were derived to visualize the significant changes. Thereby, the obtained IR spectra were subtracted from visualize the significant changes. Thereby, the obtained IR spectra were subtracted from the initial absorbance spectra. The T0, T20, T40, and T60 refer to the spectra taken in darkness at t = 20, 40, and 60 min respectively. Similarly, TL0, TL20, TL40, and TL60 refer to the spectra under UV-Vis light irradiation at t = 20, 40, and 60 min respectively. As shown in Figure 6c, the specific peaks at 2937, 2873 cm-1 (asymmetric and symmetric C-H stretching fre- quency), and 3250 cm-1 (-OH symmetric stretching) are increased with the reaction time [48-50]. The strong peaks at 1640 and 1473 cm-1 were also increased, which correspond to the *CO and CH2 (scissoring), respectively. The small peaks at 1266 and 1163 cm-1 refer to the formation of C-C (stretching frequency) and CO2δ-, respectively [19]. The peaks at 1556",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "-",
+              "and 1425 cm-1 correspond to the CO32- and CHCOH respectively. These two peaks are",
+              "-",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_100488236559e7032e2288a2_14475901",
+      "source_pdf": "paper_100488236559e7032e2288a2.14475901.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_100488236559e7032e2288a2_14475901_table_01",
+          "table_label": "",
+          "page": 1,
+          "caption": "",
+          "columns": [
+            "Journal of Materials for energy and sustainability www.rsc.org/MaterialsA",
+            "Volume 4 Number 1 Materials Chemistry A",
+            "7 January 2016",
+            "Pages 1-330"
+          ],
+          "rows": [
+            [
+              "ISSN 2050-7488 PAPER Kun Chang, Zhaorong Chang et al. Bubble-template-assisted synthesis of hollow fullerene-like MoS2 nanocages as a lithium ion battery anode material",
+              "-",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_10078090358130d27d97458_88344760",
+      "source_pdf": "paper_10078090358130d27d97458.88344760.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_1014266746635671f2310871_56985009",
+      "source_pdf": "paper_1014266746635671f2310871.56985009.pdf",
+      "title": "Efficacious CO2 Photoconversion to C2 and C3 Hydrocarbons on Upright SnS–SnS2 Heterojunction Nanosheet Frameworks",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_10149156665cfe2b63e81dd2_93986401",
+      "source_pdf": "paper_10149156665cfe2b63e81dd2.93986401.pdf",
+      "title": "Ultrasmall C-TiO2−x nanoparticle/g-C3N4 composite for CO2 photoreduction with high efficiency and selectivity",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_10187674935e6f918953fa25_00254906",
+      "source_pdf": "paper_10187674935e6f918953fa25.00254906.pdf",
+      "title": "Facile synthesis of Mo-doped TiO2 for selective photocatalytic CO2 reduction to methane_ Promoted H2O dissociation by Mo doping",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_10317555485d37171b386c06_89118591",
+      "source_pdf": "paper_10317555485d37171b386c06.89118591.pdf",
+      "title": "A Highly Selective Cr/ZrO2 Catalyst for the Reverse Water-Gas Shift Reaction Prepared from Simulated Cr-containing Wastewater by a Photocatalytic Deposition Process with ZrO2",
+      "num_tables": 2,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_10317555485d37171b386c06_89118591_table_01",
+          "table_label": "",
+          "page": 30,
+          "caption": "",
+          "columns": [
+            ""
+          ],
+          "rows": [
+            [
+              "t p i r"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_paper_10317555485d37171b386c06_89118591_table_02",
+          "table_label": "",
+          "page": 33,
+          "caption": "",
+          "columns": [
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "t p i",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_10388779675d36c3c6875976_86420959",
+      "source_pdf": "paper_10388779675d36c3c6875976.86420959.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_10427090225f8da2502e88e3_27105387",
+      "source_pdf": "paper_10427090225f8da2502e88e3.27105387.pdf",
+      "title": "Fabrication of heterostructured UIO-66-NH2 /CNTs with enhanced activity and selectivity over photocatalytic CO2 reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_1048713995f84894f6c4e69_89330678",
+      "source_pdf": "paper_1048713995f84894f6c4e69.89330678.pdf",
+      "title": "Extending the visible-light photocatalytic CO2 reduction activity of K2Ti6O13 with the MxOy (M = Co, Ni and Cu) incorporation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_10489776536347cc042ac0b2_18563167",
+      "source_pdf": "paper_10489776536347cc042ac0b2.18563167.pdf",
+      "title": "In-situ growth of few-layer graphene on ZnO with intimate interfacial contact for enhanced photocatalytic CO2 reduction activity",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_10492845675f606d8d9bd047_99127490",
+      "source_pdf": "paper_10492845675f606d8d9bd047.99127490.pdf",
+      "title": "Localized surface plasmonic resonance role of silver nanoparticles in the enhancement of long-chain hydrocarbons of the CO2 reduction over Ag-gC3N4/ZnO nanorods photocatalysts",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_105091689959e724ef346209_74648087",
+      "source_pdf": "paper_105091689959e724ef346209.74648087.pdf",
+      "title": "",
+      "num_tables": 4,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_105091689959e724ef346209_74648087_table_01",
+          "table_label": "",
+          "page": 1,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "NJC New Journal of Chemistry www.rsc.org/njc",
+              "Volume 40 Number 1 A journal for new directions in chemistry",
+              "January 2016",
+              "Pages 1-846"
+            ],
+            [
+              "ISSN 1144-0546 PAPER Jason B. Benedict et al. The role of atropisomers on the photo-reactivity and fatigue of diarylethene-based metal-organic frameworks",
+              "-",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_paper_105091689959e724ef346209_74648087_table_02",
+          "table_label": "",
+          "page": 5,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "101"
+          ],
+          "rows": [
+            [
+              "-",
+              1,
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_paper_105091689959e724ef346209_74648087_table_03",
+          "table_label": "",
+          "page": 10,
+          "caption": "",
+          "columns": [
+            "A A A A A",
+            "A A A A A A (c)"
+          ],
+          "rows": [
+            [
+              "-",
+              "(b)"
+            ],
+            [
+              "-",
+              "(a)"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_paper_105091689959e724ef346209_74648087_table_04",
+          "table_label": "",
+          "page": 12,
+          "caption": "",
+          "columns": [
+            "A A A A A",
+            "A A A A A A (d)"
+          ],
+          "rows": [
+            [
+              "-",
+              "(c)"
+            ],
+            [
+              "-",
+              "(b)"
+            ],
+            [
+              "-",
+              "(a)"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_10518714705fbcd63927e248_38984112",
+      "source_pdf": "paper_10518714705fbcd63927e248.38984112.pdf",
+      "title": "Preparation, structure and application of g-C3N4/BiOX composite photocatalyst",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_1054938546601153b52b3f79_08827798",
+      "source_pdf": "paper_1054938546601153b52b3f79.08827798.pdf",
+      "title": "Mechanisms behind photocatalytic CO2 reduction by CsPbBr3 perovskite-graphene-based nanoheterostructures",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_105884057865ce0a2540c236_79952052",
+      "source_pdf": "paper_105884057865ce0a2540c236.79952052.pdf",
+      "title": "Construction of NiO/g-C3N4 p-n heterojunctions for enhanced photocatalytic CO2 reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_1060404123603246698f7cd1_57180630",
+      "source_pdf": "paper_1060404123603246698f7cd1.57180630.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_1061122946637dd7b998aa32_28656844",
+      "source_pdf": "paper_1061122946637dd7b998aa32.28656844.pdf",
+      "title": "A Ti-OH bond breaking route for creating oxygen vacancy in titania towards efficient CO2 photoreduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_106734283559e7133f918227_64995539",
+      "source_pdf": "paper_106734283559e7133f918227.64995539.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_107436405058d91b88b4e777_47875241",
+      "source_pdf": "paper_107436405058d91b88b4e777.47875241.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_107784893063725d4ab5a424_04118982",
+      "source_pdf": "paper_107784893063725d4ab5a424.04118982.pdf",
+      "title": "A solar photothermocatalytic approach for the CO2 conversion: Investigation of different synergisms on CoO-CuO/brookite TiO2-CeO2 catalysts",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_108020603765ccf5295a2657_71825025",
+      "source_pdf": "paper_108020603765ccf5295a2657.71825025.pdf",
+      "title": "Energy band engineering of Bi2O2.33CdS direct Z-scheme heterojunction for enhanced photocatalytic reduction of CO2",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_10805635965d39bf2a2fc504_97128826",
+      "source_pdf": "paper_10805635965d39bf2a2fc504.97128826.pdf",
+      "title": "CO2 to liquid fuels: photocatalytic conversion in a continuous membrane reactor",
+      "num_tables": 3,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_10805635965d39bf2a2fc504_97128826_table_01",
+          "table_label": "",
+          "page": 8,
+          "caption": "",
+          "columns": [
+            "",
+            "Membrane",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "Photocatalytic (C3N4'Nafion)",
+              "Nafion (bare)"
+            ],
+            [
+              "Polymeric solution",
+              "-",
+              "-"
+            ],
+            [
+              "Solvent (EtOH:H2O (50:50 wt.%)) wt.%",
+              97.8,
+              97.827
+            ],
+            [
+              "Polymer, wt.%",
+              2.173,
+              2.173
+            ],
+            [
+              "Catalyst addition",
+              "-",
+              "-"
+            ],
+            [
+              "Catalyst, wt.%",
+              0.027,
+              0
+            ],
+            [
+              "Resulting membrane",
+              "-",
+              "-"
+            ],
+            [
+              "Catalyst in membrane, wt.%",
+              1.23,
+              0
+            ],
+            [
+              "Polymer in membrane, wt.%",
+              98.77,
+              100
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_paper_10805635965d39bf2a2fc504_97128826_table_02",
+          "table_label": "",
+          "page": 10,
+          "caption": "",
+          "columns": [
+            "CO2 flow rate, mL(STP*) min'1",
+            "11'107"
+          ],
+          "rows": [
+            [
+              "H2O/CO2 feed molar ratio",
+              "0.5; 2; 5"
+            ],
+            [
+              "Feed Pressure, bar",
+              2
+            ],
+            [
+              "Permeate Pressure, bar",
+              1
+            ],
+            [
+              "Contact time, s",
+              "2; 9.8; 18.7"
+            ],
+            [
+              "*STP represent the standard temperature and pressure condition equivalent to 25°C and 1 bar.",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        },
+        {
+          "table_id": "solarchem_paper_10805635965d39bf2a2fc504_97128826_table_03",
+          "table_label": "",
+          "page": 23,
+          "caption": "",
+          "columns": [
+            "Catalyst",
+            "Reactor configuration",
+            "'1 h'1 Flow rate/catalyst weight, umol gcatalyst",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Ref."
+          ],
+          "rows": [
+            [
+              "-",
+              "-",
+              "MeOH",
+              "EtOH",
+              "HCHO",
+              "Acetone",
+              "HCOOH",
+              "CH4",
+              "CO",
+              "-"
+            ],
+            [
+              "C3N4 catalyst embedded in a Nafion membrane",
+              "Continuous",
+              "0.9'17.9",
+              "0.3'14.9",
+              "0'27",
+              "0'1.8",
+              0,
+              0,
+              0,
+              "This work"
+            ],
+            [
+              "C3N4",
+              "Batch",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              5,
+              "-",
+              46
+            ],
+            [
+              "C3N4*",
+              "Batch",
+              25,
+              "-",
+              "-",
+              "-",
+              1250,
+              "-",
+              "-",
+              47
+            ],
+            [
+              "C3N4 catalyst placed in glass fiber",
+              "Continuous",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              0.5,
+              5.2,
+              48
+            ],
+            [
+              "C3N4 nanotubes",
+              "Batch",
+              0.28,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              49
+            ],
+            [
+              "C3N4",
+              "Batch",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "0.62'1",
+              "-",
+              50
+            ],
+            [
+              "C3N4",
+              "Batch",
+              0.26,
+              "-",
+              "-",
+              "-",
+              "-",
+              "traces",
+              "-",
+              51
+            ],
+            [
+              "C3N4",
+              "Batch",
+              10,
+              12,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              52
+            ],
+            [
+              "C3N4",
+              "Continuous",
+              "Traces",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              53
+            ],
+            [
+              "3 MEA'C3N4",
+              "Batch",
+              0.28,
+              "-",
+              "-",
+              "-",
+              "-",
+              0.34,
+              "-",
+              51
+            ],
+            [
+              "AgBr/C3N4",
+              "Batch",
+              "-",
+              "-",
+              "-",
+              2,
+              "-",
+              21,
+              "-",
+              46
+            ],
+            [
+              "C3N4 3%Cu/TiO2*",
+              "Batch",
+              102,
+              "-",
+              "-",
+              "-",
+              1118,
+              "-",
+              "-",
+              47
+            ],
+            [
+              "2 Au'C3N4 catalyst placed in glass fiber",
+              "Continuous",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              4.3,
+              6.5,
+              48
+            ],
+            [
+              "C3N4/ZIF 8 (nanocluster on C3N4 nanotubes)",
+              "Batch",
+              0.75,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              49
+            ],
+            [
+              "CdIn2S4/C3N4 20% wt.",
+              "Continuous",
+              42.7,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              53
+            ],
+            [
+              "6 SO/0.12B'0.2P'C3N4",
+              "Batch",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "6.25'7.5",
+              "-",
+              50
+            ],
+            [
+              "Ag'N doped C3N4'G'50",
+              "Batch",
+              20,
+              50,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              52
+            ],
+            [
+              "TiO2 catalyst embedded in a Nafion membrane",
+              "Continuous",
+              "12.6'45",
+              0,
+              0,
+              0,
+              "traces",
+              0,
+              0,
+              8
+            ],
+            [
+              "nanoparticles in porous cavities of TiO2 commercial Nafion membranes",
+              "Continuous",
+              "56 (supercritical CO2 as feed)",
+              "-",
+              "-",
+              "-",
+              38,
+              "-",
+              "-",
+              54
+            ],
+            [
+              "Membrane microreactor",
+              "Continuous",
+              111,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              55
+            ],
+            [
+              "TiO2/Y'zeolite anchored on Vycor glass",
+              "Batch",
+              5,
+              "-",
+              "-",
+              "-",
+              "-",
+              8,
+              "-",
+              56
+            ],
+            [
+              "Ti'mesoporous zeolite",
+              "Batch",
+              3.5,
+              "-",
+              "-",
+              "-",
+              "-",
+              7.5,
+              "-",
+              57
+            ],
+            [
+              "Ti'b(OH) and Ti'b(F)",
+              "Batch",
+              5.9,
+              "-",
+              "-",
+              "-",
+              "-",
+              1,
+              "-",
+              58
+            ],
+            [
+              "TiO2 and 2% Cu/TiO2 in NaOH solution",
+              "Batch",
+              0.78,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              59
+            ],
+            [
+              "Cu/TiO2 film supported on optical'fiber",
+              "Continuous",
+              0.45,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              60
+            ],
+            [
+              "Cu/TiO2 and Ag/TiO2 film supported on optical' fiber",
+              "Continuous",
+              4.12,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              61
+            ],
+            [
+              "TiO2 anatase",
+              "Batch",
+              0.075,
+              "-",
+              "-",
+              "-",
+              "-",
+              0.4,
+              "-",
+              62
+            ],
+            [
+              "TiO2 polymorphs",
+              "Continuous",
+              "-",
+              "-",
+              "-",
+              "-",
+              3.15,
+              2.13,
+              "-",
+              63
+            ],
+            [
+              "TiO2 polymorphs",
+              "Continuous",
+              "-",
+              "-",
+              "-",
+              "-",
+              2.1,
+              "-",
+              "-",
+              64
+            ],
+            [
+              "phtalocyanines/TiO2",
+              "Batch",
+              "-",
+              "-",
+              "-",
+              "-",
+              26,
+              "-",
+              "-",
+              65
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_1081098465634d3e698e8a53_23646465",
+      "source_pdf": "paper_1081098465634d3e698e8a53.23646465.pdf",
+      "title": "ZnSe/CdSe Z-scheme composites with Se vacancy for efficient photocatalytic CO2 reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_1084178649588f1d120c6f68_81088984",
+      "source_pdf": "paper_1084178649588f1d120c6f68.81088984.pdf",
+      "title": "Synergistic effect in plasmonic Au/Ag alloy NPs co-coated TiO2 NWs toward visible-light enhanced CO2 photoreduction to fuels",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_10954704605cfa3bea767f80_79647584",
+      "source_pdf": "paper_10954704605cfa3bea767f80.79647584.pdf",
+      "title": "High Pressure Photoreduction of CO2: Effect of Catalyst Formulation, Hole Scavenger Addition and Operating Conditions",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_10954704605cfa3bea767f80_79647584_table_01",
+          "table_label": "",
+          "page": 9,
+          "caption": "",
+          "columns": [
+            "",
+            "39,358",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "-",
+              "39,358 H2 CO HCOOH H2 CO HCOOH",
+              "-",
+              "-"
+            ],
+            [
+              "-",
+              18918,
+              "-",
+              "-"
+            ],
+            [
+              "-",
+              18918,
+              "-",
+              "-"
+            ],
+            [
+              "-",
+              "4,499 4,001 1,940 4,499 4,001 489 229 53 30 1,940",
+              "-",
+              "-"
+            ],
+            [
+              "489 229 53 30",
+              "-",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_10985863115d3b12baea7938_76593403",
+      "source_pdf": "paper_10985863115d3b12baea7938.76593403.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_11018236755e8204152756b6_22795180",
+      "source_pdf": "paper_11018236755e8204152756b6.22795180.pdf",
+      "title": "Ultra stable multinuclear metal complexes as homogeneous catalysts for visible-light driven syngas production from pure and diluted CO2",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_112041043063777a45c9f5d0_73832594",
+      "source_pdf": "paper_112041043063777a45c9f5d0.73832594.pdf",
+      "title": "Highly porous Zr-MCM-48 immobilized Cu-porphyrin for photocatalytic reduction of CO2 to methanol in a slurry reactor",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_11226689005d39be1157fce0_49290142",
+      "source_pdf": "paper_11226689005d39be1157fce0.49290142.pdf",
+      "title": "Assembly of highly efficient photocatalytic CO2 conversion systems with ultrathin two-dimensional metal–organic framework nanosheets",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_11244237246328563f856a64_32578311",
+      "source_pdf": "paper_11244237246328563f856a64.32578311.pdf",
+      "title": "New modeling of AgFeNi2S4-graphene-TiO2 ternary nanocomposite with chelate compounds and its photocatalytic reduction of CO2",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_112546710759e729c621a592_56789870",
+      "source_pdf": "paper_112546710759e729c621a592.56789870.pdf",
+      "title": "Enhanced CO2 photocatalytic reduction on alkali-decorated graphitic carbon nitride",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_112546710759e729c621a592_56789870_table_01",
+          "table_label": "",
+          "page": 41,
+          "caption": "",
+          "columns": [
+            "Sample",
+            "CN",
+            "0.05KOH- CN",
+            "0.1KOH- CN",
+            "0.25KOH- CN",
+            "0.5KOH- CN",
+            "1.0KOH- CN"
+          ],
+          "rows": [
+            [
+              "BET surface area (m2/g)",
+              61.9,
+              61.6,
+              62.4,
+              59.0,
+              62.2,
+              59.1
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_1132481095fb541dd904e32_14603627",
+      "source_pdf": "paper_1132481095fb541dd904e32.14603627.pdf",
+      "title": "Metal-organic layers as a platform for developing single-atom catalysts for photochemical CO2 reduction",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_114720109359e70ff7188420_17771564",
+      "source_pdf": "paper_114720109359e70ff7188420.17771564.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_114720109359e70ff7188420_17771564_table_01",
+          "table_label": "",
+          "page": 1,
+          "caption": "",
+          "columns": [
+            "Journal of Materials for energy and sustainability www.rsc.org/MaterialsA",
+            "Volume 4 Number 1 Materials Chemistry A",
+            "7 January 2016",
+            "Pages 1-330"
+          ],
+          "rows": [
+            [
+              "ISSN 2050-7488 PAPER Kun Chang, Zhaorong Chang et al. Bubble-template-assisted synthesis of hollow fullerene-like MoS2 nanocages as a lithium ion battery anode material",
+              "-",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_11547660485fa1226a283395_75785706",
+      "source_pdf": "paper_11547660485fa1226a283395.75785706.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_115656616565ccceb3569c22_44196230",
+      "source_pdf": "paper_115656616565ccceb3569c22.44196230.pdf",
+      "title": "S‐Scheme Heterojunction and Defect Site Engineering on CuxIn5S8−Cu2‐ySe for Highly Efficient Photoreduction of CO2 to methanol",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_115656616565ccceb3569c22_44196230_table_01",
+          "table_label": "",
+          "page": 10,
+          "caption": "",
+          "columns": [
+            "Table 1. The apparent quantum efficiency of and Cu1.5In4.5S7.5, CuIn5S8 Cu1.5In4.5S7.5\u0000 Cu1.45Se. Catalysts AQE"
+          ],
+          "rows": [
+            [
+              "2.81 % CuIn5S8 3.23 % Cu1.5In4.5S7.5 5.21 % Cu1.5In4.5S7.5\u0000 Cu1.45Se"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_115932045157f638f8a12209_53127349",
+      "source_pdf": "paper_115932045157f638f8a12209.53127349.pdf",
+      "title": "",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_116247251159e61a61c33c35_66880327",
+      "source_pdf": "paper_116247251159e61a61c33c35.66880327.pdf",
+      "title": "Photo-induced CO2 reduction by hydrogen for selective CO evolution in a dynamic monolith photoreactor loaded with Ag-modified TiO2 nanocatalyst",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_116349333359e7057b4a82d6_39834125",
+      "source_pdf": "paper_116349333359e7057b4a82d6.39834125.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_116349333359e7057b4a82d6_39834125_table_01",
+          "table_label": "",
+          "page": 1,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "Catalysis Science & Technology www.rsc.org/catalysis",
+              "Volume 6 Number 1",
+              "7 January 2016",
+              "Pages 1-308"
+            ],
+            [
+              "ISSN 2044-4753 PAPER Qingzhu Zhang et al. analysis of fluoroacetate dehalogenase",
+              "Catalytic mechanism of C-F bond cleavage: insights from QM/MM",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_11643649575d371b133390e2_83303697",
+      "source_pdf": "paper_11643649575d371b133390e2.83303697.pdf",
+      "title": "Construction of Bi2WO6/RGO/g-C3N4 2D/2D/2D hybrid Z-scheme heterojunctions with large interfacial contact area for efficient charge separation and high-performance photoreduction of CO2 and H2O into solar fuels",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_11643649575d371b133390e2_83303697_table_01",
+          "table_label": "",
+          "page": 38,
+          "caption": "",
+          "columns": [
+            "I R C S"
+          ],
+          "rows": [
+            [
+              "U N"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_1166294375611e0ea21e27d6_14669418",
+      "source_pdf": "paper_1166294375611e0ea21e27d6.14669418.pdf",
+      "title": "Self-assembly of TiO2/ZIF-8 nanocomposites for varied photocatalytic CO2 reduction with H2O vapor induced by different synthetic methods",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_117326670860f15fab9693c2_17759553",
+      "source_pdf": "paper_117326670860f15fab9693c2.17759553.pdf",
+      "title": "Adsorption and Photocatalytic Reduction of Carbon Dioxide on TiO2",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_117326670860f15fab9693c2_17759553_table_01",
+          "table_label": "",
+          "page": 6,
+          "caption": "",
+          "columns": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rows": [
+            [
+              "Catalysts 2021, 11, 47",
+              "-",
+              "-",
+              "-",
+              "7 of 12"
+            ],
+            [
+              "-",
+              "-",
+              "beginning of the process. On the other hand, the adsorption on the surface of TiO2-С1000 started only after half of a minute, as is evident from the appearance of weak IR bands. Thus, it can be hypothesized that at room temperature the activity of TiO2 in photocatalytic reduction of CO2 is governed by adsorption-desorption factors but not by photocatalytic",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_11810129435d39b4363af078_43536178",
+      "source_pdf": "paper_11810129435d39b4363af078.43536178.pdf",
+      "title": "Z‐Scheme Au@Void@g‐C3N4/SnS Yolk–Shell Heterostructures for Superior Photocatalytic CO2 Reduction under Visible Light",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_118178636359e716c963f564_98061854",
+      "source_pdf": "paper_118178636359e716c963f564.98061854.pdf",
+      "title": "Photocatalytic CO2 reduction over V and W codoped TiO2 catalyst in an internal-illuminated honeycomb photoreactor under simulated sunlight irradiation",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_11832303285f2ac96ac4edd8_19804186",
+      "source_pdf": "paper_11832303285f2ac96ac4edd8.19804186.pdf",
+      "title": "2D/2D/2D O-C3N4/Bt/Ti3C2Tx heterojunction with novel MXene/clay multi-electron mediator for stimulating photo-induced CO2 reforming to CO and CH4",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_11832303285f2ac96ac4edd8_19804186_table_01",
+          "table_label": "",
+          "page": 18,
+          "caption": "",
+          "columns": [
+            "",
+            "g-C3N4/Bt/Ti3C2 (e)",
+            "(Si 2p) 104.1"
+          ],
+          "rows": [
+            [
+              "-",
+              "Bentonite",
+              104.2
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_11879456205e947360a07c85_09342923",
+      "source_pdf": "paper_11879456205e947360a07c85.09342923.pdf",
+      "title": "Synthesis and characterization of graphene oxide - TiO2 thin films by sol-gel for photocatalytic applications",
+      "num_tables": 0,
+      "tables": []
+    },
+    {
+      "document_id": "solarchem_paper_12052893855d3ad81821b508_98385672",
+      "source_pdf": "paper_12052893855d3ad81821b508.98385672.pdf",
+      "title": "Selective photocatalytic CO2 reduction to CH4 over Pt/In2O3: Significant role of hydrogen adatom",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_12052893855d3ad81821b508_98385672_table_01",
+          "table_label": "",
+          "page": 32,
+          "caption": "",
+          "columns": [
+            "Photocatalyst",
+            "Catalyst compositions (wt%)",
+            "",
+            "Surface area (m2g-1)",
+            "Average pore size (nm)",
+            "Pore volume (cm3g-1)"
+          ],
+          "rows": [
+            [
+              "-",
+              "In2O3",
+              "Pt",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "In2O3",
+              100,
+              0,
+              153.8,
+              17.7,
+              0.14
+            ],
+            [
+              "0.5Pt/In2O3",
+              99.5,
+              0.5,
+              162.1,
+              19.4,
+              0.16
+            ],
+            [
+              "1.0Pt/In2O3",
+              98.7,
+              1.3,
+              153.5,
+              21.7,
+              0.17
+            ],
+            [
+              "2.0Pt/In2O3",
+              97.7,
+              2.3,
+              143.0,
+              22.3,
+              0.16
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": []
+          }
+        }
+      ]
+    }
+  ]
+}

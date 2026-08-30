@@ -1,0 +1,49 @@
+{
+  "document_id": "solarchem_example",
+  "source_pdf": "example.pdf",
+  "title": "Construction of NiO/g-C3N4 p-n heterojunctions for enhanced photocatalytic CO2 reduction",
+  "num_tables": 1,
+  "tables": [
+    {
+      "table_id": "solarchem_example_table_01",
+      "table_label": "Table 1",
+      "page": 1,
+      "caption": "Table 1: Photocatalytic CO2 reduction activity over TiO2-based catalysts.",
+      "columns": [
+        "Catalyst",
+        "Production rate (umol g^-1 h^-1)_CH4",
+        "Production rate (umol g^-1 h^-1)_CO",
+        "Selectivity (%)"
+      ],
+      "rows": [
+        [
+          "TiO2",
+          "12.5 ± 0.8",
+          3.1,
+          80.1
+        ],
+        [
+          "g-C3N4",
+          8.2,
+          1.4,
+          85.4
+        ],
+        [
+          "Pt/TiO2",
+          "21.7 ± 1.2",
+          "ND",
+          ">99"
+        ]
+      ],
+      "context": {
+        "section_title": "3. Results and discussion",
+        "mentions": [
+          {
+            "page": 2,
+            "text": "As summarised in Table 1, Pt loading raised the CH4 production rate by a factor of 1.7 relative to bare TiO2."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,778 @@
+{
+  "documents": [
+    {
+      "document_id": "solarchem_paper_1659931384588f66383f8519_61495962",
+      "source_pdf": "paper_1659931384588f66383f8519.61495962.pdf",
+      "title": "Photocatalytic reduction of CO2 to CO over the Ti–Highly dispersed HZSM-5 zeolite containing Fe",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_1659931384588f66383f8519_61495962_table_01",
+          "table_label": "Table 1",
+          "page": 5,
+          "caption": "Table 1 Comparison of the physical properties and photocatalytic activity of different sample.",
+          "columns": [
+            "Samples",
+            "BET surface area (\\mathrmm^2\\mathrm\\;g^-1)",
+            "Mean pore diameter (nm)",
+            "A(\\mathrmCO2) (\\mathrmcm^3\\mathrm\\;g^-1)^a",
+            "\\mathrmR\\mathrmCO^* 10^-3(u \\mathrmmol\\mathrmh^-1\\mathrm\\;m^-2)^\\mathrmb",
+            "\\mathrmR\\mathrmCO^\\prime (u \\mathrmmol\\mathrmh^-1\\mathrm\\;cm^-3)^\\mathrmc"
+          ],
+          "rows": [
+            [
+              "HZSM-5",
+              277.6,
+              0.534,
+              48.3,
+              2.45,
+              0.014
+            ],
+            [
+              "0.99Ti-HZSM-5",
+              281.5,
+              0.529,
+              47.1,
+              7.28,
+              0.044
+            ],
+            [
+              "0.99\\mathrmTiO2 - \\mathrmHZSM - 5",
+              263.9,
+              0.526,
+              45.8,
+              2.61,
+              0.016
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": [
+              {
+                "page": 4,
+                "text": "Texture data of the HZSM-5 and the Ti-containing HZSM-5 samples were measured by the N2 adsorption, as listed in Table 1. It can be seen that both the specific surface areas and pore diameter of 0.99TiO2-HZSM-5 sample are slightly lower than that of the HZSM-5, which may be due to the pores of HZSM-5 partly blocking by TiO2 particles. In contrast, the specific surface areas of 0.99Ti-HZSM-5 sample is a bit higher than that of the HZSM-5, but its pore diameter is a bit lower than the HZSM-5, which could be understood also by the chemical bonding of Ti species to surface oxygen atoms of TiO2 . It should be noted that such a small change of specific surface area and pore size could not induce such a difference in the photocatalytic activity between Ti-HZSM-5 and TiO2-HZSM-5, which could be seen from the normalized rates on the two samples. Thus, specific surface area and CO2 adsorption capacity are not responsible for the difference in photocatalytic activity."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_turning_lipophilic_phthalocyaninestio2_composites_into_effic",
+      "source_pdf": "Turning_lipophilic_phthalocyaninesTiO2_composites_into_efficient_photocatalysts_for_the_conversion_of_CO2_into_formic_acid_under_UV-vis_light_irradiation.pdf",
+      "title": "Turning lipophilic phthalocyanines/TiO2 composites into efficient photocatalysts for the conversion of CO2 into formic acid under UV–vis light irradiation",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_turning_lipophilic_phthalocyaninestio2_composites_into_effic_table_01",
+          "table_label": "Table 1",
+          "page": 3,
+          "caption": "Table 1 Effect of sensitizer, pH of the medium and light source on the yield of formic acid produced by photocatalytic reduction of CO2 .",
+          "columns": [
+            "Entry",
+            "Catalyst^a",
+            "pH",
+            "Light source^b",
+            "HCO2H yield",
+            "HCO2H yield"
+          ],
+          "rows": [
+            [
+              "Entry",
+              "Catalyst^a",
+              "pH",
+              "Light source^b",
+              "mg l^-1 g cat^-1",
+              "umol g cat^-1"
+            ],
+            [
+              1,
+              "TiO2",
+              3,
+              "S/H",
+              120.5,
+              131.0
+            ],
+            [
+              2,
+              "TiO2-H2Pc",
+              3,
+              "S/H",
+              69.0,
+              75.0
+            ],
+            [
+              3,
+              "TiO2-CuPc",
+              3,
+              "S/H",
+              191.8,
+              208.5
+            ],
+            [
+              4,
+              "TiO2-ZnPc",
+              3,
+              "S/H",
+              81.5,
+              88.5
+            ],
+            [
+              5,
+              "TiO2-CuPc",
+              7,
+              "S/H",
+              58.3,
+              63.4
+            ],
+            [
+              6,
+              "TiO2-CuPc",
+              13,
+              "S/H",
+              60.0,
+              65.2
+            ],
+            [
+              7,
+              "TiO2-CuPc",
+              3,
+              "S",
+              30.0,
+              32.6
+            ],
+            [
+              8,
+              "TiO2-CuPc",
+              3,
+              "H",
+              48.6,
+              52.2
+            ],
+            [
+              9,
+              "TiO2-CuPc",
+              3,
+              "-",
+              "-",
+              "-"
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": [
+              {
+                "page": 3,
+                "text": "Having gathered evidence for the catalytic activity of TiO2-CuPc composites in the photoreduction of CO2 to HCO2H, we turned to inspect the effect of a few selected reaction parameters on the efficiency of HCO2H production, namely the nature and role of sensitizer and of the central metal, the pH of the reaction medium, and the irradiation source. Results are collected in Table 1."
+              },
+              {
+                "page": 3,
+                "text": "As shown in Table 1, the \\mathrmTiO2 - CuPc catalyst (entry 3) was found to be more active than both the bare \\mathrmTiO2 (entry 1) and the \\mathrmTiO2 - H2Pc (entry 2). In this last instance, it seems that the presence of the dye appears even detrimental to the intrinsic photocatalytic activity of \\mathrmTiO2 itself. On the other hand, the effect of replacing \\mathrmCu(II) with \\mathrmZn(II) results in a sizeable decrease in \\mathrmHCO2H yield (entry 4). A similar \"metal effect\" was also observed in oxidative photodegradation studies [15]."
+              },
+              {
+                "page": 3,
+                "text": "Entries 7-9 of Table 1 show the effect of the irradiation conditions on the HCO2H yield. To study this effect, the photocatalytic reactor was purposefully equipped with two light sources, consisting of a Vis lamp (RADIUM Xe-Halogen lamp 400 W) and UV source (SANOLUX HRC UV-VIS lamp 300 W), with the latter producing also"
+              },
+              {
+                "page": 3,
+                "text": "Because the pH of the reaction medium is crucial for the efficient photoreduction of CO2 [25], it was necessary to identify the appropriate pH value that allowed for the best HCO2H . To this purpose, three independent reactions were run under acidic, neutral, and alkaline conditions, respectively (Table 1, entries 3, 5, 6, respectively) and the initial pH values were not changed or checked throughout the process. Data in Table 1 suggest that yield in photosynthesized formic acid doubles on lowering the pH of the medium from neutral (and alkaline) to moderately acidic values. This may be ascribed to a favourable protonation and subsequent desorption of the formed species from the TiO2 surface [2,25], which should then be able to get engaged in successive catalytic runs. On the other hand, under neutral or alkaline conditions, it is likely that HCO3^- and CO3^2- ions interfere with the photoreduction process, both ions being able to behave as radical scavengers [26]."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_steam_reduction_of_co2_in_a_photocatalytic_fluidized_bed_rea",
+      "source_pdf": "Steam_reduction_of_CO2_in_a_photocatalytic_fluidized_bed_reactor.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_steam_reduction_of_co2_in_a_photocatalytic_fluidized_bed_rea_table_01",
+          "table_label": "Table 1",
+          "page": 2,
+          "caption": "Table 1: Me/TiO2 photocatalysts and their characteristics",
+          "columns": [
+            "Catalyst",
+            "CuO wt %",
+            "RuO2 wt %",
+            "Pd wt %",
+            "Ebg eV",
+            "TiO2 average crystallitesPZC (size nm)",
+            "TiO2 average crystallitesPZC (pH unit)"
+          ],
+          "rows": [
+            [
+              "TiO2",
+              "-",
+              "-",
+              "-",
+              3.4,
+              7,
+              6.6
+            ],
+            [
+              "2Cu",
+              2,
+              "-",
+              "-",
+              3.4,
+              17,
+              6.1
+            ],
+            [
+              "5Cu",
+              5,
+              "-",
+              "-",
+              3.0,
+              16,
+              5.8
+            ],
+            [
+              "10Cu",
+              10,
+              "-",
+              "-",
+              2.5,
+              18,
+              5.3
+            ],
+            [
+              "0.7Ru",
+              "-",
+              0.7,
+              "-",
+              2.4,
+              13,
+              4.4
+            ],
+            [
+              "1.7Ru",
+              "-",
+              1.7,
+              "-",
+              2.0,
+              14,
+              4.5
+            ],
+            [
+              "3.7Ru",
+              "-",
+              3.7,
+              "-",
+              1.9,
+              13,
+              4.1
+            ],
+            [
+              "0.5Pd",
+              "-",
+              "-",
+              0.5,
+              2.3,
+              21,
+              3.5
+            ],
+            [
+              "1Pd",
+              "-",
+              "-",
+              1,
+              2.2,
+              25,
+              3.4
+            ],
+            [
+              "1.5Pd",
+              "-",
+              "-",
+              1.5,
+              2.2,
+              23,
+              3.3
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": [
+              {
+                "page": 2,
+                "text": "The \\mathrmMe / \\mathrmTiO2 photocatalysts are listed Table 1. In the same Table the metal nominal loading, equivalent band gap energy, \\mathrmTiO2 average crystallite size, and PZC values are also reported."
+              },
+              {
+                "page": 2,
+                "text": "These differences in the absorption properties corresponded to a decrease in the equivalent band gap energies with respect to bare \\mathrmTiO2, as shown in Table 1."
+              },
+              {
+                "page": 3,
+                "text": "Anatase crystallite size of the catalysts was evaluated from XRD analysis, using the Scherrer equation (Table 1). For bare \\mathrmTiO2 the anatase crystallite size was about 7\\mathrmnm and increased after the active phase deposition."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_photocatalytic_reduction_of_co2_on_mgotio2_nanotube_films",
+      "source_pdf": "Photocatalytic_reduction_of_CO2_on_MgOTiO2_nanotube_films.pdf",
+      "title": "Photocatalytic reduction of CO2 on MgO/TiO2 nanotube films",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_photocatalytic_reduction_of_co2_on_mgotio2_nanotube_films_table_01",
+          "table_label": "Table 1",
+          "page": 4,
+          "caption": "Table 1 The atomic percent of Ti, O and Mg of different MgO/TNTs films.",
+          "columns": [
+            "CMg(NO3)2",
+            "Ti (at%)",
+            "O (at%)",
+            "Mg (at%)"
+          ],
+          "rows": [
+            [
+              "0.001 M",
+              39.12,
+              60.63,
+              0.25
+            ],
+            [
+              "0.005 M",
+              45.63,
+              54.05,
+              0.32
+            ],
+            [
+              "0.01 M",
+              41.26,
+              58.33,
+              0.41
+            ],
+            [
+              "0.05 M",
+              44.0,
+              55.14,
+              0.86
+            ],
+            [
+              "0.1 M",
+              44.24,
+              54.83,
+              0.93
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": [
+              {
+                "page": 3,
+                "text": "are presented in Fig. 3. Our previous work reported that TAN transformed to anatase \\mathrmTiO2 nanoparticles completely after calcination at the temperature higher than 400^°\\mathrmC [27]. Observation on the TEM images of \\mathrmMgO modified \\mathrmTiO2, we found that the nanotubular structure was kept very well. This indicated that \\mathrmMgO played an essential role to keep the nanotubular structure in the dehydration of TAN. Fig. 3a showed that \\mathrmTiO2 displayed the uniform nanotube morphology, but a little part of nanotubes destroyed. The actual atomic percentage of Ti, Mg, O elements estimated by EDS analysis was shown in Table 1. The content of \\mathrmMgO increased with the increase of the concentration of \\mathrmMg(NO3)2. As the increase of the amount"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_engineering_the_tio2_outermost_layers_using_magnesium_for_ca",
+      "source_pdf": "Engineering_the_TiO2_outermost_layers_using_magnesium_for_carbon_dioxide_photoreduction.pdf",
+      "title": "Engineering the TiO2 outermost layers using magnesium for carbon dioxide photoreduction",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_engineering_the_tio2_outermost_layers_using_magnesium_for_ca_table_01",
+          "table_label": "Table 1",
+          "page": 3,
+          "caption": "Table 1 Phase composition, crystalline size and anatase cell parameter of Mg-TiO2 samples (A: anatase; B: brookite; R: rutile).",
+          "columns": [
+            "Sample (% Mg)",
+            "Phase content (%)",
+            "Phase content (%)",
+            "Phase content (%)",
+            "Crystal size (nm)",
+            "Crystal size (nm)",
+            "Crystal size (nm)",
+            "Anatase c (nm)"
+          ],
+          "rows": [
+            [
+              "Sample (% Mg)",
+              "A",
+              "R",
+              "B",
+              "A",
+              "R",
+              "B",
+              "Anatase c (nm)"
+            ],
+            [
+              0.0,
+              85.1,
+              2.6,
+              12.3,
+              30.7,
+              44.0,
+              10.7,
+              0.949
+            ],
+            [
+              0.2,
+              88.5,
+              0.6,
+              11.5,
+              24.1,
+              35.0,
+              13.0,
+              0.933
+            ],
+            [
+              0.5,
+              84.2,
+              "-",
+              15.8,
+              13.5,
+              "-",
+              10.4,
+              0.939
+            ],
+            [
+              1.0,
+              83.5,
+              "-",
+              16.5,
+              13.1,
+              "-",
+              9.6,
+              0.947
+            ],
+            [
+              2.0,
+              87.1,
+              1.7,
+              11.2,
+              21.8,
+              14.7,
+              11.0,
+              0.955
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": [
+              {
+                "page": 3,
+                "text": "The structural characterization of pure and magnesium doped titanium dioxide was investigated by means of X-ray diffraction (XRD), which are shown in the Supplementary Data (Fig. S1). All samples were mainly composed of anatase (JCPDS 84-1286), with a small fraction of brookite (JCPDS 29-1360) and a residual of rutile (JCPDS 73-1765). A phase segregation of \\mathrmMgTiO3 (JCPDS 6-494) has also been observed, clearly considering the threshold detection resolution, at least for the highest loading of magnesium included in this study (2.0 wt% Mg), as it can be seen by the appearance of the peaks corresponding to this crystal structure at 2θ values of 32.9^° and 35.5^°. It is plausible to think that, for lower loading, its detection is out of the experimental resolution of the equipment, or it does not exist yet. In spite of the nano dimensional size of these particles, the main information obtained from XRD spectra is related to the bulk nanoparticle characteristics. The phase content and crystalline size of each titanium dioxide polymorph is shown in Table 1. Details of calculation can be found in the Supplementary"
+              },
+              {
+                "page": 3,
+                "text": "From lattice parameters of the anatase phase, it was revealed the existence of a lattice cell contraction in the bulk of the nanoparticles, mainly in the c-axis, by the incorporation of magnesium [36], while the a and b axes remained nearly constant around 0.378 nm (Table 1). This contraction exhibits a maximum for the lowest doping level and a relaxation of the structure with higher magnesium loading. The magnesium incorporation into the other phases was difficult to discern at these doping levels, since the isomorph MgTi2O5 also exist, with pseudobrookite structure, which can be further decomposed to MgTiO3 and TiO2 [37], hypothesis that is plausible since at 2.0 wt% MgTiO3 is observed."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_paper_195220973259e5c83626d748_73004088",
+      "source_pdf": "paper_195220973259e5c83626d748.73004088.pdf",
+      "title": "CO2 photoreduction on hydroxyl-group-rich mesoporous single crystal TiO2",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_195220973259e5c83626d748_73004088_table_01",
+          "table_label": "Table 1",
+          "page": 3,
+          "caption": "Table 1 Specific surface areas and CO2 adsorption for TiO2 with different calcination time.",
+          "columns": [
+            "Calcined Time(h)",
+            "0",
+            "0.25",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "rows": [
+            [
+              "Surface Areas(m2/g)",
+              9.43,
+              9.15,
+              5.39,
+              5.41,
+              5.52,
+              5.07
+            ],
+            [
+              "CO2abs (umol/g)",
+              67.75,
+              51.61,
+              6.68,
+              8.26,
+              6.67,
+              5.4
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": [
+              {
+                "page": 3,
+                "text": "OH groups have an affinity for lewis-acidic CO2 [30,31], thus, can enhance the CO2 adsorption capacity [12]. Samples without calcination have the highest CO2 adsorption capacity (Table 1). The adsorption capacity decreases with calcination time lengthening. While the calcination time increased up to 2 h, there is a small peak (Table 1). This is due to the increase in the number of Ti^3+ and O vacancies (Fig. 3), which can enhance the adsorption ability of CO2 [10]. If further prolong the calcined time to 4 h, O vacancies are filled by the oxygen in air and disappear (Fig. 3). This leads to the reduction of CO2 adsorption (Table 1). CO2 adsorption capacity is an important factor affecting CH4 production."
+              },
+              {
+                "page": 5,
+                "text": "means more reactive sites, that improves utilization efficiency of photogenerated electrons. The intensity of PL peak (Fig. 6B) for samples calcined 1-4 h does show positive correlation with CO2 adsorption capacity (Table 1) and photocatalytic activity (Fig. 6A). Therefore, CO2 adsorption can affect CH4 production by affecting recombination of photogenerated carriers."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_10_1016_s1872_20671060199_4",
+      "source_pdf": "10.1016@S1872-20671060199-4.pdf",
+      "title": "Wavelength Effect on Photocatalytic Reduction of CO2 by Ag/TiO2 Catalyst",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_10_1016_s1872_20671060199_4_table_01",
+          "table_label": "Table 1",
+          "page": 3,
+          "caption": "Table 1 Characterization data of the prepared samples",
+          "columns": [
+            "Sample",
+            "Ag content (wt.%)",
+            "A\\textBET (m2/g)",
+            "Pore size r\\max (nm)",
+            "Absorption edge (eV)"
+          ],
+          "rows": [
+            [
+              "\\mathrmTiO2",
+              0.0,
+              67.6,
+              1.48,
+              2.98
+            ],
+            [
+              "Ag/ \\mathrmTiO2",
+              5.19,
+              79.7,
+              1.65,
+              2.74
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": [
+              {
+                "page": 3,
+                "text": "The textural properties and absorption edge of the prepared pure TiO2 and Ag-doped titania samples are given in Table 1, together with the actual Ag content. The samples had a relatively high surface area, and the positive effect of silver was evident. XRD analysis confirmed the presence of the anatase structure while Ag was not detected, which indicated that Ag was present as metallic clusters inside the TiO2 powder. The UV-Vis spectra of the catalysts showed an absorption shift to the visible region for the Ag-TiO2 catalysts [34]."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_synthesis_of_mo_doped_graphitic_carbon_nitride_catalysts_and",
+      "source_pdf": "Synthesis_of_Mo-doped_graphitic_carbon_nitride_catalysts_and_their_photocatalytic_activity_in_the_reduction_of_CO2_with_H2O.pdf",
+      "title": "Synthesis of Mo-doped graphitic carbon nitride catalysts and their photocatalytic activity in the reduction of CO2 with H2O",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_synthesis_of_mo_doped_graphitic_carbon_nitride_catalysts_and_table_01",
+          "table_label": "Table 1",
+          "page": 3,
+          "caption": "Table 1 Textural properties and energy band gap ( Eg ) of P-CN, Mo-CN-1, Mo-CN-2, Mo-CN-3, Mo-CN-4 and Mo-CN-5.",
+          "columns": [
+            "Samples",
+            "SBET (m2/g)",
+            "Pore size (nm)",
+            "Pore volume (cm3/g)",
+            "Eg (eV)"
+          ],
+          "rows": [
+            [
+              "P-CN",
+              13.52,
+              3.9,
+              0.288,
+              2.65
+            ],
+            [
+              "Mo-CN-1",
+              28.94,
+              3.93,
+              0.4,
+              2.41
+            ],
+            [
+              "Mo-CN-2",
+              30.08,
+              3.93,
+              0.451,
+              2.33
+            ],
+            [
+              "Mo-CN-3",
+              46.83,
+              3.84,
+              0.528,
+              2.23
+            ],
+            [
+              "Mo-CN-4",
+              88.21,
+              3.62,
+              0.208,
+              1.45
+            ],
+            [
+              "Mo-CN-5",
+              110.94,
+              3.61,
+              0.219,
+              1.4
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": [
+              {
+                "page": 3,
+                "text": "Nitrogen adsorption-desorption isotherms and corresponding pore size distribution curves of above samples are shown in Fig. 2. All the samples show the type IV isotherms with H1 -type hysteresis loop in the relative pressure (P/P0) range of 0.4-0.95, demonstrating their mesoporous characteristics. While the mesoporous features of these catalysts become more significant with increasing the content of doped molybdenum, indicating the presence of Mo element in g-C3N4 is beneficial for the formation of mesopores. These mesopores should originate from the stacking of g-C3N4 sheets [32] since Mo species can strongly interact with the interlayers of g-C3N4 nanosheets through N-bridge linking and increase the space between interlayers in the wake of Mo species doping. The pore size distribution obtained from the analysis of desorption branch of the isotherms is shown in Fig. 2b. It can be seen that all samples have relatively a narrow pore size distribution and their average pore diameters are in the range of 3.6-3.9 nm. The corresponding textural properties are summarized in Table 1. Compared with pure g-C3N4, these Mo-doped g-C3N4 catalysts have a larger BET surface area and this value is increasing with the enhancement of Mo"
+              },
+              {
+                "page": 3,
+                "text": "Fig. 4a shows the UV-vis diffuse reflectance spectra (DRS) of the Mo-doped g-C3N4 samples within the range 200-800 nm. It is apparent that the UV-vis spectra of all the Mo-doped g-C3N4 samples had extended a red shift and significant absorption between 400 and 800 nm, both increased with the increase of Mo doping concentration. The red shift of the adsorption edge of the Mo-doped g-C3N4 catalysts has been attributed to the charge-transfer transition between the molybdenum ion d-electrons and the g-C3N4 conduction or valence band [26]. It has been reported that metal doping could form a dopant energy level within the band gap of g-C3N4, the electronic transitions from the valence band to dopant level or from the dopant level to the conduction band can effectively red shift the band edge absorption threshold [33]. In addition, the optical band gap energy of the Mo-doped g-C3N4 catalysts displayed obvious red shifts with respect to that of pure g-C3N4 (listed in Table 1), which are in good consistent with the DRS result."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_novel_ti_kit_6_material_for_the_photocatalytic_reduction_of",
+      "source_pdf": "Novel_Ti-KIT-6_material_for_the_photocatalytic_reduction_of_carbon_dioxide_to_methane.pdf",
+      "title": "Novel Ti-KIT-6 material for the photocatalytic reduction of carbon dioxide to methane",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_novel_ti_kit_6_material_for_the_photocatalytic_reduction_of_table_01",
+          "table_label": "Table 1",
+          "page": 2,
+          "caption": "Table 1 Physical properties of synthesized Ti-KIT-6 materials.",
+          "columns": [
+            "Samples",
+            "SBET",
+            "PV",
+            "APD"
+          ],
+          "rows": [
+            [
+              "[Ti-KIT-6(Dried) (Si/Ti = 200)] Calcined",
+              865,
+              1.11,
+              6.55
+            ],
+            [
+              "[Ti-KIT-6(Dried) (Si/Ti = 100)] Calcined",
+              767,
+              0.8,
+              6.48
+            ],
+            [
+              "[Ti-KIT-6(Dried) (Si/Ti = 50)] Calcined",
+              730,
+              0.67,
+              6.45
+            ],
+            [
+              "KIT-6 Calcined",
+              772,
+              1.04,
+              6.49
+            ],
+            [
+              "[Ti-KIT-6(Calcined) (Si/Ti = 200)] Calcined",
+              726,
+              0.95,
+              6.45
+            ],
+            [
+              "[Ti-KIT-6(Calcined) (Si/Ti = 100)] Calcined",
+              700,
+              0.85,
+              6.4
+            ],
+            [
+              "[Ti-KIT-6(Calcined) (Si/Ti = 50)] Calcined",
+              684,
+              0.73,
+              6.41
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": [
+              {
+                "page": 3,
+                "text": "The physical and textural properties obtained by means of N2 sorption of the KIT-6 and Ti-KIT-6 materials are shown in Table 1. A noticeable decrease was observed in the surface area and pore volume of KIT-6 after Ti incorporation with different Si/Ti ratios in both dried and calcined samples. The surface area and pore volume of the Ti-KIT-6 (dried) materials were slightly higher than those of Ti-KIT-6 (calcined), which might be due to the easy incorporation of Ti in the dried weak structure of"
+              },
+              {
+                "page": 4,
+                "text": "TEM was performed in order to analyze the mesoporous structure of KIT-6 and dispersion of Ti on the KIT-6 support material. An ordered array of mesopores, which corresponds to the formation of the KIT-6 material, can be observed in Fig. 1(a). Moreover, the centers of two adjacent pores are about 10\\mathrmnm apart and the pore diameter is about 6\\mathrmnm which is in agreement with the APD obtained from the nitrogen sorption analysis shown in Table 1 and also reported in literature [11]. Fig. 1(b,c,d) shows the TEM images of Ti-KIT-6 with Si/Ti ratios of 200,100 and 50, respectively. The Ti-KIT-6(Si/Ti = 200) depicted in Fig. 1(b) shows a good dispersion of Ti and does not show any agglomeration of the Ti particles; it has preserved the structure of the support as can be confirmed by the KIT-6 mesopore channels. A similar trend can be seen in the case of Ti-KIT-6(Si/Ti = 100), which shows a good Ti dispersion and mesopore structure preservation, as can be observed in Fig. 1(c). However, in the case of Ti-KIT-6(Si/Ti = 50), the mesopore structure of KIT-6 is partially collapsed/damaged, as can be seen on the right side of Fig. 1(d); this is due to the higher Ti content than the other two ratios of 200 and 100. This effect can be more clearly observed in Fig. 2, which shows the Ti dispersion and partial collapse of the mesopores of KIT-6 after Ti anchoring (Si/Ti = 50). However, despite the Ti isolated species being dispersed on the KIT-6 support material, some agglomerates were also detected, that is, Ti-O-Ti or \\mathrmTiO2. These agglomerates were not observed"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "solarchem_band_gap_engineered_oxygen_rich_tio2_for_visible_light_induc",
+      "source_pdf": "Band_gap_engineered,_oxygen-rich_TiO2_for_visible_light_induced_photocatalytic_reduction_of_CO2.pdf",
+      "title": "",
+      "num_tables": 1,
+      "tables": [
+        {
+          "table_id": "solarchem_band_gap_engineered_oxygen_rich_tio2_for_visible_light_induc_table_01",
+          "table_label": "Table 1",
+          "page": 2,
+          "caption": "Table 1 Lattice parameters of ATiO2 and O2 -TiO2",
+          "columns": [
+            "Sample",
+            "a (A)",
+            "c (A)",
+            "c/a"
+          ],
+          "rows": [
+            [
+              "ATiO2",
+              3.7748,
+              9.3736,
+              2.4832
+            ],
+            [
+              "O2-TiO2",
+              3.7852,
+              9.3796,
+              2.478
+            ]
+          ],
+          "context": {
+            "section_title": "",
+            "mentions": [
+              {
+                "page": 2,
+                "text": "with an increase of lattice parameter a was observed for oxygen-modified TiO2 (Table 1). The change in lattice parameter can be explained on the basis of oxygen excess defects. The in situ generation of oxygen through the thermal decomposition of the peroxo-titania complex led to the formation of interstitial oxygen. Isolated interstitial O has high formation energy and is therefore unstable. It is proposed that the interstitial O bound with an O on the lattice site, forming a substitutional O2 molecule, (\\mathrmO2)\\mathrmO , which resulted in the slight outward movement of the neighboring Ti atoms and a consequent increase in the lattice parameter (see Fig. S6 in the ESI†).^23"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

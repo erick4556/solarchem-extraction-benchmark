@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solarchem-benchmark"
+version = "0.1.0"
+description = "Reproducible benchmark for table and table-context extraction in SolarChem scientific literature"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+
+dependencies = [
+    "pydantic>=2.6",
+    "pypdfium2>=4.30",
+    "pillow>=10.2",
+    "beautifulsoup4>=4.12",
+]
+
+[project.optional-dependencies]
+# OCR backends used by the automatic ground-truth generator.
+# Installed separately on the GPU server so torch/CUDA are never reinstalled.
+lighton_ocr = [
+    "torch>=2.4",
+    "transformers>=5.0",
+    "accelerate>=0.30",
+]
+# baidu/Unlimited-OCR (DeepSeek-OCR derivative, trust_remote_code).
+# Model card pins transformers==4.57.1. On transformers 5 the adapter
+# shims the removed is_torch_fx_available import. Do not reinstall CUDA torch.
+unlimited_ocr = [
+    "torch>=2.4",
+    "transformers>=4.57.1",
+    "einops>=0.8",
+    "addict>=2.4",
+    "easydict>=1.13",
+]
+dev = [
+    "pytest>=8.0",
+]
+pdfplumber = [
+    "pdfplumber>=0.11",
+]
+camelot = [
+    "camelot-py>=0.11.0",
+    "opencv-python-headless>=4.8",
+]
+pymupdf = [
+    "pymupdf>=1.24",
+]
+native_pdf = [
+    "pdfplumber>=0.11",
+    "camelot-py>=0.11.0",
+    "opencv-python-headless>=4.8",
+    "pymupdf>=1.24",
+]
+docling = [
+    "docling>=2.8",
+]
+tatr = [
+    "gmft>=0.4",
+]
+unstructured = [
+    "unstructured[pdf]>=0.16.0",
+]
+layout = [
+    "docling>=2.8",
+    "gmft>=0.4",
+    "unstructured[pdf]>=0.16.0",
+]
+
+[project.scripts]
+solarchem-gt = "solarchem_benchmark.gt.cli:main"
+solarchem-gt-validate = "solarchem_benchmark.gt.validate:main"
+solarchem-eval-gold = "solarchem_benchmark.eval.cli:main"
+solarchem-extract-tables = "solarchem_benchmark.extractors.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

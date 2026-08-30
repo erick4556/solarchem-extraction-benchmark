@@ -1,0 +1,235 @@
+{
+  "summary": {
+    "gold_documents": 10,
+    "gold_documents_found_in_prediction": 10,
+    "missing_from_prediction": [],
+    "gold_tables": 10,
+    "tables_matched": 10,
+    "exact": {
+      "caption_accuracy": 0.9,
+      "columns_accuracy": 0.7,
+      "mean_cell_accuracy": 0.9709,
+      "section_title_accuracy": 0.6,
+      "mean_mention_recall": 0.05
+    },
+    "soft": {
+      "mean_caption_token_f1": 1.0,
+      "mean_columns_token_f1": 0.9951,
+      "mean_section_title_token_f1": 0.66,
+      "mean_mention_recall_soft": 1.0,
+      "mean_mention_token_f1": 0.3771
+    }
+  },
+  "documents": [
+    {
+      "source_pdf": "Band_gap_engineered,_oxygen-rich_TiO2_for_visible_light_induced_photocatalytic_reduction_of_CO2.pdf",
+      "present_in_prediction": true,
+      "tables": [
+        {
+          "table_id": "solarchem_band_gap_engineered_oxygen_rich_tio2_for_visible_light_induc_table_01",
+          "matched": true,
+          "caption_exact": true,
+          "caption_token_f1": 1.0,
+          "columns_exact": true,
+          "columns_token_f1": 1.0,
+          "cell_accuracy": 1.0,
+          "section_title_exact": true,
+          "section_title_token_f1": 1.0,
+          "mention_recall_exact": 0.0,
+          "mention_recall_soft": 1.0,
+          "mention_mean_token_f1": 0.2576,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "source_pdf": "Novel_Ti-KIT-6_material_for_the_photocatalytic_reduction_of_carbon_dioxide_to_methane.pdf",
+      "present_in_prediction": true,
+      "tables": [
+        {
+          "table_id": "solarchem_novel_ti_kit_6_material_for_the_photocatalytic_reduction_of_table_01",
+          "matched": true,
+          "caption_exact": true,
+          "caption_token_f1": 1.0,
+          "columns_exact": true,
+          "columns_token_f1": 1.0,
+          "cell_accuracy": 1.0,
+          "section_title_exact": false,
+          "section_title_token_f1": 0.6,
+          "mention_recall_exact": 0.0,
+          "mention_recall_soft": 1.0,
+          "mention_mean_token_f1": 0.518,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "source_pdf": "Synthesis_of_Mo-doped_graphitic_carbon_nitride_catalysts_and_their_photocatalytic_activity_in_the_reduction_of_CO2_with_H2O.pdf",
+      "present_in_prediction": true,
+      "tables": [
+        {
+          "table_id": "solarchem_synthesis_of_mo_doped_graphitic_carbon_nitride_catalysts_and_table_01",
+          "matched": true,
+          "caption_exact": true,
+          "caption_token_f1": 1.0,
+          "columns_exact": true,
+          "columns_token_f1": 1.0,
+          "cell_accuracy": 1.0,
+          "section_title_exact": true,
+          "section_title_token_f1": 1.0,
+          "mention_recall_exact": 0.0,
+          "mention_recall_soft": 1.0,
+          "mention_mean_token_f1": 0.3076,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "source_pdf": "10.1016@S1872-20671060199-4.pdf",
+      "present_in_prediction": true,
+      "tables": [
+        {
+          "table_id": "solarchem_10_1016_s1872_20671060199_4_table_01",
+          "matched": true,
+          "caption_exact": true,
+          "caption_token_f1": 1.0,
+          "columns_exact": true,
+          "columns_token_f1": 1.0,
+          "cell_accuracy": 1.0,
+          "section_title_exact": false,
+          "section_title_token_f1": 0.0,
+          "mention_recall_exact": 0.0,
+          "mention_recall_soft": 1.0,
+          "mention_mean_token_f1": 0.4561,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "source_pdf": "paper_195220973259e5c83626d748.73004088.pdf",
+      "present_in_prediction": true,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_195220973259e5c83626d748_73004088_table_01",
+          "matched": true,
+          "caption_exact": true,
+          "caption_token_f1": 1.0,
+          "columns_exact": false,
+          "columns_token_f1": 1.0,
+          "cell_accuracy": 0.8571,
+          "section_title_exact": true,
+          "section_title_token_f1": 1.0,
+          "mention_recall_exact": 0.0,
+          "mention_recall_soft": 1.0,
+          "mention_mean_token_f1": 0.3716,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "source_pdf": "Engineering_the_TiO2_outermost_layers_using_magnesium_for_carbon_dioxide_photoreduction.pdf",
+      "present_in_prediction": true,
+      "tables": [
+        {
+          "table_id": "solarchem_engineering_the_tio2_outermost_layers_using_magnesium_for_ca_table_01",
+          "matched": true,
+          "caption_exact": true,
+          "caption_token_f1": 1.0,
+          "columns_exact": true,
+          "columns_token_f1": 1.0,
+          "cell_accuracy": 1.0,
+          "section_title_exact": false,
+          "section_title_token_f1": 0.0,
+          "mention_recall_exact": 0.0,
+          "mention_recall_soft": 1.0,
+          "mention_mean_token_f1": 0.3581,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "source_pdf": "Photocatalytic_reduction_of_CO2_on_MgOTiO2_nanotube_films.pdf",
+      "present_in_prediction": true,
+      "tables": [
+        {
+          "table_id": "solarchem_photocatalytic_reduction_of_co2_on_mgotio2_nanotube_films_table_01",
+          "matched": true,
+          "caption_exact": true,
+          "caption_token_f1": 1.0,
+          "columns_exact": true,
+          "columns_token_f1": 1.0,
+          "cell_accuracy": 1.0,
+          "section_title_exact": true,
+          "section_title_token_f1": 1.0,
+          "mention_recall_exact": 0.0,
+          "mention_recall_soft": 1.0,
+          "mention_mean_token_f1": 0.1313,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "source_pdf": "Steam_reduction_of_CO2_in_a_photocatalytic_fluidized_bed_reactor.pdf",
+      "present_in_prediction": true,
+      "tables": [
+        {
+          "table_id": "solarchem_steam_reduction_of_co2_in_a_photocatalytic_fluidized_bed_rea_table_01",
+          "matched": true,
+          "caption_exact": true,
+          "caption_token_f1": 1.0,
+          "columns_exact": true,
+          "columns_token_f1": 1.0,
+          "cell_accuracy": 1.0,
+          "section_title_exact": true,
+          "section_title_token_f1": 1.0,
+          "mention_recall_exact": 0.5,
+          "mention_recall_soft": 1.0,
+          "mention_mean_token_f1": 0.6944,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "source_pdf": "Turning_lipophilic_phthalocyaninesTiO2_composites_into_efficient_photocatalysts_for_the_conversion_of_CO2_into_formic_acid_under_UV-vis_light_irradiation.pdf",
+      "present_in_prediction": true,
+      "tables": [
+        {
+          "table_id": "solarchem_turning_lipophilic_phthalocyaninestio2_composites_into_effic_table_01",
+          "matched": true,
+          "caption_exact": false,
+          "caption_token_f1": 1.0,
+          "columns_exact": false,
+          "columns_token_f1": 0.9872,
+          "cell_accuracy": 0.8519,
+          "section_title_exact": true,
+          "section_title_token_f1": 1.0,
+          "mention_recall_exact": 0.0,
+          "mention_recall_soft": 1.0,
+          "mention_mean_token_f1": 0.4508,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "source_pdf": "paper_1659931384588f66383f8519.61495962.pdf",
+      "present_in_prediction": true,
+      "tables": [
+        {
+          "table_id": "solarchem_paper_1659931384588f66383f8519_61495962_table_01",
+          "matched": true,
+          "caption_exact": true,
+          "caption_token_f1": 1.0,
+          "columns_exact": false,
+          "columns_token_f1": 0.9639,
+          "cell_accuracy": 1.0,
+          "section_title_exact": false,
+          "section_title_token_f1": 0.0,
+          "mention_recall_exact": 0.0,
+          "mention_recall_soft": 1.0,
+          "mention_mean_token_f1": 0.2258,
+          "detail": ""
+        }
+      ]
+    }
+  ]
+}

@@ -32,6 +32,7 @@ This repository is `code/` plus `data/` (except the PDF corpus):
     ├── documents/        # source PDF corpus (gitignored; not in the repo)
     ├── ground_truth/     # generated ground truth JSON (per engine)
     ├── predictions/      # tool outputs (not GT)
+    ├── rdf/              # Turtle export of LightOn silver
     └── intermediate/
         └── ocr_cache/
             ├── lighton_ocr/      # raw page transcriptions (LightOn)
@@ -517,3 +518,19 @@ OCR caches are per engine under `data/intermediate/ocr_cache/<engine_id>/`
 On an A100 the SGLang recipe's `--attention-backend fa3` is unavailable
 (FlashAttention-3 needs Hopper); the Transformers adapter used here does not
 require FA3.
+
+## RDF export (silver)
+
+The published graph is the **LightOn silver** corpus, not Gold. Gold was only
+used to choose the OCR engine. Tables become `sc:TableRepresentation`,
+documents `sc:Article`, and in-text citations `sc:TextMention` (ontology:
+`sc:` in `code/src/solarchem_benchmark/rdf/solarchem-alignment.ttl`). Cell
+grids stay in JSON.
+
+```bash
+python scripts/export_rdf.py
+# → data/rdf/silver302.ttl
+# → data/rdf/solarchem-alignment.ttl
+```
+
+`--input` pointing at `data/ground_truth/gold/` is refused.

@@ -74,6 +74,10 @@ solarchem-gt = "solarchem_benchmark.gt.cli:main"
 solarchem-gt-validate = "solarchem_benchmark.gt.validate:main"
 solarchem-eval-gold = "solarchem_benchmark.eval.cli:main"
 solarchem-extract-tables = "solarchem_benchmark.extractors.cli:main"
+solarchem-export-rdf = "solarchem_benchmark.rdf.cli:main"
+
+[tool.setuptools.package-data]
+solarchem_benchmark = ["rdf/*.ttl"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

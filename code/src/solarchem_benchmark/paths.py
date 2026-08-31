@@ -22,6 +22,7 @@ DATA_ROOT_ENV_VAR = "SOLARCHEM_DATA_ROOT"
 _DOCUMENTS_DIR_NAME = "documents"
 _GROUND_TRUTH_DIR_NAME = "ground_truth"
 _PREDICTIONS_DIR_NAME = "predictions"
+_RDF_DIR_NAME = "rdf"
 _OCR_CACHE_DIR_NAME = "intermediate/ocr_cache"
 
 WORKING_SILVER_FILENAME = "ground_truth_lighton_ocr_302.json"
@@ -122,6 +123,11 @@ def default_prediction_path(data_root: Path, tool_id: str) -> Path:
         "_"
     )
     return default_predictions_dir(data_root) / f"{slug or 'tool'}.json"
+
+
+def default_rdf_dir(data_root: Path) -> Path:
+    """Return ``data/rdf/`` for Turtle exports of the silver graph."""
+    return data_root / _RDF_DIR_NAME
 
 
 def default_ocr_cache_dir(data_root: Path, engine_id: str | None = None) -> Path:

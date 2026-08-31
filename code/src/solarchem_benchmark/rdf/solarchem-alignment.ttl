@@ -1,0 +1,288 @@
+# Copied schema (parts 1–3) from Metadata-Extraction/ontologies/rdf/solarchem-alignment.ttl.
+# Paper-specific instances (BiOBr, Ag/TiO2) are omitted: the benchmark emits
+# those from the LightOn silver JSON instead.
+
+@prefix sc:      <https://w3id.org/solarchem/alignment/> .
+@prefix schema:  <https://schema.org/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix dqv:     <http://www.w3.org/ns/dqv#> .
+@prefix qudt:    <http://qudt.org/schema/qudt/> .
+@prefix unit:    <http://qudt.org/vocab/unit/> .
+@prefix csvw:    <http://www.w3.org/ns/csvw#> .
+@prefix iadopt:  <https://w3id.org/iadopt/ont/> .
+@prefix np:      <http://www.nanopub.org/nschema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# =================================================================
+#  PART 1 — ONTOLOGY SCHEMA (classes, properties)
+# =================================================================
+
+# ---- Core classes ----
+
+sc:Article a owl:Class ;
+    rdfs:label "Article" ;
+    rdfs:comment "Scientific article used as source document." .
+
+sc:Experiment a owl:Class ;
+    rdfs:label "Experiment" ;
+    rdfs:comment "Experimental setup or result context described in the article." .
+
+sc:ExperimentalVariable a owl:Class ;
+    rdfs:subClassOf iadopt:Variable ;
+    rdfs:label "Experimental variable" ;
+    rdfs:comment "Measured or reported variable aligned with the I-ADOPT framework (maps to iadopt:Variable)." .
+
+sc:ExperimentalCondition a owl:Class ;
+    rdfs:label "Experimental condition" ;
+    rdfs:comment "Condition under which the experiment is reported (light source, time, etc.)." .
+
+sc:Material a owl:Class ;
+    rdfs:label "Material" ;
+    rdfs:comment "Material or catalyst involved in the experiment." .
+
+# ---- Representation classes ----
+
+sc:Representation a owl:Class ;
+    rdfs:label "Representation" ;
+    rdfs:comment "Generic representation of an experimental result." .
+
+sc:TableRepresentation a owl:Class ;
+    rdfs:subClassOf sc:Representation ;
+    rdfs:label "Table representation" ;
+    rdfs:comment "Representation of results extracted from a table." .
+
+sc:FigureRepresentation a owl:Class ;
+    rdfs:subClassOf sc:Representation ;
+    rdfs:label "Figure representation" ;
+    rdfs:comment "Representation of results extracted from a figure or graph." .
+
+sc:TextMention a owl:Class ;
+    rdfs:label "Text mention" ;
+    rdfs:comment "Text span within an article that mentions or interprets an experimental result." .
+
+# ---- Figure complexity ----
+
+sc:FigureComplexity a owl:Class ;
+    rdfs:label "Figure complexity level" ;
+    rdfs:comment "Classification of difficulty for figure/graph extraction." .
+
+sc:Easy   a sc:FigureComplexity ; schema:name "Easy"   ; rdfs:comment "Simple chart with one series, clear axes." .
+sc:Medium a sc:FigureComplexity ; schema:name "Medium" ; rdfs:comment "Chart with legend, multiple colours, or multiple series." .
+sc:Hard   a sc:FigureComplexity ; schema:name "Hard"   ; rdfs:comment "Insets, 3D charts, sub-figures mixing images and graphs, formulas, scale factors." .
+
+sc:hasComplexity a owl:ObjectProperty ;
+    rdfs:domain sc:FigureRepresentation ;
+    rdfs:range sc:FigureComplexity ;
+    rdfs:label "has complexity" .
+
+sc:hasFigureType a owl:DatatypeProperty ;
+    rdfs:domain sc:FigureRepresentation ;
+    rdfs:range xsd:string ;
+    rdfs:label "has figure type" ;
+    rdfs:comment "E.g. line-chart, bar-chart, XRD, UV-Vis, SEM, TEM, 3D-chart, mixed." .
+
+sc:hasSubFigure a owl:ObjectProperty ;
+    rdfs:domain sc:FigureRepresentation ;
+    rdfs:range sc:FigureRepresentation ;
+    rdfs:label "has sub-figure" ;
+    rdfs:comment "Indicates that this figure contains sub-panels (a), (b), etc." .
+
+# ---- Result classes ----
+
+sc:Result a owl:Class ;
+    rdfs:label "Result" ;
+    rdfs:comment "Generic extracted result associated with a variable and a material." .
+
+sc:TabularResult a owl:Class ;
+    rdfs:subClassOf sc:Result ;
+    rdfs:label "Tabular result" .
+
+sc:GraphicalResult a owl:Class ;
+    rdfs:subClassOf sc:Result ;
+    rdfs:label "Graphical result" .
+
+# ---- Assertion and alignment ----
+
+sc:ScientificAssertion a owl:Class ;
+    rdfs:label "Scientific assertion" ;
+    rdfs:comment "Statement expressed in text about the experimental results." .
+
+sc:MultimodalAlignment a owl:Class ;
+    rdfs:label "Multimodal alignment" ;
+    rdfs:comment "Alignment between tabular, graphical and textual representations of the same result." .
+
+sc:AlignmentStatus a owl:Class ;
+    rdfs:label "Alignment status" .
+
+# ---- Properties ----
+
+sc:reportedIn a owl:ObjectProperty ;
+    rdfs:domain sc:Experiment ;
+    rdfs:range sc:Article .
+
+sc:hasVariable a owl:ObjectProperty ;
+    rdfs:domain sc:Experiment ;
+    rdfs:range sc:ExperimentalVariable .
+
+sc:hasCondition a owl:ObjectProperty ;
+    rdfs:domain sc:Experiment ;
+    rdfs:range sc:ExperimentalCondition .
+
+sc:hasExpectedUnit a owl:ObjectProperty ;
+    rdfs:domain sc:ExperimentalVariable ;
+    rdfs:range qudt:Unit .
+
+sc:hasAlternativeLabel a owl:DatatypeProperty ;
+    rdfs:domain sc:ExperimentalVariable ;
+    rdfs:range xsd:string ;
+    rdfs:label "has alternative label" .
+
+sc:belongsToArticle a owl:ObjectProperty ;
+    rdfs:domain sc:Representation ;
+    rdfs:range sc:Article .
+
+sc:forMaterial a owl:ObjectProperty ;
+    rdfs:domain sc:Result ;
+    rdfs:range sc:Material .
+
+sc:forVariable a owl:ObjectProperty ;
+    rdfs:domain sc:Result ;
+    rdfs:range sc:ExperimentalVariable .
+
+sc:hasObservedUnit a owl:ObjectProperty ;
+    rdfs:domain sc:Result ;
+    rdfs:range qudt:Unit .
+
+sc:numericValue a owl:DatatypeProperty ;
+    rdfs:domain sc:Result ;
+    rdfs:range xsd:decimal .
+
+sc:refersToMaterial a owl:ObjectProperty ;
+    rdfs:domain sc:ScientificAssertion ;
+    rdfs:range sc:Material .
+
+sc:refersToVariable a owl:ObjectProperty ;
+    rdfs:domain sc:ScientificAssertion ;
+    rdfs:range sc:ExperimentalVariable .
+
+sc:aligns a owl:ObjectProperty ;
+    rdfs:domain sc:MultimodalAlignment .
+
+sc:hasAlignmentStatus a owl:ObjectProperty ;
+    rdfs:domain sc:MultimodalAlignment ;
+    rdfs:range sc:AlignmentStatus .
+
+sc:hasQualityMeasurement a owl:ObjectProperty ;
+    rdfs:domain sc:MultimodalAlignment ;
+    rdfs:range dqv:QualityMeasurement .
+
+
+# =================================================================
+#  PART 2 — VOCABULARY INSTANCES (units, metrics, statuses)
+# =================================================================
+
+# ---- QUDT units ----
+
+sc:MicroMolPerGram a qudt:Unit ;
+    schema:name "micromole per gram" ;
+    qudt:symbol "umol/g" .
+
+sc:MicroMolPerGramHour a qudt:Unit ;
+    schema:name "micromole per gram per hour" ;
+    qudt:symbol "umol g-1 h-1" .
+
+sc:PPMPerHour a qudt:Unit ;
+    schema:name "parts per million per hour" ;
+    qudt:symbol "ppm/h" .
+
+sc:Nanometre a qudt:Unit ;
+    schema:name "nanometre" ;
+    qudt:symbol "nm" .
+
+sc:ElectronVolt a qudt:Unit ;
+    schema:name "electron volt" ;
+    qudt:symbol "eV" .
+
+# ---- DQV metrics ----
+
+sc:numericConsistencyMetric a dqv:Metric ;
+    schema:name "Numeric consistency between table and figure" ;
+    rdfs:comment "Score 1.0 when the numeric value in the table matches the figure within tolerance; 0.0 otherwise." .
+
+sc:unitConsistencyMetric a dqv:Metric ;
+    schema:name "Unit and scale consistency" ;
+    rdfs:comment "Checks whether the variable units in the table and the figure axis label are compatible." .
+
+# ---- Alignment statuses ----
+
+sc:consistent a sc:AlignmentStatus ;
+    schema:name "consistent" .
+
+sc:inconsistent a sc:AlignmentStatus ;
+    schema:name "inconsistent" .
+
+sc:approximatelyConsistent a sc:AlignmentStatus ;
+    schema:name "approximately consistent" ;
+    rdfs:comment "Values match within an acceptable margin of error." .
+
+
+# =================================================================
+#  PART 3 — I-ADOPT MODELLING
+# =================================================================
+# I-ADOPT decomposes an observable variable into:
+#   Variable  hasProperty         -> Property
+#   Variable  hasObjectOfInterest -> ObjectOfInterest
+#   Variable  hasMatrix           -> Matrix    (optional)
+#   Variable  hasConstraint       -> Constraint (optional)
+
+sc:ch4Production a sc:ExperimentalVariable, iadopt:Variable ;
+    schema:name "CH4 production" ;
+    sc:hasAlternativeLabel "Methane evolution"^^xsd:string ;
+    sc:hasAlternativeLabel "CH4 yield"^^xsd:string ;
+    sc:hasExpectedUnit sc:MicroMolPerGram ;
+    iadopt:hasProperty         sc:prop_productionRate ;
+    iadopt:hasObjectOfInterest sc:ooi_CH4 .
+
+sc:prop_productionRate a iadopt:Property ;
+    schema:name "production rate" .
+
+sc:ooi_CH4 a iadopt:ObjectOfInterest ;
+    schema:name "methane (CH4)" .
+
+sc:h2Production a sc:ExperimentalVariable, iadopt:Variable ;
+    schema:name "H2 production" ;
+    sc:hasAlternativeLabel "Hydrogen evolution rate"^^xsd:string ;
+    sc:hasExpectedUnit sc:MicroMolPerGram ;
+    iadopt:hasProperty         sc:prop_productionRate ;
+    iadopt:hasObjectOfInterest sc:ooi_H2 .
+
+sc:ooi_H2 a iadopt:ObjectOfInterest ;
+    schema:name "hydrogen (H2)" .
+
+sc:bandGap a sc:ExperimentalVariable, iadopt:Variable ;
+    schema:name "Band gap" ;
+    sc:hasAlternativeLabel "Eg"^^xsd:string ;
+    sc:hasExpectedUnit sc:ElectronVolt ;
+    iadopt:hasProperty         sc:prop_energy ;
+    iadopt:hasObjectOfInterest sc:ooi_semiconductor .
+
+sc:prop_energy a iadopt:Property ;
+    schema:name "energy" .
+
+sc:ooi_semiconductor a iadopt:ObjectOfInterest ;
+    schema:name "semiconductor material" .
+
+sc:crystalliteSize a sc:ExperimentalVariable, iadopt:Variable ;
+    schema:name "TiO2 crystallite size (anatase)" ;
+    sc:hasExpectedUnit sc:Nanometre ;
+    iadopt:hasProperty         sc:prop_size ;
+    iadopt:hasObjectOfInterest sc:ooi_crystallite .
+
+sc:prop_size a iadopt:Property ;
+    schema:name "size" .
+
+sc:ooi_crystallite a iadopt:ObjectOfInterest ;
+    schema:name "TiO2 crystallite" .

@@ -18,3 +18,5 @@ venv/
 # PDF corpus — keep local / on the GPU server (copyright, ~4 GB)
 data/documents/*
 !data/documents/.gitkeep
+data/analysis/**/*.pdf
+data

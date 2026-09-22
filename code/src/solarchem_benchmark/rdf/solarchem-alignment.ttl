@@ -1,7 +1,3 @@
-# Copied schema (parts 1–3) from Metadata-Extraction/ontologies/rdf/solarchem-alignment.ttl.
-# Paper-specific instances (BiOBr, Ag/TiO2) are omitted: the benchmark emits
-# those from the LightOn silver JSON instead.
-
 @prefix sc:      <https://w3id.org/solarchem/alignment/> .
 @prefix schema:  <https://schema.org/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -16,9 +12,7 @@
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-# =================================================================
 #  PART 1 — ONTOLOGY SCHEMA (classes, properties)
-# =================================================================
 
 # ---- Core classes ----
 
@@ -180,9 +174,7 @@ sc:hasQualityMeasurement a owl:ObjectProperty ;
     rdfs:range dqv:QualityMeasurement .
 
 
-# =================================================================
 #  PART 2 — VOCABULARY INSTANCES (units, metrics, statuses)
-# =================================================================
 
 # ---- QUDT units ----
 
@@ -229,9 +221,7 @@ sc:approximatelyConsistent a sc:AlignmentStatus ;
     rdfs:comment "Values match within an acceptable margin of error." .
 
 
-# =================================================================
 #  PART 3 — I-ADOPT MODELLING
-# =================================================================
 # I-ADOPT decomposes an observable variable into:
 #   Variable  hasProperty         -> Property
 #   Variable  hasObjectOfInterest -> ObjectOfInterest

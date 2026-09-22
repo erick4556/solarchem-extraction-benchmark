@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "table-context-extract"
+version = "0.1.0"
+description = "Extract tables and in-text table mentions from scientific PDFs with LightOnOCR-2"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "pydantic>=2.6",
+    "pypdfium2>=4.30",
+    "pillow>=10.2",
+    "beautifulsoup4>=4.12",
+]
+
+[project.optional-dependencies]
+lighton_ocr = [
+    "torch>=2.4",
+    "transformers>=5.0",
+    "accelerate>=0.30",
+]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+extract-tables = "table_context_extract.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

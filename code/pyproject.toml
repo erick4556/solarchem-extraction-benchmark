@@ -63,6 +63,11 @@ tatr = [
 unstructured = [
     "unstructured[pdf]>=0.16.0",
 ]
+# Claim-to-table linking (convaiinnovations/laya). Installed on the GPU
+# server with --no-deps for the same reason as the OCR extras.
+laya = [
+    "laya>=0.3.20",
+]
 layout = [
     "docling>=2.8",
     "gmft>=0.4",
@@ -75,6 +80,7 @@ solarchem-gt-validate = "solarchem_benchmark.gt.validate:main"
 solarchem-eval-gold = "solarchem_benchmark.eval.cli:main"
 solarchem-extract-tables = "solarchem_benchmark.extractors.cli:main"
 solarchem-export-rdf = "solarchem_benchmark.rdf.cli:main"
+solarchem-link-claims = "solarchem_benchmark.claims.cli:main"
 
 [tool.setuptools.package-data]
 solarchem_benchmark = ["rdf/*.ttl"]

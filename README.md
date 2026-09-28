@@ -534,3 +534,84 @@ python scripts/export_rdf.py
 ```
 
 `--input` pointing at `data/ground_truth/gold/` is refused.
+
+## Claim-to-table linking with Laya
+
+Links text claims to the tables they talk about, using
+[Laya](https://huggingface.co/convaiinnovations/laya) (Apache-2.0, open-weights
+alternative to TypeSafe Jev). Laya does not generate text: it answers typed
+`choice` questions in one forward pass and returns a probability per option,
+so there is nothing to parse and nothing to hallucinate.
+
+Inputs are the 10 KG-pilot PDFs (`data/analysis/kg_pilot_10/papers/`), their
+tables from the LightOn silver (matched by file name), and the page text from
+the LightOn OCR cache (`data/intermediate/ocr_cache/lighton_ocr/`; falls back
+to the PDF text layer when absent).
+
+Per paper:
+
+1. **Candidates**: body sentences with a stated number, a result verb or a
+   `Table N` reference. Front matter, captions, references and table bodies
+   leaked into the text layer are dropped.
+2. **Claim** (Laya): is it a finding of this study; type = performance,
+   property, condition, explanation, other.
+3. **Which table** (Laya): one question per sentence whose options are the
+   paper's table captions plus `none`, so probabilities compare across tables.
+4. **Where in the table** (Laya), for every table: relation (repeats a value,
+   trend, contradicts, explains), and which **row** and **column**. The
+   row/column options are that table's own labels.
+   `Table N` in the sentence is masked in both, so the model links on content.
+5. **Numeric check** (rules): stated numbers vs cells, `exact`, `rounded`
+   (42.98 vs 43) or `approx` (1 %), with the unit required to appear in the
+   column, row label or caption. Gives `consistent` / `approximatelyConsistent`.
+6. **Decision**: linked if the sentence names the table, or Laya picks it
+   (argmax over tables and `none`), or a number matches the table and Laya
+   ranks it first or second. Model-based links require the sentence to be a
+   claim (role `result`).
+
+This trial does not call `solarchem-eval-gold` and does not write
+`data/predictions/<tool>.json`. Table *extraction* (detection, caption,
+columns, cells) stays in that evaluation. Here, table reading is a different
+question: the silver cell is hidden and Laya chooses its number from the row
+and column labels.
+
+Install on the GPU server (existing CUDA torch and transformers are kept):
+
+```bash
+cd code
+pip install -U laya          # needs torch>=2.0, transformers>=4.48
+export USE_TF=0              # avoids a TF/abseil deadlock at model build
+```
+
+On an H100 MIG slice the cuDNN attention kernel has no execution plan. Loading
+Laya disables that kernel and keeps flash and memory-efficient attention.
+
+Three commands, same output directory. Flags without a command still run `link`.
+
+```bash
+# 1. claims and which table / row / column they point at
+python scripts/link_claims_laya.py link --match Indium-doped --device cuda
+
+# 2. hidden silver cells: which number belongs in this row and column
+python scripts/link_claims_laya.py read-tables --match Indium-doped --device cuda
+
+# 3. one scores.json: link self-check, cell accuracy, claim precision/recall
+python scripts/link_claims_laya.py score --checkpoint english
+```
+
+`--checkpoint` is `english` (default: ModernBERT-large, 512 tokens, so long
+tables are truncated in the row/column stage), `multilingual` (mmBERT,
+2048-token budget) or `typed-decisions`. `--model-path` loads a fine-tuned
+checkpoint.
+
+The three commands write one file, `data/predictions/claims_laya/<model>.json`.
+`link` stores each sentence and its table. `read-tables` adds the hidden-cell
+answers to that same file. `score` adds a `scores` block: masked-table
+self-check, cell accuracy against `random_accuracy`, and claim
+precision/recall when `data/analysis/kg_pilot_10/claims_labels/*.csv` is
+present. This command does not write RDF.
+
+The base checkpoints are weak zero-shot (see the model card's "Honest limits"):
+`p_link` is high for most pairs, which is why the decision uses the ranking,
+not an absolute cut. The label CSV is the training set for Laya's fine-tuning
+notebook and for per-question temperature calibration.

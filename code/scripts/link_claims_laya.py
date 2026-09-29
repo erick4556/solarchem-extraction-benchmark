@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """Laya trial. One JSON: link claims, read hidden cells, score. Kept apart from extractor eval.
 
-    python scripts/link_claims_laya.py link --pdf paper.pdf --device cuda
-    python scripts/link_claims_laya.py read-tables --pdf paper.pdf --device cuda
-    python scripts/link_claims_laya.py score
+    python scripts/link_claims_laya.py run --pdf paper.pdf --device cuda
 """
 
 from __future__ import annotations

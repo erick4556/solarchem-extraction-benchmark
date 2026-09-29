@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from solarchem_benchmark.claims.cli import main
+from solarchem_benchmark.claims.cli import _run_file, main
 from solarchem_benchmark.claims.link import (
     LinkConfig,
     build_table_view,
@@ -204,6 +204,15 @@ def test_document_sentences_from_ocr_markdown() -> None:
     assert sentences[0].section == "3. Results and discussion"
 
 
+def test_laya_results_filename(tmp_path: Path) -> None:
+    from argparse import Namespace
+
+    args = Namespace(output_dir=None)
+    assert _run_file(args, tmp_path, "laya-english").name == "laya-results.json"
+    assert _run_file(Namespace(output_dir=tmp_path / "out"), tmp_path, "laya-multilingual").name == "laya-results.json"
+    assert _run_file(Namespace(output_dir=tmp_path / "out"), tmp_path, "uniform").name == "uniform.json"
+
+
 def test_cli_dry_run_writes_outputs(tmp_path: Path) -> None:
     data = tmp_path / "data"
     papers = data / "analysis" / "kg_pilot_10" / "papers"
@@ -342,3 +351,10 @@ def test_cli_read_tables_and_score(tmp_path: Path) -> None:
     assert run["scores"]["claims"]["precision"] == 1.0
     assert run["scores"]["link"]["evaluable_sentences"] == 1
     assert list(out.iterdir()) == [out / "uniform.json"]
+
+    out_run = tmp_path / "out-run"
+    assert main(["run", "--data-root", str(data), "--dry-run", "--output-dir", str(out_run)]) == 0
+    combined = json.loads((out_run / "uniform.json").read_text(encoding="utf-8"))
+    assert combined["documents"][0]["table_reading"]["cells"] > 0
+    assert combined["scores"]["claims"]["labeled"] == 1
+    assert combined["scores"]["link"]["evaluable_sentences"] == 1

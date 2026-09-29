@@ -586,25 +586,27 @@ export USE_TF=0              # avoids a TF/abseil deadlock at model build
 On an H100 MIG slice the cuDNN attention kernel has no execution plan. Loading
 Laya disables that kernel and keeps flash and memory-efficient attention.
 
-Three commands, same output directory. Flags without a command still run `link`.
+`run` does the three stages. Flags without a command still run `link` only.
 
 ```bash
-# 1. claims and which table / row / column they point at
-python scripts/link_claims_laya.py link --match Indium-doped --device cuda
-
-# 2. hidden silver cells: which number belongs in this row and column
-python scripts/link_claims_laya.py read-tables --match Indium-doped --device cuda
-
-# 3. one scores.json: link self-check, cell accuracy, claim precision/recall
-python scripts/link_claims_laya.py score --checkpoint english
+python scripts/link_claims_laya.py run --match Indium-doped --device cuda
 ```
 
-`--checkpoint` is `english` (default: ModernBERT-large, 512 tokens, so long
-tables are truncated in the row/column stage), `multilingual` (mmBERT,
-2048-token budget) or `typed-decisions`. `--model-path` loads a fine-tuned
-checkpoint.
+The same file can be built one stage at a time:
 
-The three commands write one file, `data/predictions/claims_laya/<model>.json`.
+```bash
+python scripts/link_claims_laya.py link --match Indium-doped --device cuda
+python scripts/link_claims_laya.py read-tables --match Indium-doped --device cuda
+python scripts/link_claims_laya.py score
+```
+
+The default weights are ModernBERT-large (512 tokens, so long tables are
+truncated in the row/column stage). `--checkpoint multilingual` uses mmBERT
+with a 2048-token budget, and `--checkpoint typed-decisions` is the other set.
+`--model-path` loads a fine-tuned checkpoint. The JSON records which weights
+were used.
+
+The three commands write one file, `data/predictions/claims_laya/laya-results.json`.
 `link` stores each sentence and its table. `read-tables` adds the hidden-cell
 answers to that same file. `score` adds a `scores` block: masked-table
 self-check, cell accuracy against `random_accuracy`, and claim

@@ -1,12 +1,11 @@
 """CLI for the Laya claims trial.
 
-Three commands, one JSON file, no call into the extractor evaluation::
+One command writes the whole run into a single JSON file::
 
-    solarchem-link-claims link --pdf paper.pdf --device cuda
-    solarchem-link-claims read-tables --pdf paper.pdf --device cuda
-    solarchem-link-claims score
+    solarchem-link-claims run --pdf paper.pdf --device cuda
 
-Invoking the script with the old flags and no command still runs ``link``.
+``link``, ``read-tables`` and ``score`` still run one stage each.
+Invoking the script with flags and no command still runs ``link``.
 """
 
 from __future__ import annotations
@@ -36,7 +35,7 @@ logger = logging.getLogger("solarchem_benchmark.claims")
 
 PILOT_PAPERS = Path("analysis/kg_pilot_10/papers")
 LABELS_DIR = Path("analysis/kg_pilot_10/claims_labels")
-COMMANDS = {"link", "read-tables", "score"}
+COMMANDS = {"run", "link", "read-tables", "score"}
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -49,15 +48,11 @@ def build_parser() -> argparse.ArgumentParser:
     )
     sub = parser.add_subparsers(dest="command", required=True)
 
+    run = sub.add_parser("run", help="Link claims, read hidden cells, and score, in one step.")
+    _add_run_args(run)
+
     link = sub.add_parser("link", help="Classify claims and link them to silver tables.")
-    _add_shared(link)
-    _add_model(link)
-    _add_papers(link)
-    link.add_argument("--claim-threshold", type=float, default=0.5)
-    link.add_argument("--link-threshold", type=float, default=0.0)
-    link.add_argument("--no-mask-references", action="store_true")
-    link.add_argument("--max-candidates", type=int, default=0)
-    link.add_argument("--only-referenced", action="store_true")
+    _add_run_args(link)
 
     reading = sub.add_parser(
         "read-tables",
@@ -69,8 +64,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     score = sub.add_parser("score", help="Add the scores block to the run file.")
     score.add_argument("--data-root", type=Path, help="Root of the data directory.")
-    score.add_argument("--checkpoint", default="english", choices=sorted(CHECKPOINTS))
-    score.add_argument("--output-dir", type=Path, help="Run file or its directory (default: claims_laya/laya-<checkpoint>.json).")
+    score.add_argument("--checkpoint", default="english", choices=sorted(CHECKPOINTS), help=argparse.SUPPRESS)
+    score.add_argument("--output-dir", type=Path, help="Run file or its directory (default: claims_laya/laya-results.json).")
     score.add_argument(
         "--labels",
         type=Path,
@@ -82,7 +77,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def _add_shared(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--data-root", type=Path, help="Root of the data directory.")
-    parser.add_argument("--output-dir", type=Path, help="Directory or JSON path. Default: <data>/predictions/claims_laya/<model>.json.")
+    parser.add_argument("--output-dir", type=Path, help="Directory or JSON path. Default: <data>/predictions/claims_laya/laya-results.json.")
     parser.add_argument("--log-level", default="INFO", choices=["DEBUG", "INFO", "WARNING", "ERROR"])
 
 
@@ -95,6 +90,22 @@ def _add_model(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--fast", action="store_true")
     parser.add_argument("--dry-run", action="store_true", help="Uniform probabilities, no Laya.")
+
+
+def _add_run_args(parser: argparse.ArgumentParser) -> None:
+    _add_shared(parser)
+    _add_model(parser)
+    _add_papers(parser)
+    parser.add_argument("--claim-threshold", type=float, default=0.5)
+    parser.add_argument("--link-threshold", type=float, default=0.0)
+    parser.add_argument("--no-mask-references", action="store_true")
+    parser.add_argument("--max-candidates", type=int, default=0)
+    parser.add_argument("--only-referenced", action="store_true")
+    parser.add_argument(
+        "--labels",
+        type=Path,
+        help="Label CSV or directory (default: <data>/analysis/kg_pilot_10/claims_labels).",
+    )
 
 
 def _add_papers(parser: argparse.ArgumentParser) -> None:
@@ -143,19 +154,25 @@ def _build_model(args: argparse.Namespace):
     )
 
 
-def _safe_name(model_name: str) -> str:
-    return model_name.replace(":", "_").replace("/", "_")
+RESULTS_FILE = "laya-results.json"
+
+
+def _results_filename(model_name: str) -> str:
+    """One results file. The dry-run stand-in keeps its own name."""
+    if model_name == UniformModel.name:
+        return f"{model_name}.json"
+    return RESULTS_FILE
 
 
 def _run_file(args: argparse.Namespace, data_root: Path, model_name: str) -> Path:
-    """One JSON for the whole run. A directory argument gets ``<model>.json`` inside it."""
-    safe = _safe_name(model_name)
+    """One JSON for the whole run. A directory argument gets the results file inside it."""
+    filename = _results_filename(model_name)
     if args.output_dir:
         path = args.output_dir.expanduser().resolve()
         if path.suffix == ".json":
             return path
-        return path / f"{safe}.json"
-    return default_predictions_dir(data_root) / "claims_laya" / f"{safe}.json"
+        return path / filename
+    return default_predictions_dir(data_root) / "claims_laya" / filename
 
 
 def _load_run(path: Path) -> dict:
@@ -309,12 +326,12 @@ def _score_run_file(args: argparse.Namespace, data_root: Path) -> Path | None:
             return path if path.is_file() else None
         if not path.is_dir():
             return None
-        preferred = path / f"laya-{args.checkpoint}.json"
+        preferred = path / RESULTS_FILE
         if preferred.is_file():
             return preferred
         found = sorted(path.glob("*.json"))
         return found[0] if len(found) == 1 else None
-    path = default_predictions_dir(data_root) / "claims_laya" / f"laya-{args.checkpoint}.json"
+    path = default_predictions_dir(data_root) / "claims_laya" / RESULTS_FILE
     return path if path.is_file() else None
 
 
@@ -350,12 +367,25 @@ def _cmd_score(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_run(args: argparse.Namespace) -> int:
+    """Link, then read cells, then score, into the same JSON file."""
+    data_root = resolve_data_root(args.data_root)
+    args.output_dir = _run_file(args, data_root, _build_model(args).name)
+    for step in (_cmd_link, _cmd_read, _cmd_score):
+        code = step(args)
+        if code:
+            return code
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     argv = list(sys.argv[1:] if argv is None else argv)
     if not argv or argv[0] not in COMMANDS | {"-h", "--help"}:
         argv = ["link", *argv]
     args = build_parser().parse_args(argv)
     logging.basicConfig(level=getattr(logging, args.log_level), format="%(levelname)-7s %(message)s")
+    if args.command == "run":
+        return _cmd_run(args)
     if args.command == "read-tables":
         return _cmd_read(args)
     if args.command == "score":

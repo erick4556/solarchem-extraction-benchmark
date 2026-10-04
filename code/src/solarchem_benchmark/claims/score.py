@@ -17,6 +17,10 @@ from typing import Any
 from solarchem_benchmark.claims.text import canonical_table_number
 
 GOLD_FIELDS = ("gold_is_claim", "gold_role", "gold_type", "gold_table", "gold_status")
+# Kept with the row so a person can read the key, and so a changed sentence
+# split cannot be graded as if it were still the labeled sentence. ``gold_source``
+# records a table, a figure, the literature or a method. Laya does not predict it.
+LABEL_CONTEXT = ("text", "gold_source")
 _YES = {"yes", "y", "true", "1", "si", "sí"}
 _NO = {"no", "n", "false", "0"}
 _SKIP_JSON = {"summary.json", "table_reading.json", "scores.json"}
@@ -74,11 +78,15 @@ def load_labels(paths: list[Path]) -> dict[tuple[str, str], dict[str, str]]:
                     if not document_id or not sentence_id:
                         continue
                     current = labels.setdefault((document_id, sentence_id), {})
-                    for field in GOLD_FIELDS:
+                    for field in (*GOLD_FIELDS, *LABEL_CONTEXT):
                         value = (row.get(field) or "").strip()
                         if value:
                             current[field] = value
     return labels
+
+
+def _norm_text(value: str | None) -> str:
+    return " ".join((value or "").split())
 
 
 def _as_bool(value: str | None) -> bool | None:
@@ -133,18 +141,29 @@ def score_claims(
 ) -> dict[str, Any]:
     """Precision/recall of the claim bit, and accuracy of role, type, table and status."""
     records: dict[tuple[str, str], dict[str, Any]] = {}
+    by_text: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for document in documents:
         for record in document.get("sentences") or []:
             records[(document["document_id"], record["sentence_id"])] = record
+            by_text.setdefault((document["document_id"], _norm_text(record.get("text"))), []).append(record)
 
     tp = fp = fn = 0
     labeled = role_hit = role_n = type_hit = type_n = 0
     table_hit = table_n = status_hit = status_n = 0
-    missing = 0
+    missing = text_mismatches = recovered_by_text = 0
     for key, gold in labels.items():
         record = records.get(key)
+        gold_text = _norm_text(gold.get("text"))
+        if record is None and gold_text:
+            hits = by_text.get((key[0], gold_text), [])
+            if len(hits) == 1:
+                record = hits[0]
+                recovered_by_text += 1
         if record is None:
             missing += 1
+            continue
+        if gold_text and _norm_text(record.get("text")) != gold_text:
+            text_mismatches += 1
             continue
         claim = record.get("claim") or {}
         is_claim = _as_bool(gold.get("gold_is_claim"))
@@ -187,6 +206,8 @@ def score_claims(
     return {
         "labeled": labeled,
         "missing_sentences": missing,
+        "text_mismatches": text_mismatches,
+        "recovered_by_text": recovered_by_text,
         **_prf(tp, fp, fn),
         "role_labeled": role_n,
         "role_accuracy": accuracy(role_hit, role_n),

@@ -281,6 +281,49 @@ def test_score_claims_precision_and_table() -> None:
     assert scores["role_accuracy"] == 0.5
     assert scores["table_accuracy"] == 0.5
     assert scores["status_accuracy"] == 1.0
+    assert scores["text_mismatches"] == 0
+    assert scores["recovered_by_text"] == 0
+
+
+def test_score_skips_a_row_whose_text_no_longer_matches() -> None:
+    document = {
+        "document_id": "solarchem_demo",
+        "sentences": [
+            {
+                "sentence_id": "s1",
+                "text": "The yield of CH4 reached 244.",
+                "p_no_table": 0.2,
+                "claim": {"is_claim": True, "role": "result", "type": "performance"},
+                "links": [{"table_label": "Table 2", "p_link": 0.7, "status": "consistent"}],
+            },
+            {
+                "sentence_id": "s9",
+                "text": "The BET surface area was 84 m2/g.",
+                "p_no_table": 0.4,
+                "claim": {"is_claim": True, "role": "result", "type": "property"},
+                "links": [{"table_label": "Table 2", "p_link": 0.6, "status": "consistent"}],
+            },
+        ],
+    }
+    labels = {
+        ("solarchem_demo", "s1"): {
+            "gold_is_claim": "yes",
+            "gold_role": "result",
+            "text": "A different sentence now sits at this id.",
+        },
+        ("solarchem_demo", "moved"): {
+            "gold_is_claim": "yes",
+            "gold_role": "result",
+            "gold_table": "Table 2",
+            "text": "The BET surface area was 84 m2/g.",
+        },
+    }
+    scores = score_claims([document], labels)
+    assert scores["text_mismatches"] == 1
+    assert scores["recovered_by_text"] == 1
+    assert scores["labeled"] == 1
+    assert scores["missing_sentences"] == 0
+    assert scores["table_accuracy"] == 1.0
 
 
 def test_cli_link_and_score(tmp_path: Path) -> None:

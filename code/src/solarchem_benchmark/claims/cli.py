@@ -311,7 +311,10 @@ def _cmd_score(args: argparse.Namespace) -> int:
     run["scores"] = scores
     _write_run(run_path, run)
     logger.info("Link: %s", scores["link"])
-    logger.info("Claims: %s", {k: scores["claims"][k] for k in ("labeled", "precision", "recall", "f1", "table_accuracy")})
+    logger.info(
+        "Claims: %s",
+        {k: scores["claims"][k] for k in ("labeled", "precision", "recall", "f1", "table_accuracy", "text_mismatches")},
+    )
     logger.info("Output: %s", run_path)
     return 0
 

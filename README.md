@@ -606,8 +606,11 @@ were used.
 Both commands write one file, `data/predictions/claims_laya/laya-results.json`.
 `link` stores each sentence and its table. `score` adds a `scores` block:
 the masked-table self-check, and claim precision/recall when
-`data/analysis/kg_pilot_10/claims_labels/*.csv` is present. This command
-does not write RDF.
+`data/analysis/kg_pilot_10/claims_labels/*.csv` is present. Each label row
+stores the sentence text. Scoring uses that text to confirm the row still
+refers to the same sentence, and ignores the row when the text no longer
+matches. `gold_source` records a table, a figure, the literature or a method
+for the person reading the file. This command does not write RDF.
 
 The base checkpoints are weak zero-shot (see the model card's "Honest limits"):
 `p_link` is high for most pairs, which is why the decision uses the ranking,

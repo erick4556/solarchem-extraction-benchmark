@@ -1,11 +1,9 @@
 """Scores for the Laya claims trial.
 
-Three blocks, all computed here and written to ``scores.json`` under
-``data/predictions/claims_laya/``. Nothing in this module calls
+Two blocks, written into the run JSON. Nothing in this module calls
 ``solarchem_benchmark.eval``.
 
 * **link** — masked table choice, plus row and column when a number pins one line.
-* **table_reading** — hidden silver cells (see :mod:`.reading`).
 * **claims** — precision and recall against a label CSV. Without labels this block stays empty.
 """
 
@@ -219,28 +217,11 @@ def load_documents(output_dir: Path) -> list[dict[str, Any]]:
 def build_scores(
     documents: list[dict[str, Any]],
     *,
-    reading: dict[str, Any] | None,
     labels: dict[tuple[str, str], dict[str, str]],
     label_paths: list[str],
 ) -> dict[str, Any]:
-    reading_docs = (reading or {}).get("documents") or []
-    reading_cells = sum(doc.get("cells") or 0 for doc in reading_docs)
-    reading_correct = sum(doc.get("correct") or 0 for doc in reading_docs)
-    if reading_cells:
-        random_acc = sum(
-            (doc.get("random_accuracy") or 0) * (doc.get("cells") or 0) for doc in reading_docs
-        ) / reading_cells
-        table_reading = {
-            "cells": reading_cells,
-            "correct": reading_correct,
-            "accuracy": round(reading_correct / reading_cells, 4),
-            "random_accuracy": round(random_acc, 4),
-        }
-    else:
-        table_reading = {"cells": 0, "correct": 0, "accuracy": None, "random_accuracy": None}
     return {
         "link": pool_link_evaluations([doc.get("evaluation") or {} for doc in documents]),
-        "table_reading": table_reading,
         "claims": score_claims(documents, labels),
         "labels": label_paths,
         "documents": [doc["document_id"] for doc in documents],

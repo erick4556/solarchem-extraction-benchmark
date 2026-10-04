@@ -4,7 +4,7 @@ One command writes the whole run into a single JSON file::
 
     solarchem-link-claims run --pdf paper.pdf --device cuda
 
-``link``, ``read-tables`` and ``score`` still run one stage each.
+``link`` and ``score`` still run one stage each.
 Invoking the script with flags and no command still runs ``link``.
 """
 
@@ -20,7 +20,6 @@ from pathlib import Path
 
 from solarchem_benchmark.claims.link import LinkConfig, run_document
 from solarchem_benchmark.claims.model import CHECKPOINTS, LayaModel, UniformModel
-from solarchem_benchmark.claims.reading import run_table_reading
 from solarchem_benchmark.claims.score import build_scores, load_labels, pool_link_evaluations
 from solarchem_benchmark.claims.text import document_sentences, load_pages
 from solarchem_benchmark.gt.schema import GroundTruthCorpus, GroundTruthDocument
@@ -35,32 +34,24 @@ logger = logging.getLogger("solarchem_benchmark.claims")
 
 PILOT_PAPERS = Path("analysis/kg_pilot_10/papers")
 LABELS_DIR = Path("analysis/kg_pilot_10/claims_labels")
-COMMANDS = {"run", "link", "read-tables", "score"}
+COMMANDS = {"run", "link", "score"}
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="solarchem-link-claims",
         description=(
-            "Laya trial: link claims to tables, read hidden table cells, and score both. "
+            "Laya trial: classify claims and link them to silver tables. "
             "Does not run the extractor evaluation."
         ),
     )
     sub = parser.add_subparsers(dest="command", required=True)
 
-    run = sub.add_parser("run", help="Link claims, read hidden cells, and score, in one step.")
+    run = sub.add_parser("run", help="Link claims to tables and score, in one step.")
     _add_run_args(run)
 
     link = sub.add_parser("link", help="Classify claims and link them to silver tables.")
     _add_run_args(link)
-
-    reading = sub.add_parser(
-        "read-tables",
-        help="Ask which number is in each hidden silver cell and store it in the run file.",
-    )
-    _add_shared(reading)
-    _add_model(reading)
-    _add_papers(reading)
 
     score = sub.add_parser("score", help="Add the scores block to the run file.")
     score.add_argument("--data-root", type=Path, help="Root of the data directory.")
@@ -189,11 +180,9 @@ def _write_run(path: Path, run: dict) -> None:
 
 
 def _upsert(run: dict, document_id: str, update: dict) -> None:
-    """Replace one document, keeping link text or cell reading the other command already stored."""
+    """Replace one document, keeping sentences already stored by ``link``."""
     previous = next((doc for doc in run["documents"] if doc.get("document_id") == document_id), None)
     merged = dict(previous or {})
-    if previous and "table_reading" in previous and "table_reading" not in update:
-        update = {**update, "table_reading": previous["table_reading"]}
     if previous and "sentences" in previous and "sentences" not in update:
         merged.update(update)
         update = merged
@@ -286,39 +275,6 @@ def _cmd_link(args: argparse.Namespace) -> int:
     return 0
 
 
-def _cmd_read(args: argparse.Namespace) -> int:
-    prepared = _prepare_papers(args)
-    if prepared is None:
-        return 1
-    data_root, silver_path, silver, pdfs = prepared
-    model = _build_model(args)
-    run_path = _run_file(args, data_root, model.name)
-    run = _load_run(run_path)
-    run["model"] = model.describe()
-    run["silver"] = str(silver_path)
-    written = 0
-    for pdf in pdfs:
-        document = silver.get(pdf.name)
-        if document is None or not document.tables:
-            logger.warning("Not in silver or no tables, skipped: %s", pdf.name)
-            continue
-        started = time.perf_counter()
-        result = run_table_reading(document, model)
-        result["seconds"] = round(time.perf_counter() - started, 2)
-        logger.info(
-            "%s cells=%d accuracy=%s random=%s %.1fs",
-            document.document_id, result["cells"], result["accuracy"], result["random_accuracy"], result["seconds"],
-        )
-        _upsert(run, document.document_id, {"table_reading": result})
-        written += 1
-    if not written:
-        logger.error("Nothing processed.")
-        return 1
-    _write_run(run_path, run)
-    logger.info("Output: %s", run_path)
-    return 0
-
-
 def _score_run_file(args: argparse.Namespace, data_root: Path) -> Path | None:
     if args.output_dir:
         path = args.output_dir.expanduser().resolve()
@@ -347,31 +303,24 @@ def _cmd_score(args: argparse.Namespace) -> int:
         logger.error("No linked documents in %s. Run link first.", run_path)
         return 1
     label_paths = _label_paths(data_root, args.labels)
-    reading_docs = []
-    for doc in run["documents"]:
-        reading = doc.get("table_reading")
-        if reading:
-            reading_docs.append({"document_id": doc["document_id"], **reading})
     scores = build_scores(
         documents,
-        reading={"documents": reading_docs} if reading_docs else None,
         labels=load_labels(label_paths),
         label_paths=[str(path) for path in label_paths],
     )
     run["scores"] = scores
     _write_run(run_path, run)
     logger.info("Link: %s", scores["link"])
-    logger.info("Table reading: %s", scores["table_reading"])
     logger.info("Claims: %s", {k: scores["claims"][k] for k in ("labeled", "precision", "recall", "f1", "table_accuracy")})
     logger.info("Output: %s", run_path)
     return 0
 
 
 def _cmd_run(args: argparse.Namespace) -> int:
-    """Link, then read cells, then score, into the same JSON file."""
+    """Link claims to tables, then score, into the same JSON file."""
     data_root = resolve_data_root(args.data_root)
     args.output_dir = _run_file(args, data_root, _build_model(args).name)
-    for step in (_cmd_link, _cmd_read, _cmd_score):
+    for step in (_cmd_link, _cmd_score):
         code = step(args)
         if code:
             return code
@@ -386,8 +335,6 @@ def main(argv: list[str] | None = None) -> int:
     logging.basicConfig(level=getattr(logging, args.log_level), format="%(levelname)-7s %(message)s")
     if args.command == "run":
         return _cmd_run(args)
-    if args.command == "read-tables":
-        return _cmd_read(args)
     if args.command == "score":
         return _cmd_score(args)
     return _cmd_link(args)

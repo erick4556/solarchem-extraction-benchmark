@@ -15,7 +15,6 @@ from solarchem_benchmark.claims.link import (
     run_document,
     table_choice_question,
 )
-from solarchem_benchmark.claims.reading import cell_queries, run_table_reading
 from solarchem_benchmark.claims.score import score_claims
 from solarchem_benchmark.claims.text import (
     Sentence,
@@ -239,38 +238,6 @@ def test_cli_dry_run_writes_outputs(tmp_path: Path) -> None:
     assert list(out.iterdir()) == [out / "uniform.json"]
 
 
-def test_hidden_cell_question_does_not_show_the_value() -> None:
-    queries = cell_queries(_document())
-    assert queries
-    for query in queries:
-        assert query.raw not in query.state
-        assert query.criteria[query.correct_key] == query.raw
-
-
-def test_table_reading_counts_an_oracle_and_a_miss() -> None:
-    queries = cell_queries(_document())
-
-    class Oracle(KeywordModel):
-        def predict_batch(self, states, questions):
-            by_state = {query.state: query.correct_key for query in queries}
-            out = []
-            for state in states:
-                key = by_state[state]
-                out.append({"cell": {"choice": key, "probabilities": {key: 1.0}}})
-            return out
-
-    class AlwaysFirst(KeywordModel):
-        def predict_batch(self, states, questions):
-            key = next(iter(questions["cell"]["criteria"]))
-            return [{"cell": {"choice": key, "probabilities": {key: 1.0}}} for _ in states]
-
-    perfect = run_table_reading(_document(), Oracle())
-    assert perfect["cells"] == len(queries)
-    assert perfect["accuracy"] == 1.0
-    missed = run_table_reading(_document(), AlwaysFirst())
-    assert missed["accuracy"] < 1.0
-
-
 def test_score_claims_precision_and_table() -> None:
     document = {
         "document_id": "solarchem_demo",
@@ -316,7 +283,7 @@ def test_score_claims_precision_and_table() -> None:
     assert scores["status_accuracy"] == 1.0
 
 
-def test_cli_read_tables_and_score(tmp_path: Path) -> None:
+def test_cli_link_and_score(tmp_path: Path) -> None:
     data = tmp_path / "data"
     papers = data / "analysis" / "kg_pilot_10" / "papers"
     papers.mkdir(parents=True)
@@ -333,9 +300,8 @@ def test_cli_read_tables_and_score(tmp_path: Path) -> None:
     out = tmp_path / "out"
     base = ["--data-root", str(data), "--dry-run", "--output-dir", str(out)]
     assert main(["link", *base]) == 0
-    assert main(["read-tables", *base]) == 0
     run = json.loads((out / "uniform.json").read_text(encoding="utf-8"))
-    assert run["documents"][0]["table_reading"]["cells"] > 0
+    assert "table_reading" not in run["documents"][0]
 
     labels = data / "analysis" / "kg_pilot_10" / "claims_labels" / "demo.csv"
     labels.parent.mkdir(parents=True)
@@ -346,7 +312,7 @@ def test_cli_read_tables_and_score(tmp_path: Path) -> None:
     )
     assert main(["score", "--data-root", str(data), "--output-dir", str(out)]) == 0
     run = json.loads((out / "uniform.json").read_text(encoding="utf-8"))
-    assert run["scores"]["table_reading"]["cells"] == run["documents"][0]["table_reading"]["cells"]
+    assert "table_reading" not in run["scores"]
     assert run["scores"]["claims"]["labeled"] == 1
     assert run["scores"]["claims"]["precision"] == 1.0
     assert run["scores"]["link"]["evaluable_sentences"] == 1
@@ -355,6 +321,7 @@ def test_cli_read_tables_and_score(tmp_path: Path) -> None:
     out_run = tmp_path / "out-run"
     assert main(["run", "--data-root", str(data), "--dry-run", "--output-dir", str(out_run)]) == 0
     combined = json.loads((out_run / "uniform.json").read_text(encoding="utf-8"))
-    assert combined["documents"][0]["table_reading"]["cells"] > 0
+    assert "table_reading" not in combined["documents"][0]
+    assert "table_reading" not in combined["scores"]
     assert combined["scores"]["claims"]["labeled"] == 1
     assert combined["scores"]["link"]["evaluable_sentences"] == 1

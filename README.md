@@ -570,10 +570,8 @@ Per paper:
    claim (role `result`).
 
 This trial does not call `solarchem-eval-gold` and does not write
-`data/predictions/<tool>.json`. Table *extraction* (detection, caption,
-columns, cells) stays in that evaluation. Here, table reading is a different
-question: the silver cell is hidden and Laya chooses its number from the row
-and column labels.
+`data/predictions/<tool>.json`. Table extraction (detection, caption,
+columns, cells) stays in that evaluation.
 
 Install on the GPU server (existing CUDA torch and transformers are kept):
 
@@ -586,7 +584,7 @@ export USE_TF=0              # avoids a TF/abseil deadlock at model build
 On an H100 MIG slice the cuDNN attention kernel has no execution plan. Loading
 Laya disables that kernel and keeps flash and memory-efficient attention.
 
-`run` does the three stages. Flags without a command still run `link` only.
+`run` links the claims and then scores them. Flags without a command still run `link` only.
 
 ```bash
 python scripts/link_claims_laya.py run --match Indium-doped --device cuda
@@ -596,7 +594,6 @@ The same file can be built one stage at a time:
 
 ```bash
 python scripts/link_claims_laya.py link --match Indium-doped --device cuda
-python scripts/link_claims_laya.py read-tables --match Indium-doped --device cuda
 python scripts/link_claims_laya.py score
 ```
 
@@ -606,12 +603,11 @@ with a 2048-token budget, and `--checkpoint typed-decisions` is the other set.
 `--model-path` loads a fine-tuned checkpoint. The JSON records which weights
 were used.
 
-The three commands write one file, `data/predictions/claims_laya/laya-results.json`.
-`link` stores each sentence and its table. `read-tables` adds the hidden-cell
-answers to that same file. `score` adds a `scores` block: masked-table
-self-check, cell accuracy against `random_accuracy`, and claim
-precision/recall when `data/analysis/kg_pilot_10/claims_labels/*.csv` is
-present. This command does not write RDF.
+Both commands write one file, `data/predictions/claims_laya/laya-results.json`.
+`link` stores each sentence and its table. `score` adds a `scores` block:
+the masked-table self-check, and claim precision/recall when
+`data/analysis/kg_pilot_10/claims_labels/*.csv` is present. This command
+does not write RDF.
 
 The base checkpoints are weak zero-shot (see the model card's "Honest limits"):
 `p_link` is high for most pairs, which is why the decision uses the ranking,

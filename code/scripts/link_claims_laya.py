@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Laya trial. One JSON: link claims, read hidden cells, score. Kept apart from extractor eval.
+"""Laya trial. One JSON: link claims to tables and score. Kept apart from extractor eval.
 
     python scripts/link_claims_laya.py run --pdf paper.pdf --device cuda
 """

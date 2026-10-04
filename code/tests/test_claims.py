@@ -279,7 +279,10 @@ def test_score_claims_precision_and_table() -> None:
     assert scores["precision"] == 0.5
     assert scores["recall"] == 1.0
     assert scores["role_accuracy"] == 0.5
-    assert scores["table_accuracy"] == 0.5
+    assert scores["table_labeled"] == 1
+    assert scores["table_accuracy"] == 1.0
+    assert scores["no_table_labeled"] == 1
+    assert scores["no_table_accuracy"] == 0.0
     assert scores["status_accuracy"] == 1.0
     assert scores["text_mismatches"] == 0
     assert scores["recovered_by_text"] == 0

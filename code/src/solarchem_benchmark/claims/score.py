@@ -139,7 +139,12 @@ def score_claims(
     documents: list[dict[str, Any]],
     labels: dict[tuple[str, str], dict[str, str]],
 ) -> dict[str, Any]:
-    """Precision/recall of the claim bit, and accuracy of role, type, table and status."""
+    """Precision/recall of the claim bit, and accuracy of role, type, table and status.
+
+    ``table_accuracy`` counts only rows whose gold table is a real table.
+    Rows labeled ``none`` are scored apart, as ``no_table_accuracy``: the hit
+    is predicting no table.
+    """
     records: dict[tuple[str, str], dict[str, Any]] = {}
     by_text: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for document in documents:
@@ -149,7 +154,7 @@ def score_claims(
 
     tp = fp = fn = 0
     labeled = role_hit = role_n = type_hit = type_n = 0
-    table_hit = table_n = status_hit = status_n = 0
+    table_hit = table_n = no_table_hit = no_table_n = status_hit = status_n = 0
     missing = text_mismatches = recovered_by_text = 0
     for key, gold in labels.items():
         record = records.get(key)
@@ -183,8 +188,14 @@ def score_claims(
             type_n += 1
             type_hit += int(claim.get("type") == gold["gold_type"])
         if gold.get("gold_table"):
-            table_n += 1
-            table_hit += int(_table_key(predicted_table(record)) == _table_key(gold["gold_table"]))
+            predicted = _table_key(predicted_table(record))
+            target = _table_key(gold["gold_table"])
+            if target == "none":
+                no_table_n += 1
+                no_table_hit += int(predicted == "none")
+            else:
+                table_n += 1
+                table_hit += int(predicted == target)
         if gold.get("gold_status") and gold.get("gold_table"):
             target = _table_key(gold["gold_table"])
             if target != "none":
@@ -215,6 +226,8 @@ def score_claims(
         "type_accuracy": accuracy(type_hit, type_n),
         "table_labeled": table_n,
         "table_accuracy": accuracy(table_hit, table_n),
+        "no_table_labeled": no_table_n,
+        "no_table_accuracy": accuracy(no_table_hit, no_table_n),
         "status_labeled": status_n,
         "status_accuracy": accuracy(status_hit, status_n),
     }

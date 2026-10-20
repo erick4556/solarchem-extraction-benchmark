@@ -11,9 +11,10 @@ Stages
    paper's table captions plus ``none``. Probabilities are therefore comparable
    across tables; asking "is it about this table?" once per table was not (on
    the pilot, top-1 0.40 against 0.66 for this form, English checkpoint).
-4. **Where in the table** (model) -- for every table: relation (repeats a
-   value, trend, contradicts, explains), row and column. Row and column
-   options are that table's own labels.
+4. **Where in the table** (model) -- relation (repeats a value, trend,
+   contradicts, explains), row and column. Row and column options are that
+   table's own labels. Asked only for tables the decision can keep: the ones
+   the sentence names, and a claim's two best-ranked tables.
 5. **Numeric check** (deterministic) -- numbers stated in the sentence are
    matched against the table cells (exact, rounded, within 1 %), with the unit
    required to appear in the column, row label or caption.
@@ -445,12 +446,16 @@ def _link_record(
     sentence: Sentence,
     view: TableView,
     link_p: float,
-    answers: dict[str, dict[str, Any]],
+    answers: dict[str, dict[str, Any]] | None,
 ) -> dict[str, Any]:
-    relation = answers["relation"]["choice"]
-    relation_p = _probability(answers["relation"], relation)
-    row_key = answers["row"]["choice"]
-    column_key = answers["column"]["choice"]
+    """One sentence-table pair. ``answers`` is ``None`` when the table could not
+    be linked, so stage 4 was skipped; the status then rests on the numbers alone."""
+    asked = answers is not None
+    answers = answers or {"relation": {}, "row": {}, "column": {}}
+    relation = answers["relation"].get("choice")
+    relation_p = _probability(answers["relation"], relation) if asked else 0.0
+    row_key = answers["row"].get("choice")
+    column_key = answers["column"].get("choice")
 
     numbers = stated_numbers(sentence.text)
     matches = numeric_matches(numbers, view)
@@ -471,10 +476,10 @@ def _link_record(
         "p_link": round(link_p, 4),
         "relation": relation,
         "relation_probabilities": answers["relation"].get("probabilities", {}),
-        "row": view.row_labels.get(row_key, NONE_OPTION),
-        "row_p": round(_probability(answers["row"], row_key), 4),
-        "column": view.column_labels.get(column_key, NONE_OPTION),
-        "column_p": round(_probability(answers["column"], column_key), 4),
+        "row": view.row_labels.get(row_key, NONE_OPTION) if asked else None,
+        "row_p": round(_probability(answers["row"], row_key), 4) if asked else None,
+        "column": view.column_labels.get(column_key, NONE_OPTION) if asked else None,
+        "column_p": round(_probability(answers["column"], column_key), 4) if asked else None,
         "row_index": row_index,
         "column_index": column_index,
         "explicit_reference": explicit,
@@ -543,27 +548,45 @@ def run_document(
         if views
         else [{} for _ in candidates]
     )
-    per_table: list[list[dict[str, dict]]] = []
+    decisions = []
+    for index, sentence in enumerate(candidates):
+        role = claim_answers[index]["role"]
+        p_claim = _probability(role, RESULT_ROLE)
+        is_claim = role["choice"] == RESULT_ROLE or p_claim >= config.claim_threshold
+        choice = table_answers[index].get("table", {})
+        p_tables = [_probability(choice, table_option_key(view, t)) for t, view in enumerate(views)]
+        decisions.append((p_claim, is_claim, _probability(choice, NONE_OPTION), p_tables))
+
+    # Stage 3 only for pairs that _decide_links can keep: a table the sentence
+    # names, or one of the claim's two best-ranked tables. Same stable order as
+    # the sort below, so ties rank identically.
+    needed: list[list[int]] = [[] for _ in views]
+    for index, sentence in enumerate(candidates):
+        _, is_claim, _, p_tables = decisions[index]
+        ranked = sorted(range(len(views)), key=lambda t: round(p_tables[t], 4), reverse=True)
+        for t, view in enumerate(views):
+            explicit = view.number is not None and view.number in sentence.table_refs
+            if explicit or (is_claim and t in ranked[:2]):
+                needed[t].append(index)
+
+    per_table: list[dict[int, dict[str, dict]]] = []
     for number, view in enumerate(views, start=1):
-        logger.info("Stage 3/3: row and column in %s (%d/%d)", view.table.table_label, number, len(views))
-        states = [link_state(s, view, mask=config.mask_references) for s in candidates]
-        per_table.append(predict(model, states, view.questions))
+        indexes = needed[number - 1]
+        logger.info(
+            "Stage 3/3: row and column in %s (%d/%d), %d sentences",
+            view.table.table_label, number, len(views), len(indexes),
+        )
+        states = [link_state(candidates[i], view, mask=config.mask_references) for i in indexes]
+        answers = predict(model, states, view.questions) if states else []
+        per_table.append(dict(zip(indexes, answers)))
 
     records = []
     for index, sentence in enumerate(candidates):
         claim = claim_answers[index]
         role = claim["role"]["choice"]
-        p_claim = _probability(claim["role"], RESULT_ROLE)
-        is_claim = role == RESULT_ROLE or p_claim >= config.claim_threshold
-        choice = table_answers[index].get("table", {})
-        p_no_table = _probability(choice, NONE_OPTION)
+        p_claim, is_claim, p_no_table, p_tables = decisions[index]
         links = [
-            _link_record(
-                sentence,
-                view,
-                _probability(choice, table_option_key(view, t)),
-                per_table[t][index],
-            )
+            _link_record(sentence, view, p_tables[t], per_table[t].get(index))
             for t, view in enumerate(views)
         ]
         links.sort(key=lambda link: link["p_link"], reverse=True)

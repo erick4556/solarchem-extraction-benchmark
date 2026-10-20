@@ -192,6 +192,44 @@ def test_run_document_links_and_checks_numbers() -> None:
     assert evaluation["column_top1"] == 0.0
 
 
+class MethodAwareModel(KeywordModel):
+    """KeywordModel that calls calcination a method and records stage-4 states."""
+
+    def __init__(self) -> None:
+        self.row_states: list[str] = []
+
+    def predict_batch(self, states, questions):
+        out = super().predict_batch(states, questions)
+        if "row" in questions:
+            self.row_states.extend(states)
+        if "role" in questions:
+            for state, answers in zip(states, out):
+                if "calcined" in state:
+                    keys = list(questions["role"]["criteria"])
+                    answers["role"] = {
+                        "type": "choice",
+                        "choice": "method",
+                        "probabilities": {k: (0.9 if k == "method" else 0.1 / (len(keys) - 1)) for k in keys},
+                    }
+        return out
+
+
+def test_stage_four_skips_tables_that_cannot_be_linked() -> None:
+    sentences = [
+        Sentence("s1", 9, "3.5", "The yield rate of CH4 over In-doped TiO2 is 244 umol g^-1 h^-1."),
+        Sentence("s2", 3, "2.1", "The samples were calcined at 500 °C for 5 h in a furnace."),
+    ]
+    model = MethodAwareModel()
+    result = run_document(_document(), sentences, model, LinkConfig())
+
+    claim, method = result["sentences"]
+    assert claim["claim"]["is_claim"] and not method["claim"]["is_claim"]
+    assert all(link["row"] is not None for link in claim["links"])
+    assert all(link["row"] is None and link["relation"] is None for link in method["links"])
+    assert all(link["status"] == "unverified" and not link["linked"] for link in method["links"])
+    assert not any("calcined" in state for state in model.row_states)
+
+
 def test_document_sentences_from_ocr_markdown() -> None:
     pages = [
         "# 3. Results and discussion\n\nThe CH4 rate was 244 umol/g/h. It is 7.9-fold higher.\n\n"
@@ -265,7 +303,6 @@ def test_score_claims_precision_and_table() -> None:
             "gold_role": "result",
             "gold_type": "performance",
             "gold_table": "Table 2",
-            "gold_status": "consistent",
         },
         ("solarchem_demo", "s2"): {
             "gold_is_claim": "no",
@@ -283,7 +320,6 @@ def test_score_claims_precision_and_table() -> None:
     assert scores["table_accuracy"] == 1.0
     assert scores["no_table_labeled"] == 1
     assert scores["no_table_accuracy"] == 0.0
-    assert scores["status_accuracy"] == 1.0
     assert scores["text_mismatches"] == 0
     assert scores["recovered_by_text"] == 0
 

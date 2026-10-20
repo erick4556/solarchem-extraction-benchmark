@@ -32,6 +32,8 @@ This repository is `code/` plus `data/` (except the PDF corpus):
     ├── documents/        # source PDF corpus (gitignored; not in the repo)
     ├── ground_truth/     # generated ground truth JSON (per engine)
     ├── predictions/      # tool outputs (not GT)
+    │   ├── table_extraction/  # extractor tables and their eval_* reports
+    │   └── claims_laya/       # Laya claim and table-link runs
     ├── rdf/              # Turtle export of LightOn silver
     └── intermediate/
         └── ocr_cache/
@@ -320,7 +322,7 @@ pip install -e ".[camelot]"        # + Ghostscript for lattice
 
 By default only the PDFs listed in the frozen working silver
 (`data/ground_truth/ground_truth_lighton_ocr_302.json`, 302 documents) are
-processed. Output goes to `data/predictions/<tool>.json`, not into the GT
+processed. Output goes to `data/predictions/table_extraction/<tool>.json`, not into the GT
 files. Documents already present are skipped (resume). Documents with 0
 recovered tables are **kept** (`num_tables: 0`) so the prediction file has the
 same 302 keys as silver; the evaluator counts those as detection misses.
@@ -345,16 +347,16 @@ python scripts/evaluate_against_gold.py \
   --gold ../data/ground_truth/gold/ground_truth_gold_pilot.json \
   --tool pdfplumber \
   --metrics structure \
-  --report ../data/predictions/eval_pdfplumber_gold10.json
+  --report ../data/predictions/table_extraction/eval_pdfplumber_gold10.json
 
 python scripts/evaluate_against_gold.py \
   --reference ../data/ground_truth/ground_truth_lighton_ocr_302.json \
   --tool pdfplumber \
   --metrics structure \
-  --report ../data/predictions/eval_pdfplumber_silver302.json
+  --report ../data/predictions/table_extraction/eval_pdfplumber_silver302.json
 ```
 
-`--tool` picks `data/predictions/<tool>.json`. Pass `--prediction` to score any
+`--tool` picks `data/predictions/table_extraction/<tool>.json`. Pass `--prediction` to score any
 other file.
 
 ## Phase 6 — layout / end-to-end extractors
@@ -393,12 +395,12 @@ Same evaluation as Phase 5, changing `--tool`:
 python scripts/evaluate_against_gold.py \
   --gold ../data/ground_truth/gold/ground_truth_gold_pilot.json \
   --tool docling --metrics structure \
-  --report ../data/predictions/eval_docling_gold10.json
+  --report ../data/predictions/table_extraction/eval_docling_gold10.json
 
 python scripts/evaluate_against_gold.py \
   --reference ../data/ground_truth/ground_truth_lighton_ocr_302.json \
   --tool docling --metrics structure \
-  --report ../data/predictions/eval_docling_silver302.json
+  --report ../data/predictions/table_extraction/eval_docling_silver302.json
 ```
 
 ## Phase 7 — GROBID and Ollama VLMs (tables + context)
@@ -417,17 +419,17 @@ fills context):
 
 ```bash
 python scripts/extract_native_tables.py --tool grobid
-# → data/predictions/grobid.json
+# → data/predictions/table_extraction/grobid.json
 
 python scripts/evaluate_against_gold.py \
   --gold ../data/ground_truth/gold/ground_truth_gold_pilot.json \
   --tool grobid --metrics all \
-  --report ../data/predictions/eval_grobid_gold10.json
+  --report ../data/predictions/table_extraction/eval_grobid_gold10.json
 
 python scripts/evaluate_against_gold.py \
   --reference ../data/ground_truth/ground_truth_lighton_ocr_302.json \
   --tool grobid --metrics all \
-  --report ../data/predictions/eval_grobid_silver302.json
+  --report ../data/predictions/table_extraction/eval_grobid_silver302.json
 ```
 
 Override the URL with `--grobid-host` or `$GROBID_HOST` (default
@@ -447,7 +449,7 @@ Default tags: `qwen3-vl:32b`, `gemma4:31b`, `mistral-small3.2:24b`.
 Override with `--ollama-model` or `$OLLAMA_HOST`.
 
 Start on Gold-10 (not the 302-doc silver) — each page is a GPU call.
-Predictions still go to `data/predictions/<tool>.json`, same as TATR/Docling.
+Predictions still go to `data/predictions/table_extraction/<tool>.json`, same as TATR/Docling.
 `gold10` appears only on the evaluation report.
 
 ```bash
@@ -476,7 +478,7 @@ Evaluate with **`--metrics all`** (structure + context):
 python scripts/evaluate_against_gold.py \
   --gold ../data/ground_truth/gold/ground_truth_gold_pilot.json \
   --tool ollama_qwen3_vl --metrics all \
-  --report ../data/predictions/eval_ollama_qwen3_vl_gold10.json
+  --report ../data/predictions/table_extraction/eval_ollama_qwen3_vl_gold10.json
 ```
 
 Same pattern for `ollama_gemma4` and `ollama_mistral_small`. Structure-only
@@ -491,7 +493,7 @@ both GT CLIs (with resume), the schema, a **Gold pilot** of 10 human-verified
 tables under `data/ground_truth/gold/` (see [`code/docs/gold_pilot.md`](code/docs/gold_pilot.md)),
 and **Phase 5 native extractors** (pdfplumber, Camelot lattice/stream, PyMuPDF)
 plus **Phase 6 layout extractors** (Docling, TATR, Unstructured), **GROBID**,
-and **Phase 7 Ollama VLMs** writing to `data/predictions/`.
+and **Phase 7 Ollama VLMs** writing to `data/predictions/table_extraction/`.
 
 Unlimited-OCR uses `baidu/Unlimited-OCR` with `trust_remote_code` and requires
 CUDA. Each engine writes its own silver file by default:
@@ -546,7 +548,9 @@ so there is nothing to parse and nothing to hallucinate.
 Inputs are the 10 KG-pilot PDFs (`data/analysis/kg_pilot_10/papers/`), their
 tables from the LightOn silver (matched by file name), and the page text from
 the LightOn OCR cache (`data/intermediate/ocr_cache/lighton_ocr/`; falls back
-to the PDF text layer when absent).
+to the PDF text layer when absent). The fallback splits sentences differently,
+so its ids no longer match the label CSV: the log must say `ocr_cache` for
+every paper before the scores are used.
 
 Per paper:
 
@@ -557,9 +561,12 @@ Per paper:
    property, condition, explanation, other.
 3. **Which table** (Laya): one question per sentence whose options are the
    paper's table captions plus `none`, so probabilities compare across tables.
-4. **Where in the table** (Laya), for every table: relation (repeats a value,
-   trend, contradicts, explains), and which **row** and **column**. The
-   row/column options are that table's own labels.
+4. **Where in the table** (Laya): relation (repeats a value, trend,
+   contradicts, explains), and which **row** and **column**. The row/column
+   options are that table's own labels. Asked only for tables that step 6
+   can keep: the ones the sentence names, and a claim's two best-ranked
+   tables (on the 10 papers, 2,074 sentence-table pairs instead of 9,150).
+   The other pairs keep `row`, `column` and `relation` as `null`.
    `Table N` in the sentence is masked in both, so the model links on content.
 5. **Numeric check** (rules): stated numbers vs cells, `exact`, `rounded`
    (42.98 vs 43) or `approx` (1 %), with the unit required to appear in the
@@ -570,7 +577,7 @@ Per paper:
    claim (role `result`).
 
 This trial does not call `solarchem-eval-gold` and does not write
-`data/predictions/<tool>.json`. Table extraction (detection, caption,
+`data/predictions/table_extraction/<tool>.json`. Table extraction (detection, caption,
 columns, cells) stays in that evaluation.
 
 Install on the GPU server (existing CUDA torch and transformers are kept):
@@ -585,16 +592,32 @@ On an H100 MIG slice the cuDNN attention kernel has no execution plan. Loading
 Laya disables that kernel and keeps flash and memory-efficient attention.
 
 `run` links the claims and then scores them. Flags without a command still run `link` only.
+Without `--labels`, `score` reads every CSV in `claims_labels/`, so pass the key
+that matches the run:
 
 ```bash
-python scripts/link_claims_laya.py run --match Indium-doped --device cuda
+python scripts/link_claims_laya.py run --device cuda \
+  --labels ../data/analysis/kg_pilot_10/claims_labels/kg_pilot_10.csv \
+  --output-dir ../data/predictions/claims_laya/laya-kg-pilot-10.json
+
+python scripts/link_claims_laya.py run --match Indium-doped --device cuda \
+  --labels ../data/analysis/kg_pilot_10/claims_labels/indium.csv \
+  --output-dir ../data/predictions/claims_laya/laya-indium.json
 ```
 
-The same file can be built one stage at a time:
+Both keys take their sentence ids from the LightOn OCR cache. The indium rows
+are the same in the two files. Columns: `document_id`, `sentence_id`, `text`,
+`gold_is_claim`, `gold_role`, `gold_type`, `gold_table` (scored), and
+`gold_source`, `note` (for the reader). Each label must be decidable from the
+sentence, its section and the silver tables, which is all Laya sees.
+
+After a label change only `score` is needed; it rewrites the `scores` block
+without the GPU:
 
 ```bash
-python scripts/link_claims_laya.py link --match Indium-doped --device cuda
-python scripts/link_claims_laya.py score
+python scripts/link_claims_laya.py score \
+  --labels ../data/analysis/kg_pilot_10/claims_labels/kg_pilot_10.csv \
+  --output-dir ../data/predictions/claims_laya/laya-kg-pilot-10.json
 ```
 
 The default weights are ModernBERT-large (512 tokens, so long tables are
@@ -603,7 +626,8 @@ with a 2048-token budget, and `--checkpoint typed-decisions` is the other set.
 `--model-path` loads a fine-tuned checkpoint. The JSON records which weights
 were used.
 
-Both commands write one file, `data/predictions/claims_laya/laya-results.json`.
+A run writes one JSON: the `--output-dir` path, or
+`data/predictions/claims_laya/laya-results.json` without it.
 `link` stores each sentence and its table. `score` adds a `scores` block:
 the masked-table self-check, and claim precision/recall when
 `data/analysis/kg_pilot_10/claims_labels/*.csv` is present. Each label row

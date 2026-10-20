@@ -51,13 +51,13 @@ def build_parser() -> argparse.ArgumentParser:
         "--prediction",
         type=Path,
         help=(
-            "Prediction JSON to score. Defaults to data/predictions/<tool>.json "
+            "Prediction JSON to score. Defaults to data/predictions/table_extraction/<tool>.json "
             "when --tool is set, else data/ground_truth/ground_truth_<engine>.json."
         ),
     )
     parser.add_argument(
         "--tool",
-        help="Native extractor id used only to pick data/predictions/<tool>.json.",
+        help="Native extractor id used only to pick data/predictions/table_extraction/<tool>.json.",
     )
     parser.add_argument(
         "--engine",

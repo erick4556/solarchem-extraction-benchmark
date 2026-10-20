@@ -1,6 +1,6 @@
 """CLI for table extractors (Phase 5 native + Phase 6 layout + Phase 7 GROBID/Ollama).
 
-Predictions are written under ``data/predictions/``, never into the silver GT
+Predictions are written under ``data/predictions/table_extraction/``, never into the silver GT
 files. By default only PDFs listed in the working silver snapshot
 (``ground_truth_lighton_ocr_302.json``) are processed.
 """
@@ -43,7 +43,7 @@ def build_parser() -> argparse.ArgumentParser:
         description=(
             "Extract tables from PDFs (pdfplumber, Camelot, PyMuPDF, Docling, "
             "TATR, Unstructured, GROBID, Ollama VLMs) into the benchmark schema. "
-            "Output goes to data/predictions/, not into the ground-truth files. "
+            "Output goes to data/predictions/table_extraction/, not into the ground-truth files. "
             "Documents already present are skipped unless --overwrite is set. "
             "Documents with 0 recovered tables are kept (num_tables=0) so the "
             "prediction file aligns with the silver/Gold working set and "
@@ -70,7 +70,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--output",
         type=Path,
-        help="Output JSON (default: data/predictions/<tool>.json).",
+        help="Output JSON (default: data/predictions/table_extraction/<tool>.json).",
     )
     parser.add_argument(
         "--tool",

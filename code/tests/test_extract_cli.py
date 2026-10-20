@@ -67,7 +67,7 @@ def test_default_output_is_named_after_the_tool(tmp_path: Path) -> None:
     with patch("solarchem_benchmark.extractors.cli.extract_document", side_effect=fake_extract):
         assert main(["--data-root", str(data_root), "--tool", "pdfplumber", "--input", str(data_root / "documents")]) == 0
 
-    output = data_root / "predictions" / "pdfplumber.json"
+    output = data_root / "predictions" / "table_extraction" / "pdfplumber.json"
     assert output.is_file()
     corpus = GroundTruthCorpus.model_validate_json(output.read_text(encoding="utf-8"))
     assert corpus.documents[0].source_pdf == "a.pdf"
@@ -87,7 +87,7 @@ def test_reference_restricts_the_working_set(tmp_path: Path) -> None:
         calls.append(pdf.name)
         return _doc(pdf.name)
 
-    output = data_root / "predictions" / "pdfplumber.json"
+    output = data_root / "predictions" / "table_extraction" / "pdfplumber.json"
     with patch("solarchem_benchmark.extractors.cli.extract_document", side_effect=fake_extract):
         assert (
             main(
@@ -128,7 +128,7 @@ def test_default_reference_is_the_working_silver_snapshot(tmp_path: Path) -> Non
 
 def test_merged_run_skips_pdfs_already_in_the_output(tmp_path: Path) -> None:
     data_root = _corpus(tmp_path)
-    output = data_root / "predictions" / "pdfplumber.json"
+    output = data_root / "predictions" / "table_extraction" / "pdfplumber.json"
     output.parent.mkdir(parents=True)
     output.write_text(
         GroundTruthCorpus(documents=[_doc("a.pdf"), _doc("b.pdf")]).model_dump_json() + "\n",
@@ -161,7 +161,7 @@ def test_merged_run_skips_pdfs_already_in_the_output(tmp_path: Path) -> None:
 
 def test_keeps_empty_documents_so_the_working_set_aligns(tmp_path: Path) -> None:
     data_root = _corpus(tmp_path, ("empty.pdf", "has_table.pdf"))
-    output = data_root / "predictions" / "pdfplumber.json"
+    output = data_root / "predictions" / "table_extraction" / "pdfplumber.json"
 
     def fake_extract(pdf, extractor, **kwargs):
         return _doc(pdf.name, with_table=pdf.name != "empty.pdf")
@@ -219,7 +219,7 @@ def test_importerror_aborts_the_run(tmp_path: Path) -> None:
 
 def test_file_is_written_after_each_success(tmp_path: Path) -> None:
     data_root = _corpus(tmp_path, ("a.pdf", "b.pdf"))
-    output = data_root / "predictions" / "pdfplumber.json"
+    output = data_root / "predictions" / "table_extraction" / "pdfplumber.json"
     seen_sizes: list[int] = []
 
     def fake_extract(pdf, extractor, **kwargs):

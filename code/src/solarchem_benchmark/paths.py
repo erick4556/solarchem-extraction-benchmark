@@ -22,6 +22,7 @@ DATA_ROOT_ENV_VAR = "SOLARCHEM_DATA_ROOT"
 _DOCUMENTS_DIR_NAME = "documents"
 _GROUND_TRUTH_DIR_NAME = "ground_truth"
 _PREDICTIONS_DIR_NAME = "predictions"
+_TABLE_EXTRACTION_DIR_NAME = "table_extraction"
 _RDF_DIR_NAME = "rdf"
 _OCR_CACHE_DIR_NAME = "intermediate/ocr_cache"
 
@@ -117,12 +118,17 @@ def default_predictions_dir(data_root: Path) -> Path:
     return data_root / _PREDICTIONS_DIR_NAME
 
 
+def default_table_extraction_dir(data_root: Path) -> Path:
+    """Return ``data/predictions/table_extraction/``: extractor outputs and their ``eval_*`` reports."""
+    return default_predictions_dir(data_root) / _TABLE_EXTRACTION_DIR_NAME
+
+
 def default_prediction_path(data_root: Path, tool_id: str) -> Path:
-    """Return ``data/predictions/<tool_id>.json``."""
+    """Return ``data/predictions/table_extraction/<tool_id>.json``."""
     slug = "".join(char if char.isalnum() or char in "-_" else "_" for char in tool_id).strip(
         "_"
     )
-    return default_predictions_dir(data_root) / f"{slug or 'tool'}.json"
+    return default_table_extraction_dir(data_root) / f"{slug or 'tool'}.json"
 
 
 def default_rdf_dir(data_root: Path) -> Path:

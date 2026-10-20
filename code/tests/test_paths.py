@@ -36,10 +36,10 @@ def test_ocr_cache_dir_is_per_engine(tmp_path: Path) -> None:
 
 def test_prediction_path_is_under_predictions(tmp_path: Path) -> None:
     assert default_prediction_path(tmp_path, "pdfplumber") == (
-        tmp_path / "predictions" / "pdfplumber.json"
+        tmp_path / "predictions" / "table_extraction" / "pdfplumber.json"
     )
     assert default_prediction_path(tmp_path, "camelot_lattice") == (
-        tmp_path / "predictions" / "camelot_lattice.json"
+        tmp_path / "predictions" / "table_extraction" / "camelot_lattice.json"
     )
 
 

@@ -10,20 +10,18 @@ Two blocks, written into the run JSON. Nothing in this module calls
 from __future__ import annotations
 
 import csv
-import json
 from pathlib import Path
 from typing import Any
 
 from solarchem_benchmark.claims.text import canonical_table_number
 
-GOLD_FIELDS = ("gold_is_claim", "gold_role", "gold_type", "gold_table", "gold_status")
+GOLD_FIELDS = ("gold_is_claim", "gold_role", "gold_type", "gold_table")
 # Kept with the row so a person can read the key, and so a changed sentence
 # split cannot be graded as if it were still the labeled sentence. ``gold_source``
 # records a table, a figure, the literature or a method. Laya does not predict it.
 LABEL_CONTEXT = ("text", "gold_source")
 _YES = {"yes", "y", "true", "1", "si", "sí"}
 _NO = {"no", "n", "false", "0"}
-_SKIP_JSON = {"summary.json", "table_reading.json", "scores.json"}
 
 
 def pool_link_evaluations(evaluations: list[dict[str, Any]]) -> dict[str, Any]:
@@ -139,7 +137,7 @@ def score_claims(
     documents: list[dict[str, Any]],
     labels: dict[tuple[str, str], dict[str, str]],
 ) -> dict[str, Any]:
-    """Precision/recall of the claim bit, and accuracy of role, type, table and status.
+    """Precision/recall of the claim bit, and accuracy of role, type and table.
 
     ``table_accuracy`` counts only rows whose gold table is a real table.
     Rows labeled ``none`` are scored apart, as ``no_table_accuracy``: the hit
@@ -154,7 +152,7 @@ def score_claims(
 
     tp = fp = fn = 0
     labeled = role_hit = role_n = type_hit = type_n = 0
-    table_hit = table_n = no_table_hit = no_table_n = status_hit = status_n = 0
+    table_hit = table_n = no_table_hit = no_table_n = 0
     missing = text_mismatches = recovered_by_text = 0
     for key, gold in labels.items():
         record = records.get(key)
@@ -196,20 +194,6 @@ def score_claims(
             else:
                 table_n += 1
                 table_hit += int(predicted == target)
-        if gold.get("gold_status") and gold.get("gold_table"):
-            target = _table_key(gold["gold_table"])
-            if target != "none":
-                status = next(
-                    (
-                        link.get("status")
-                        for link in record.get("links") or []
-                        if _table_key(link.get("table_label")) == target
-                    ),
-                    None,
-                )
-                if status is not None:
-                    status_n += 1
-                    status_hit += int(status == gold["gold_status"])
 
     def accuracy(hits: int, count: int) -> float | None:
         return round(hits / count, 4) if count else None
@@ -228,24 +212,7 @@ def score_claims(
         "table_accuracy": accuracy(table_hit, table_n),
         "no_table_labeled": no_table_n,
         "no_table_accuracy": accuracy(no_table_hit, no_table_n),
-        "status_labeled": status_n,
-        "status_accuracy": accuracy(status_hit, status_n),
     }
-
-
-def document_jsons(output_dir: Path) -> list[Path]:
-    return sorted(
-        path for path in output_dir.glob("*.json") if path.name not in _SKIP_JSON and not path.name.startswith(".")
-    )
-
-
-def load_documents(output_dir: Path) -> list[dict[str, Any]]:
-    documents = []
-    for path in document_jsons(output_dir):
-        payload = json.loads(path.read_text(encoding="utf-8"))
-        if isinstance(payload, dict) and payload.get("document_id") and "sentences" in payload:
-            documents.append(payload)
-    return documents
 
 
 def build_scores(

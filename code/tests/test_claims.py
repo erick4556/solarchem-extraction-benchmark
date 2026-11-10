@@ -114,6 +114,17 @@ def test_table_residue_is_not_a_candidate() -> None:
     assert is_candidate(prose)
 
 
+def test_results_section_admits_claims_without_cues() -> None:
+    text = "Thus, the physicochemical state of Ag loaded on C3N4 is metallic."
+    assert is_candidate(Sentence("s1", 6, "RESULTS AND DISCUSSION", text))
+    assert is_candidate(Sentence("s2", 6, "3.2. Characterisation of the photocatalysts", text))
+    assert is_candidate(Sentence("s3", 9, "4. Conclusions", text))
+    assert not is_candidate(Sentence("s4", 1, "1. Introduction", text))
+    assert not is_candidate(Sentence("s5", 2, "2.1. Synthesis of the catalysts", text))
+    cue = "No segregated copper species or particles were detected for any sample."
+    assert is_candidate(Sentence("s6", 2, "2.3. Characterisation", cue))
+
+
 def test_match_kind_handles_rounding() -> None:
     view = build_table_view(_document().tables[0])
     cell_43 = next(c for c in view.cells if c.value == 43)

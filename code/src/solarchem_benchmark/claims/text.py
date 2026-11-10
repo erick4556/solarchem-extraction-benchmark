@@ -78,7 +78,16 @@ _CUE_RE = re.compile(
     r"\b(?:increas|decreas|higher|lower|enhanc|improv|reduc|compar|than|maximum|minimum|"
     r"optim|highest|lowest|yield|rate|selectiv|band ?gap|surface area|efficien|activit|"
     r"produc|evolution|shift|attribut|due to|indicat|show|exhibit|reveal|observ|confirm|"
-    r"suggest|measur|obtain|achiev|conver)",
+    r"suggest|measur|obtain|achiev|conver|detect|found|prov(?:e|ed|es|ing)\b|display|"
+    r"consistent|agree|evident|appear|similar|correlat|corroborat|successful|introduc|"
+    r"distribut|in line with|identical|unchanged|no significant|negligible|absent|presence|remain)",
+    re.IGNORECASE,
+)
+# Results, discussion, conclusions and abstract state most claims, often
+# without a number or a cue word ("Ag on C3N4 was metallic").
+_RESULT_SECTION_RE = re.compile(
+    r"^(?:\d+\.?\s*)?(?:abstract|results?|discussion|conclusions?)\b|results and discussion"
+    r"|^3(?:\.\d+)*\.?\s|^4\.?\s*conclu",
     re.IGNORECASE,
 )
 
@@ -278,7 +287,7 @@ def is_candidate(sentence: Sentence) -> bool:
         return False
     if looks_like_table_residue(sentence.text) or _FRONT_MATTER_RE.search(sentence.text):
         return False
-    if sentence.table_refs:
+    if sentence.table_refs or _RESULT_SECTION_RE.search(sentence.section):
         return True
     return bool(stated_numbers(sentence.text)) or bool(_CUE_RE.search(sentence.text))
 

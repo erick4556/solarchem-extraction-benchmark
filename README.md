@@ -554,9 +554,11 @@ every paper before the scores are used.
 
 Per paper:
 
-1. **Candidates**: body sentences with a stated number, a result verb or a
-   `Table N` reference. Front matter, captions, references and table bodies
-   leaked into the text layer are dropped.
+1. **Candidates**: body sentences with a stated number, a result word, a
+   `Table N` reference, or any sentence in the abstract, results, discussion
+   or conclusions (claims there often carry no number, e.g. "Ag on C3N4 was
+   metallic"). Front matter, captions, references and table bodies leaked
+   into the text layer are dropped.
 2. **Claim** (Laya): is it a finding of this study; type = performance,
    property, condition, explanation, other.
 3. **Which table** (Laya): one question per sentence whose options are the

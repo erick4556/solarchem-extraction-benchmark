@@ -17,9 +17,8 @@ from solarchem_benchmark.claims.text import canonical_table_number
 
 GOLD_FIELDS = ("gold_is_claim", "gold_role", "gold_type", "gold_table")
 # Kept with the row so a person can read the key, and so a changed sentence
-# split cannot be graded as if it were still the labeled sentence. ``gold_source``
-# records a table, a figure, the literature or a method. Laya does not predict it.
-LABEL_CONTEXT = ("text", "gold_source")
+# split cannot be graded as if it were still the labeled sentence.
+LABEL_CONTEXT = ("text",)
 _YES = {"yes", "y", "true", "1", "si", "sí"}
 _NO = {"no", "n", "false", "0"}
 

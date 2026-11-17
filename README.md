@@ -609,8 +609,8 @@ python scripts/link_claims_laya.py run --match Indium-doped --device cuda \
 
 Both keys take their sentence ids from the LightOn OCR cache. The indium rows
 are the same in the two files. Columns: `document_id`, `sentence_id`, `text`,
-`gold_is_claim`, `gold_role`, `gold_type`, `gold_table` (scored), and
-`gold_source`, `note` (for the reader). Each label must be decidable from the
+`gold_is_claim`, `gold_role`, `gold_type` and `gold_table`, the four scored
+columns. Each label must be decidable from the
 sentence, its section and the silver tables, which is all Laya sees.
 
 After a label change only `score` is needed; it rewrites the `scores` block
@@ -637,8 +637,7 @@ stores the sentence text. Scoring uses that text to confirm the row still
 refers to the same sentence, and ignores the row when the text no longer
 matches. Table accuracy counts only rows whose answer is a real table.
 Rows marked `none` are scored apart: the hit is predicting no table.
-`gold_source` records a table, a figure, the literature or a method
-for the person reading the file. This command does not write RDF.
+This command does not write RDF.
 
 The base checkpoints are weak zero-shot (see the model card's "Honest limits"):
 `p_link` is high for most pairs, which is why the decision uses the ranking,
